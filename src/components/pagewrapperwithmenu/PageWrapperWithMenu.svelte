@@ -9,7 +9,7 @@
 
   export let active;
   export let routes;
-  console.log(routes);
+  // console.log(routes);
 
   $: item = routes[active].label;
 </script>

@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import { fade, fly } from "svelte/transition";
-  import { Gyarn, Grid } from "components";
+  import { Gyarn, Grid, Heading } from "components";
   import { typewriter } from "animations";
   import { mobile } from "stores";
 
@@ -36,7 +36,7 @@
     border: none;
     animation: flashing 2s infinite ease-in-out;
     color: #a9e3b0;
-    font-size: 3rem;
+    font-size: 1.5em;
   }
 </style>
 
@@ -48,9 +48,12 @@
       on:outroend={() => {
         loaded = true;
       }}
-      class="w-100 h-100 flex justify-center">
-      <Grid />
-      <button on:click={() => (mounted = false)}>PRESS START</button>
+      class="w-100 h-100 flex items-center justify-center">
+      <div
+        class="w-100 h-25 flex flex-column items-center justify-between f4 tc">
+        <Heading />
+        <button on:click={() => (mounted = false)}>[ENTER]</button>
+      </div>
     </div>
   {/if}
 </div>

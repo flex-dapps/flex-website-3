@@ -3,7 +3,8 @@ export function typewriter(node, { speed = 150 }) {
     node.childNodes.length === 1 && node.childNodes[0].nodeType === 3;
 
   if (!valid) {
-    throw new Error(
+    console.log("error", node);
+    console.log(
       `This transition only works on elements with a single text node child`
     );
   }

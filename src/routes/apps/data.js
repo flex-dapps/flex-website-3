@@ -1,6 +1,6 @@
 export const data = [
   {
-    label: "Blocknative",
+    label: "Blocknative Assist",
     logo: `
                       .-//-\`                      
                   \`.:////////:.\`                  

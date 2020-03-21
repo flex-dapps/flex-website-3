@@ -40,12 +40,20 @@
 </script>
 
 <style>
-  p {
+  #post {
+  }
+
+  h1 {
+    margin: 0.5rem 0rem;
+  }
+  #container {
     line-height: 2rem;
     font-size: 1rem;
     margin: 0.5rem;
+    overflow: scroll;
+    max-height: 80vh;
+    padding-bottom: 3rem;
   }
-
   div {
     margin: 0.5rem 0;
   }
@@ -54,9 +62,7 @@
 <!-- find the url context and do If blocks -->
 
 <PageWrapperWithMenu routes={subroutes} bind:active>
-  <div />
   {#if active !== null}
-    <h1>{post.name}</h1>
     <div id="container" />
   {/if}
 </PageWrapperWithMenu>

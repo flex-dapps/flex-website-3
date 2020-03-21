@@ -7,9 +7,11 @@ function isMobile() {
     subscribe,
     check: () => {
       let el = document.getElementById("app");
+
       if (el) {
         let { clientWidth, clientHeight } = el;
-        set(clientWidth / clientHeight < 1);
+        const mobile = clientWidth / clientHeight < 1;
+        set(mobile);
       }
       return;
     }

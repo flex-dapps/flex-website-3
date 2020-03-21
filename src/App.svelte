@@ -1,5 +1,5 @@
 <script>
-  import { setContext, getContext } from "svelte";
+  import { setContext, getContext, onMount } from "svelte";
   import { Router, Route, navigate } from "svelte-routing";
   import { elasticOut } from "svelte/easing";
   import { fade, fly } from "svelte/transition";
@@ -28,6 +28,13 @@
 </script>
 
 <style>
+  /* @media only screen and (min-aspect-ratio: 1/1) {
+    #app {
+      font-size: 22px;
+      max-height: 300;
+      border: 1px solid red;
+    }
+  } */
   #app {
     border: 0.1rem solid #a9e3b0;
     box-sizing: border-box;
@@ -35,7 +42,7 @@
     width: 100%;
     height: 100%;
     max-width: 1280px;
-    max-height: 800px;
+    max-height: 720px;
     padding-top: 1.5rem;
   }
 
@@ -60,12 +67,7 @@
 {#if !loaded}
   <Loading bind:loaded />
 {:else if loaded}
-  <div
-    id="app"
-    class="overflow-hidden"
-    in:fade={{ duration: 1000 }}
-    on:introstart={() => mobile.check()}
-    out:fade>
+  <div id="app" class="overflow-hidden" in:fade={{ duration: 1000 }} out:fade>
     <div class="topbar flex items-center justify-between pl1">
       {'flexdapps v' + version}
     </div>

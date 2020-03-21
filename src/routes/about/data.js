@@ -38,7 +38,7 @@ const copy = [
     description: introduction
   },
   {
-    name: "The Story of Flex",
+    name: "What is a dapp?",
     description: story
   },
   {
