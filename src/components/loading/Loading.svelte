@@ -5,13 +5,16 @@
   import { typewriter } from "animations";
   import { mobile } from "stores";
 
-  let t = 0,
-    percent = 0;
+  export let wantToLoad = false;
+
+  let t = 0;
+  let percent = 0;
 
   let loading = true;
   let intermediate = false;
   let mounted = false;
-  export let loaded = false;
+
+  $: console.log(wantToLoad);
 
   onMount(() => {
     mounted = true;
@@ -44,15 +47,15 @@
   {#if mounted}
     <div
       in:fade={{ duration: 1000 }}
-      out:fade={{ duration: 1000 }}
-      on:outroend={() => {
-        loaded = true;
-      }}
       class="w-100 h-100 flex items-center justify-center">
       <div
         class="w-100 h-25 flex flex-column items-center justify-between f4 tc">
-        <Heading />
-        <button on:click={() => (mounted = false)}>[ENTER]</button>
+        <Heading on:finishTyping />
+        {#if !wantToLoad}
+          <button on:click={() => (mounted = false)}>[ENTER]</button>
+        {:else}
+          <div />
+        {/if}
       </div>
     </div>
   {/if}

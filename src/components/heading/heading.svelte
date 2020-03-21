@@ -1,16 +1,20 @@
 <script>
+  import { createEventDispatcher } from "svelte";
   import { typewriter } from "animations";
   const messages = [
     "WE BUILD PROGRAMMABLE MONEY",
     // "WE TRANSFORM PEOPLE INTO BANKS",
     // "WE BUILD CURRENCY POWERED APPLICATIONS",
     "WE WRITE UNSTOPPABLE CODE",
-    "WE DONT NEED PERMISSION"
+    "WE DO NOT NEED PERMISSION"
     // "NEITHER DO YOU"
   ];
 
   let active = 0;
   $: message = messages[active];
+
+  const dispatch = createEventDispatcher();
+  const finishTyping = () => dispatch("finishTyping");
 </script>
 
 <style>
@@ -30,9 +34,9 @@
     position: relative;
     right: 0;
     background: #a9e3b0;
-    min-width: 0.75em;
+    min-width: 0.5em;
     bottom: -0.5em;
-    height: 1.5em;
+    height: 1.25em;
     animation: flash 0.5s infinite linear !important;
   }
 
@@ -64,6 +68,7 @@
       }}
       out:typewriter={{ speed: 35 }}
       on:outroend={() => {
+        finishTyping();
         window.setTimeout(() => {
           active === messages.length - 1 ? (active = 0) : active++;
           message = true;

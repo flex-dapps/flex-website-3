@@ -4,15 +4,20 @@
   import { elasticOut } from "svelte/easing";
   import { fade, fly } from "svelte/transition";
   import { typewriter } from "animations";
-  import { Loading } from "components";
+  import { Loading, finishTyping } from "components";
   import { Menu, Apps, Mail, About, Users, Ventures, Player } from "routes";
   import { Music } from "fragments";
-  import { mobile } from "stores";
+  import { mobile, keys } from "stores";
 
   let version = "3.0";
 
   let home = true;
-  let loaded = true;
+  let loaded = false;
+  let wantToLoad = false;
+
+  const onFinishTyping = () => {
+    if (wantToLoad) loaded = true;
+  };
 
   const animatedNavigate = route => {
     navigate(route);
@@ -24,6 +29,11 @@
   };
 
   onMount(() => {
+    window.onkeydown = k => {
+      if (k.keyCode === keys.enter) {
+        wantToLoad = true;
+      }
+    };
     mobile.check();
     window.onresize = mobile.check;
   });
@@ -67,10 +77,10 @@
     rel="stylesheet"
     href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
 </svelte:head>
-{#if !loaded}
-  <Loading bind:loaded />
+{#if !loaded && !wantToLoad}
+  <Loading bind:wantToLoad on:finishTyping={onFinishTyping} />
 {:else if loaded}
-  <div id="app" class="overflow-hidden" in:fade={{ duration: 1000 }} out:fade>
+  <div id="app" class="overflow-hidden" out:fade>
     <div class="topbar flex items-center justify-between pl1">
       {'flexdapps v' + version}
     </div>
