@@ -18,6 +18,7 @@
 
   onMount(() => {
     mounted = true;
+    mobile.check();
   });
 </script>
 
@@ -43,7 +44,7 @@
   }
 </style>
 
-<div class="w-100 h-100">
+<div id="app" class="w-100 h-100">
   {#if mounted}
     <div
       in:fade={{ duration: 1000 }}
