@@ -58,7 +58,6 @@
     let fieldIsValid = currentState.validation(currentState.value);
     if (fieldIsValid) {
       loaded = false;
-      console.log(states);
     } else {
       showUserAnError(("Invalid " + currentState.name).toUpperCase());
     }
@@ -122,14 +121,7 @@
 
     </div>
     {#if loaded && !finished}
-      <div
-        in:fly={{ x: 500, duration: 1200 }}
-        out:fly={{ x: -500, duration: 1200 }}
-        on:outroend={() => {
-          active < states.length - 1 ? active++ : (finished = true);
-          loaded = true;
-        }}
-        class="signup w-50 h-100 flex flex-column justify-start pa3">
+      <div class="signup w-50 h-100 flex flex-column justify-start pa3">
         <h1>{currentState.message}</h1>
         <input
           placeholder={currentState.placeholder}
@@ -144,13 +136,7 @@
         {/if}
       </div>
     {:else if finished}
-      <div
-        in:fly={{ y: -500, duration: 1200 }}
-        out:fly={{ y: 500, duration: 1200 }}
-        on:outroend={() => {
-          loaded = true;
-        }}
-        class="w-100 h-100 flex flex-column justify-start pa3">
+      <div class="w-100 h-100 flex flex-column justify-start pa3">
         <div class="submit">
           {#each states as state}
             <div class="flex justify-start pa2">

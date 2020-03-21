@@ -31,6 +31,10 @@
     top: 0;
   }
 
+  p {
+    margin-bottom: 20px;
+  }
+
   h1 {
     margin: 0.5rem 0;
   }
@@ -42,14 +46,20 @@
 
 <PageWrapperWithMenu routes={subroutes} bind:active data>
   {#if active !== null}
-    <div class="description pa3">
-      <div class="logo">
+    <div class="description pa3 h-100 overflow-scroll">
+      <div class="logo justify-center tl h-50">
         <Ascii content={client.logo} />
       </div>
       <h1>{client.name}</h1>
-      <p>{client.tagline}</p>
-      <p>website: {client.url}</p>
-      <p>{client.description}</p>
+      <p>OVERVIEW: {client.overview}</p>
+      <p>DURATION: {client.duration}</p>
+      {#each client.links as linkObj}
+        <p><a href={linkObj.link}>{linkObj.text ? linkObj.text : linkObj.link}</a></p>
+      {/each}
+
+      {#each client.description as desc}
+        <p>{desc}</p>
+      {/each}
     </div>
   {/if}
 </PageWrapperWithMenu>

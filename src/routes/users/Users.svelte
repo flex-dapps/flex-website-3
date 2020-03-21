@@ -22,8 +22,13 @@
 
 <style>
   p {
-    line-height: 2rem;
+    /* line-height: 2rem; */
     font-size: 1rem;
+  }
+
+  .sideline {
+    font-size: 0.75rem;
+    line-height: 2rem;
   }
 </style>
 
@@ -32,14 +37,21 @@
   {#if active !== null}
     <div class="description pr3">
       <h1>{human.label}</h1>
-      <img alt={'Photo of ' + human.name} class="w-33 mr4 fl" src={human.url} />
-      <p>KNOWN ALIAS: {human.codeName}</p>
-      <p>NAME: {human.name}</p>
-      <p>ROLE: {human.position}</p>
-      <p>SKILLS: {human.skills}</p>
-      {#each human.special as special}
-        <p>{special.key.toUpperCase()}: {special.value}</p>
-      {/each}
+      <div class="flex flex-row">
+        <img
+          alt={'Photo of ' + human.name}
+          class="w-33 mr4 fl h-100"
+          src={human.url} />
+        <div class="flex flex-column">
+          <p class="sideline">KNOWN ALIAS: {human.codeName}</p>
+          <p class="sideline">NAME: {human.name}</p>
+          <p class="sideline">ROLE: {human.position}</p>
+          <p class="sideline">SKILLS: {human.skills}</p>
+          {#each human.special as special}
+            <p class="sideline">{special.key.toUpperCase()}: {special.value}</p>
+          {/each}
+        </div>
+      </div>
       <p>{human.description}</p>
     </div>
   {/if}

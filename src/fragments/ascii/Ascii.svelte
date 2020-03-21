@@ -18,5 +18,5 @@
 </style>
 
 {#if content}
-  <pre class="tc">{content}</pre>
+  <pre class="tl">{content}</pre>
 {/if}

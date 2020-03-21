@@ -23,7 +23,10 @@
     }
   };
 
-  window.onresize = mobile.check;
+  onMount(() => {
+    mobile.check();
+    window.onresize = mobile.check;
+  });
   setContext("animatedNavigate", animatedNavigate);
 </script>
 
@@ -41,8 +44,8 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    max-width: 1280px;
-    max-height: 720px;
+    max-width: 1080px;
+    max-height: 640px;
     padding-top: 1.5rem;
   }
 

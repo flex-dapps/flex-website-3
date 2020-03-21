@@ -3,9 +3,9 @@ export const data = [
     label: "X-cessive Overlord",
     url: "/img/team/tom.gif",
     name: "Tom Nash",
-    codeName: "['X-cessive Overlord', 'Thomas the Tech Engine']",
+    codeName: "['X-cessive Overlord']",
     position: "['CTO', 'Co-Founder']",
-    skills: "['Software Architecture', 'Solidity', 'IPFS', 'Web3.js']",
+    skills: "['Software Architecture', 'Solidity', 'Svelte']",
     special: [
       {
         key: "Field Status",
@@ -14,10 +14,6 @@ export const data = [
       {
         key: "Favourite Reviewbrah Video",
         value: "Popeyes Cheddar Biscuit Butterfly Shrimp"
-      },
-      {
-        key: "Broken Bones",
-        value: "0"
       }
     ],
     description:
@@ -37,7 +33,7 @@ export const data = [
       },
       {
         key: "YEETS PER MINUTE",
-        value: "0.016666667"
+        value: "3.1415926535"
       }
     ],
     description:
@@ -68,7 +64,7 @@ export const data = [
     url: "/img/team/aaron.gif",
     name: "Aaron Barnard",
     codeName: "Intellectual Genius",
-    position: "['Lead Front-end Developer', 'Kombucha Runner']",
+    position: "['MIA']",
     skills: "['React', 'Context API']",
     special: [
       {
@@ -97,7 +93,7 @@ export const data = [
       },
       {
         key: "Spirit Pillar",
-        value: `Roll 2*D6 and multiply the result by Tha Prophet's alacrity rating`
+        value: `Roll D6 and multiply by your alacrity rating`
       }
     ],
     description:
@@ -127,8 +123,8 @@ export const data = [
     url: "/img/team/jonathan.gif",
     name: "Jonathan Dunne",
     codeName: "['Fearless Mercenary, 'Tronathan']",
-    position: "['Front-end Developer', '007']",
-    skills: "['React Native', 'Presidential Support']",
+    position: "['Front-end Developer', '007', 'Delegatee']",
+    skills: "['Svelte', 'Meme Hour', 'Presidential Support']",
     special: [
       {
         key: "Underlying Motives",
@@ -139,7 +135,7 @@ export const data = [
         value: `[========= ] 18/20`
       }
     ],
-    description: `Once a student, now a teacher, the Fearless Mercenary lets nothing stand in his way when put to task. Currying favour from those in any position, the Mercenary draws understanding from every aspect of the Normie-ruled universe and knows exactly what it takes to succeed: fresh kicks and flash bling.`
+    description: `Always a student, now a teacher, the Fearless Mercenary lets nothing stand in his way when put to task. Currying favour from those in any position, the Mercenary draws understanding from every aspect of the Normie-ruled universe and knows exactly what it takes to succeed: fresh kicks and flash bling.`
   },
   {
     label: "Mad Desperado",
@@ -165,44 +161,12 @@ export const data = [
     url: "/img/team/dan.gif",
     name: "Daniel Harrison",
     codeName: "['Midnight Swami', 'The Wizard']",
-
     position: "['Front-end Developer', 'Floating Mantis']",
     skills: "['React', 'Redux', 'Canvas', 'Web3']",
     special: [
       {
         key: "Favourite Tool",
         value: "Dynamite and Bandaids"
-      },
-      {
-        key: "Favourite Quote",
-        value:
-          "\"Smoking kills. If you're killed, you've lost a very important part of your life.\""
-      }
-    ],
-    description:
-      "Midnight Swami hails from the world's newest nation, the aptly-named New Zealand. His strikingly handsome appearance and charismatic personality gained him a reputation as an extremely nice person. But nice guys get nowhere, so Midnight Swami vowed to live a life committed to writing code behind the veil of multiple 24 inch monitors - flexing his dapps for the world to see."
-  },
-  {
-    label: "Zexy Magician",
-    url: "/img/team/anonymous.gif",
-    name: "Keisaku Higa",
-    codeName: "['Midnight Tokyo', 'Zexy Magician']",
-
-    position: "['Lead Front-end Developer', 'Floating Mantis']",
-    skills: "['React', 'Redux', 'Canvas', 'Web3']",
-    special: [
-      {
-        key: "Favourite Question",
-        value: '"Can you help me with my VCR?"'
-      },
-      {
-        key: "Favourite Tool",
-        value: "Dynamite and Bandaids"
-      },
-      {
-        key: "Favourite Quote",
-        value:
-          "\"Smoking kills. If you're killed, you've lost a very important part of your life.\""
       }
     ],
     description:
@@ -213,8 +177,7 @@ export const data = [
     url: "/img/team/denver.gif",
     name: "Denver Pallis",
     codeName: "Violent Artist",
-
-    position: "['Junior Developer', 'Screecher']",
+    position: "['Junior Developer', 'Zoomer']",
     skills: "['Python', 'Memes']",
     special: [
       {
@@ -227,7 +190,7 @@ export const data = [
       }
     ],
     description:
-      "Most hackers sneak in under the cover of night, but not the Violent Artist. Loud, reckless, and almost certainly a hostile threat, 99% of psychologists agree that his dictionary didn't contain the word 'caution'. It doesn't matter whether it's bits, shells, or villains; bashing is the name of the game for the Violent Artist."
+      "Most hackers sneak in under the cover of night, but not the Violent Artist. Loud, reckless, and almost certainly a hostile threat, 99% of psychologists agree that his state-issued dictionary didn't contain the word 'caution'. It doesn't matter whether it's bits, shells, or villains; bashing is the name of the game for the Violent Artist."
   },
   {
     label: "Unknown",
@@ -240,10 +203,6 @@ export const data = [
       {
         key: "Location",
         value: "ALL_VALUES"
-      },
-      {
-        key: "Fan of Pitbull (Mr Worldwide)",
-        value: "FALSE"
       },
       {
         key: "Computer Owner",

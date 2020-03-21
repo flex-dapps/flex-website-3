@@ -9,7 +9,6 @@
 
   export let active;
   export let routes;
-  // console.log(routes);
 
   $: item = routes[active].label;
 </script>
@@ -43,7 +42,7 @@
     <Nav left={true} bind:active routes={$mobile ? back : routes} />
   </div>
   <!-- CONTENT -->
-  <div class={$mobile ? 'w-100' : 'w-75'}>
+  <div class={$mobile ? 'w-100' : 'h-100 w-75'}>
     <slot />
   </div>
   <!-- CONTENT -->

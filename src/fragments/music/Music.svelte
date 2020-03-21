@@ -55,11 +55,11 @@
 
 <style>
   div {
-    /* height: 75%; */
-    /* width: 2em; */
-    /* background: url("/img/music-player.svg");
+    height: 75%;
+    width: 2em;
+    background: url("/img/music-player.svg");
     background-size: contain;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
   }
 
   canvas {

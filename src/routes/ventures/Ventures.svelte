@@ -31,6 +31,10 @@
     transition: font-size 0.2s ease-in-out;
   }
 
+  p {
+    margin-bottom: 20px;
+  }
+
   h1 {
     margin: 0.5rem 0;
   }
@@ -42,14 +46,23 @@
 
 <PageWrapperWithMenu routes={subroutes} bind:active data>
   {#if active !== null}
-    <div class="description pa3">
-      <div class="logo">
+    <div class="description pa3 h-100 overflow-scroll">
+      <div class="logo justify-center tl h-50">
         <Ascii content={venture.logo} />
       </div>
       <h1>{venture.name}</h1>
-      <a href={venture.url} target="_new">{venture.url}</a>
-      <p>{venture.tagline}</p>
-      <p>{venture.description}</p>
+      <p>OVERVIEW: {venture.overview}</p>
+      {#each venture.links as linkObj}
+        <p>
+          <a href={linkObj.link}>
+            {linkObj.text ? linkObj.text : linkObj.link}
+          </a>
+        </p>
+      {/each}
+
+      {#each venture.description as desc}
+        <p>{desc}</p>
+      {/each}
     </div>
   {/if}
 </PageWrapperWithMenu>
