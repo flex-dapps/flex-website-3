@@ -76,7 +76,7 @@
     margin-bottom: 1rem;
   }
   p {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
   input::placeholder {
     color: #a9e3b025;
