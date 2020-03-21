@@ -1,15 +1,24 @@
-const values = `
+const virtues = `# We hold ourselves accountable to the following virtues:
+
+--
+
 ## Curiosity Tempered by Purpose
 
 We are creative and curious. We enjoy nothing more than banding together to clear the thick weeds of abstract puzzles. We share a single banner, one that shines purpose on all we do. We are loyal to the glory and honour of creation.
 
+--
+
 ## Scrutiny with Sincerity
 
-Curiosity unchecked becomes absurd, and thus we must be rigorous when deriving creative truth. We accept that others will subscribe to different truths and plot divergent routes on their journey. We respect every path.
+Curiosity unchecked becomes absurd, and thus we are rigorous when deriving creative truth. We accept that others will subscribe to different truths and plot different routes on their journey. We respect every path.
+
+--
 
 ## Cultivation and Patience
 
 Mastery is virtuous. It cannot be bought or given, it is cultivated through careful practice. Mastery signals your patience and determination. We strive to be masters of our craft.
+
+--
 
 ## Style Points
 
@@ -36,13 +45,13 @@ const copy = [
     description: introduction
   },
   {
-    name: "Our Values",
-    description: values
+    name: "Our Virtues",
+    description: virtues
   },
   {
     name: "What is a dapp?",
     description: story
-  },
+  }
   // {
   //   name: "Our Approach",
   //   description: `Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast quarter crow's nest nipperkin grog yardarm hempen halter furl. Swab barque interloper chantey doubloon starboard grog black jack gangway rutters.
