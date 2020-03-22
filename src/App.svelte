@@ -57,8 +57,8 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      max-width: 1080px;
-      max-height: 640px;
+      max-width: 1280px;
+      max-height: 740px;
       padding-top: 1.5rem;
     }
     .topbar {
@@ -104,7 +104,7 @@
     out:fade>
     <div class="topbar flex items-center justify-between ph2">
       <div class="w-40">{'flexdapps v' + version}</div>
-      <div class="w-60 h-75">
+      <div class="w-60 h-75 player-container">
         <Player />
       </div>
     </div>

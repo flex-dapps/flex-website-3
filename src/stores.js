@@ -13,7 +13,7 @@ function isMobile() {
         const mobile = clientWidth / clientHeight < 1;
         set(mobile);
       }
-      return;
+      return mobile || false;
     }
   };
 }

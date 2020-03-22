@@ -27,13 +27,6 @@
   };
 </script>
 
-<style>
-  .backContainer {
-    position: absolute;
-    left: 0;
-  }
-</style>
-
 <div class="flex justify-between h-100 items-center">
   {#if currentSong}
     <audio id="audio">
