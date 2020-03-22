@@ -5,20 +5,29 @@
   import { typewriter } from "animations";
   import { mobile } from "stores";
 
-  export let wantToLoad = false;
+  export let enterPressed = false;
 
-  let t = 0;
-  let percent = 0;
+  let enterText = "[ENTER]";
+  let btn;
+
+  $: if (enterPressed) {
+    btn.classList.remove("flashing");
+  }
 
   let loading = false;
   let intermediate = false;
   let mounted = false;
 
   onMount(() => {
-    if (!wantToLoad && window.location.pathname === "/") {
+    if (!enterPressed && window.location.pathname === "/") {
       mounted = true;
     }
     mobile.check();
+    window.onkeydown = k => {
+      if (k.keyCode === keys.enter) {
+        enterPressed = true;
+      }
+    };
   });
 </script>
 
@@ -38,33 +47,30 @@
   button {
     background: none;
     border: none;
-    animation: flashing 2s infinite ease-in-out;
     color: #a9e3b0;
     font-size: 1.5em;
+  }
+
+  .flashing {
+    animation: flashing 2s infinite ease-in-out;
   }
 </style>
 
 <div id="app" class="w-100 h-100">
-  {#if mounted}
-    <div
-      in:fade={{ duration: 1000 }}
-      class="w-100 h-100 flex items-center justify-center">
-      <div
-        class="w-100 h-25 flex flex-column items-center justify-between f4 tc">
-        <Heading on:finishTyping />
-        {#if !wantToLoad}
-          <button
-            on:click={() => {
-              wantToLoad = true;
-              mounted = false;
-              console.log({ wantToLoad });
-            }}>
-            [ENTER]
-          </button>
-        {:else}
-          <div />
-        {/if}
-      </div>
+  <div
+    in:fade={{ duration: 1000 }}
+    class="w-100 h-100 flex items-center justify-center">
+    <div class="w-100 h-25 flex flex-column items-center justify-between f4 tc">
+      <Heading on:finishTyping message={enterPressed ? false : 0} />
+      <button
+        class="flashing"
+        bind:this={btn}
+        on:click={() => {
+          enterPressed = true;
+          mounted = false;
+        }}>
+        {enterPressed ? 'YEET' : '[ENTER]'}
+      </button>
     </div>
-  {/if}
+  </div>
 </div>

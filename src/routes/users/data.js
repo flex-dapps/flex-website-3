@@ -12,12 +12,12 @@ export const data = [
         value: "Legal Alien"
       },
       {
-        key: "PREDOMINANT DEMEANOUR",
-        value: "SKEPTICAL"
+        key: "FAVOURITE STATIONARY",
+        value: "RED STRING"
       }
     ],
     description:
-      'Described by one witness as "possessing arms and dangerous", the Xcessive Overlord has painted himself as a mysterious and ancient figure, sharing wisdom which he hides within the copious lines of email marketing drivel that are distributed fortnightly. Never trust what you read about him, that is unless the information is read under a full moon.'
+      'Described by one witness as "possessing arms and dangerous", the Xcessive Overlord knows when to cut and run. Sharing battle stories thinly veiled as fortnightly email marketing drivel, the Overlord has earned a reputation as a reliable delivery driver. Information of his underlying motives is sparse, though some say he receives infrequent instructions via dead drop.'
   },
   {
     label: "Master Assassin",

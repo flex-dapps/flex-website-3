@@ -11,6 +11,7 @@
   ];
 
   let active = 0;
+  export let message;
   $: message = messages[active];
 
   const dispatch = createEventDispatcher();

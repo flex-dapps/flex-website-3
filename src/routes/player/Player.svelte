@@ -12,7 +12,6 @@
   const toggle = () => {
     audio.paused ? audio.play() : audio.pause();
     audio.paused ? (playing = false) : (playing = true);
-    console.log({ audio });
   };
 
   const skip = (forward = true) => {
@@ -30,11 +29,6 @@
 </script>
 
 <style>
-  img path {
-    fill: green;
-    color: red;
-  }
-
   .backContainer {
     position: absolute;
     left: 0;
@@ -60,12 +54,15 @@
 
     <h1>{currentSong.name}</h1>
     <div class="controls w-25 flex justify-between">
-      <img on:click={() => skip(false)} src="./img/music-previous.svg" />
+      <img
+        on:click={() => skip(false)}
+        src="./img/music-previous.svg"
+        alt="previous" />
       <img
         on:click={() => toggle()}
         src={`./img/music-${playing ? 'pause' : 'play'}.svg`}
         alt="Toggle Music" />
-      <img on:click={() => skip()} src="./img/music-next.svg" />
+      <img on:click={() => skip()} src="./img/music-next.svg" alt="next" />
     </div>
   </div>
   <div />

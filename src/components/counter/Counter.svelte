@@ -85,8 +85,6 @@
   setNumber(memes[active].number);
 
   onMount(() => {
-    console.log("yooting");
-
     let el = document.getElementById("counter");
 
     el.addEventListener("mouseenter", e => {
