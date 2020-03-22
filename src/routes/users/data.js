@@ -17,7 +17,7 @@ export const data = [
       }
     ],
     description:
-      'Described by one witness as "possessing arms and dangerous", the Xcessive Overlord knows when to cut and run. Sharing battle stories thinly veiled as fortnightly email marketing drivel, the Overlord now works for the mafia as a delivery driver. Information of his underlying motives is sparse, some say he receives infrequent instructions via dead drop.'
+      'Described by one witness as "possessing arms and dangerous", the Xcessive Overlord knows when to cut and run. Sharing battle stories thinly veiled as fortnightly email marketing drivel, the Overlord has earned a reputation as a reliable delivery driver. Information of his underlying motives is sparse, though some say he receives infrequent instructions via dead drop.'
   },
   {
     label: "Master Assassin",
