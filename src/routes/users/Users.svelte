@@ -42,7 +42,7 @@
           alt={'Photo of ' + human.name}
           class="w-33 mr4 fl h-100"
           src={human.url} />
-        <div class="flex flex-column">
+        <div class="flex flex-column w-100">
           <p class="sideline">KNOWN ALIAS: {human.codeName}</p>
           <p class="sideline">NAME: {human.name}</p>
           <p class="sideline">ROLE: {human.position}</p>

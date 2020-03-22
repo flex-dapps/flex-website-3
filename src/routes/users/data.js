@@ -48,8 +48,8 @@ export const data = [
     skills: "['Solidity', 'Bash', 'Machine Learning']",
     special: [
       {
-        key: "Status",
-        value: "ERR_RECORD_NON_EXISTENT"
+        key: "COVID-19 Positive",
+        value: "TRUE"
       },
       {
         key: "Screen Size",
@@ -62,22 +62,22 @@ export const data = [
   {
     label: "Intellectual Genius",
     url: "/img/team/aaron.gif",
-    name: "Aaron Barnard",
+    name: "[REDACTED]",
     codeName: "Intellectual Genius",
-    position: "['MIA']",
-    skills: "['React', 'Context API']",
+    position: "[REDACTED]",
+    skills: "[REDACTED]",
     special: [
       {
         key: "Hair Style",
-        value: "Minimalist"
+        value: "[REDACTED]"
       },
       {
-        key: "Last Successful Kombucha Run",
+        key: "Last Successful [REDACTED]",
         value: "1557294687"
       }
     ],
     description:
-      'One glance at Intellectual Genius will tell you that he means business. That glint in his eye isn\'t saying "namaste," it\'s saying "there are still stateless components to be made." Intellectual Genius heads up the #KombuchaJustice campaign for Flex Dapps and has resolved never to rest until every floor can reap the healthy gut benefits.'
+      "One glance at Intellectual Genius will tell you that he means business. That glint in his eye isn't saying \"namaste,\" it's saying [REDACTED]. Intellectual Genius heads up the [REDACTED] campaign for Flex Dapps and has resolved never to rest until [REDACTED]."
   },
   {
     label: "Tha Prophet",
@@ -109,11 +109,11 @@ export const data = [
     special: [
       {
         key: "Starting Location",
-        value: "KREMLIN"
+        value: "Kremlin"
       },
       {
         key: "Win Condition",
-        value: "DELETE 4CHAN"
+        value: "Delete 4chan"
       }
     ],
     description: `You don't come to be known as the X-Pert Mastermind by sniffing glue and chasing chickens. While nobody knows the Mastermind's real name (due to it's phonetic complexity), they know her by reputation. She can 3D print foreign passports, turn off websites by frowning at them and blacklist you in over 600 government databases.`
@@ -132,7 +132,7 @@ export const data = [
       },
       {
         key: "Normie Favour Level",
-        value: `[========= ] 18/20`
+        value: `[==========] 20/20`
       }
     ],
     description: `Always a student, now a teacher, the Fearless Mercenary lets nothing stand in his way when put to task. Currying favour from those in any position, the Mercenary draws understanding from every aspect of the Normie-ruled universe and knows exactly what it takes to succeed: fresh kicks and flash bling.`
@@ -165,8 +165,12 @@ export const data = [
     skills: "['React', 'Redux', 'Canvas', 'Web3']",
     special: [
       {
-        key: "Favourite Tool",
+        key: "FAVOURITE TOOL",
         value: "Dynamite and Bandaids"
+      },
+      {
+        key: "BLOOD SPILLED",
+        value: "ERR_UINT_OVERFLOW"
       }
     ],
     description:

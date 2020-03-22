@@ -125,3 +125,8 @@ button:active {
 button:focus {
   border-color: #666;
 }
+
+.invert {
+  background: #a9e3b0;
+  color: #2a333e;
+}

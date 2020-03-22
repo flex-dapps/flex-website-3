@@ -14,10 +14,10 @@
   let intermediate = false;
   let mounted = false;
 
-  $: console.log(wantToLoad);
-
   onMount(() => {
-    mounted = true;
+    if (!wantToLoad && window.location.pathname === "/") {
+      mounted = true;
+    }
     mobile.check();
   });
 </script>
@@ -53,7 +53,14 @@
         class="w-100 h-25 flex flex-column items-center justify-between f4 tc">
         <Heading on:finishTyping />
         {#if !wantToLoad}
-          <button on:click={() => (mounted = false)}>[ENTER]</button>
+          <button
+            on:click={() => {
+              wantToLoad = true;
+              mounted = false;
+              console.log({ wantToLoad });
+            }}>
+            [ENTER]
+          </button>
         {:else}
           <div />
         {/if}

@@ -16,6 +16,7 @@
   let wantToLoad = false;
 
   const onFinishTyping = () => {
+    console.log({ wantToLoad });
     if (wantToLoad) loaded = true;
   };
 
@@ -24,9 +25,11 @@
     if (route === "/") {
       home = true;
     } else {
-      home = false;
+      loaded = true;
     }
   };
+
+  $: console.log({ wantToLoad });
 
   onMount(() => {
     window.onkeydown = k => {
@@ -36,6 +39,10 @@
     };
     mobile.check();
     window.onresize = mobile.check;
+    if (window.location.pathname !== "/") {
+      wantToLoad = true;
+      loaded = true;
+    }
   });
   setContext("animatedNavigate", animatedNavigate);
 </script>
