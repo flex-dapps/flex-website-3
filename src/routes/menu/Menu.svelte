@@ -15,14 +15,29 @@
 
   let interval;
   let loaded = false;
+  let logoHighlight = false;
+  let logo;
 
   // I have added this subscription to $mobile because something about my mobile store
   // and the component lifecycle my typewriter animation is erroring and this causes other
   // elements on the page to fail
 
+  const bindListeners = () => {
+    if (!logo) {
+      return setTimeout(bindListeners, 50);
+    }
+    logo.addEventListener("mouseenter", () => {
+      logoHighlight = true;
+    });
+    logo.addEventListener("mouseleave", () => {
+      logoHighlight = false;
+    });
+  };
+
   onMount(() => {
     mobile.check();
     loaded = true;
+    bindListeners();
   });
 </script>
 
@@ -31,11 +46,7 @@
     width: 33%;
   }
 
-  .w-66 {
-    width: 66%;
-  }
-
-  #highlighted {
+  .highlighted {
     background: #a9e3b0;
     color: #2a333e;
   }
@@ -47,6 +58,7 @@
     margin: 0;
     text-align: center;
     vertical-align: middle;
+    cursor: default;
   }
 </style>
 
@@ -54,8 +66,8 @@
   {#if $mobile}
     <div class="w-100 h-100 flex flex-column justify-between items-center">
       <div />
-      <div class=" f3 h-100 flex-column justify-center flex">
-        <h1 id="highlighted">FLEX</h1>
+      <div class=" f3 h-100 flex-column justify-center flex" bind:this={logo}>
+        <h1 class="highlighted">FLEX</h1>
         <h1>DAPPS</h1>
       </div>
       <div class="w-100 f3 ">
@@ -64,9 +76,9 @@
     </div>
   {:else if !$mobile}
     <div class="w-100 h-100 flex justify-around items-center pa4">
-      <div class=" f3 h-100 flex-column justify-center flex">
-        <h1 id="highlighted">FLEX</h1>
-        <h1>DAPPS</h1>
+      <div class=" f3 h-100 flex-column justify-center flex" bind:this={logo}>
+        <h1 class:highlighted={!logoHighlight}>FLEX</h1>
+        <h1 class:highlighted={logoHighlight}>DAPPS</h1>
       </div>
       <div class="w-33 f3">
         <Nav {routes} />

@@ -7,6 +7,7 @@
   let active = 0;
   let playing;
   let currentSong = songs[active];
+  let audio;
 
   const toggle = () => {
     audio.paused ? audio.play() : audio.pause();
@@ -25,11 +26,23 @@
     audio.play();
     playing = true;
   };
+
+  onMount(() => {
+    audio.addEventListener(
+      "ended",
+      () => {
+        setTimeout(() => {
+          skip(true);
+        }, 1000);
+      },
+      false
+    );
+  });
 </script>
 
 <div class="flex justify-between h-100 items-center">
   {#if currentSong}
-    <audio id="audio">
+    <audio id="audio" bind:this={audio}>
       <source src={currentSong.url} id="source" type="audio/mp3" />
       Your browser does not support the audio element.
     </audio>
