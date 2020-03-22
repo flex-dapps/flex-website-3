@@ -10,10 +10,6 @@
   let active = 0;
   let errorMessage;
 
-  // const yeet = responsive.isMobile.subscribe(value => {
-  //   mobile = value;
-  // });
-
   let states = [
     {
       name: "name",
@@ -58,6 +54,7 @@
     let fieldIsValid = currentState.validation(currentState.value);
     if (fieldIsValid) {
       loaded = false;
+      active++;
     } else {
       showUserAnError(("Invalid " + currentState.name).toUpperCase());
     }
@@ -105,23 +102,31 @@
 
   <Back />
   <div class="flex justify-between pa3 w-100">
-    <div class="w-50">
-      <h1>Want to get in touch?</h1>
-      <p>We'll get back to you as soon as we can.</p>
-      <p>Please include some ascii art in your message for Seb.</p>
-      <a target="_blank" href="https://discord.gg/HVS7BVE">
-        <p>Alternatively, join our Discord server.</p>
-      </a>
-      <h1>Flex Dapps does not:</h1>
-      <ul>
-        <li>00. Do pro-bono work</li>
-        <li>01. Do pro-bono work disguised as tokens</li>
-        <li>02. Sign non-disclosure agreements simply to hear an idea</li>
-      </ul>
+    {#if !$mobile}
+      <div class="w-50">
+        <h1>Want to get in touch?</h1>
+        <p>We'll get back to you as soon as we can.</p>
+        <a target="_blank" href="https://discord.gg/HVS7BVE">
+          <p>
+            Alternatively, chat to the Australian web3 community in our Discord
+            server.
+          </p>
+        </a>
+        <h1>Flex Dapps does not:</h1>
+        <ul>
+          <li>00. Do pro-bono work</li>
+          <li>01. Do pro-bono work disguised as tokens</li>
+          <li>02. Sign non-disclosure agreements simply to hear an idea</li>
+        </ul>
 
-    </div>
+      </div>
+    {/if}
     {#if loaded && !finished}
-      <div class="signup w-50 h-100 flex flex-column justify-start pa3">
+      <div
+        class="signup h-100 flex flex-column justify-start pa3"
+        in:fade={{ duration: 500 }}
+        out:fade={{ duration: 500 }}
+        on:outroend={() => (loaded = true)}>
         <h1>{currentState.message}</h1>
         <input
           placeholder={currentState.placeholder}
@@ -148,6 +153,7 @@
       </div>
     {/if}
   </div>
+
 </div>
 
 <!-- Invite people to Discord after completing the form -->

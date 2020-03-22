@@ -7,7 +7,16 @@ body {
   font-size: 22px;
 }
 
-@import url("https://fonts.googleapis.com/css?family=VT323&display=swap");
+div:-webkit-scrollbar {
+  display: none !important;
+}
+
+/* Hide scrollbar for IE and Edge */
+div {
+  -ms-overflow-style: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
 
 @media only screen and (min-aspect-ratio: 4/3) and (min-width: 1180px) {
   html {
@@ -65,7 +74,7 @@ body {
   margin: 0;
   padding: 8px;
   box-sizing: border-box;
-  font-family: "VT323", monospace;
+  font-family: 'VT323', monospace;
   text-rendering: optimizeSpeed;
 }
 
@@ -109,7 +118,7 @@ input:disabled {
   color: #ccc;
 }
 
-input[type="range"] {
+input[type='range'] {
   height: 0;
 }
 

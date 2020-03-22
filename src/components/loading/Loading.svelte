@@ -10,7 +10,7 @@
   let t = 0;
   let percent = 0;
 
-  let loading = true;
+  let loading = false;
   let intermediate = false;
   let mounted = false;
 

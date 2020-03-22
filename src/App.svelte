@@ -13,8 +13,8 @@
   let version = "3.0";
 
   let home = true;
-  let loaded = false;
-  let wantToLoad = false;
+  let loaded = true;
+  let wantToLoad = true;
 
   const onFinishTyping = () => {
     console.log({ wantToLoad });
@@ -53,31 +53,39 @@
 </script>
 
 <style>
-  /* @media only screen and (min-aspect-ratio: 1/1) {
+  @media only screen and (min-aspect-ratio: 1/1) {
     #app {
-      font-size: 22px;
-      max-height: 300;
-      border: 1px solid red;
+      border: 0.1rem solid #a9e3b0;
+      box-sizing: border-box;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      max-width: 1080px;
+      max-height: 640px;
+      padding-top: 1.5rem;
     }
-  } */
-  #app {
-    border: 0.1rem solid #a9e3b0;
-    box-sizing: border-box;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 1080px;
-    max-height: 640px;
-    padding-top: 1.5rem;
+    .topbar {
+      width: 100%;
+      height: 1.5rem;
+      background: #a9e3b0;
+      color: #2a333e;
+      position: absolute;
+      top: 0;
+    }
   }
 
-  .topbar {
-    width: 100%;
-    height: 1.5rem;
-    background: #a9e3b0;
-    color: #2a333e;
-    position: absolute;
-    top: 0;
+  @media only screen and (max-aspect-ratio: 1/1) {
+    #app {
+      box-sizing: border-box;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding-top: 1.5rem;
+    }
+
+    .topbar {
+      display: none;
+    }
   }
 </style>
 
