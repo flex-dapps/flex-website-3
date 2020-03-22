@@ -10,6 +10,7 @@
   .back-text:hover {
     background: #a9e3b0;
     color: #2a333e;
+    cursor: pointer;
   }
 </style>
 
