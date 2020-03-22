@@ -43,28 +43,22 @@
     let navItems = document.getElementsByClassName("item");
     for (let i = 0; i < navItems.length; i++) {
       navItems[i].addEventListener("mouseenter", e => {
-        active = i;
+        e.target.classList.add("selected");
       });
-
-      // window.addEventListener("resize", () => {
-      //   fitNavItemsToContainer();
-      // });
+      navItems[i].addEventListener("mouseleave", e => {
+        e.target.classList.remove("selected");
+      });
     }
 
     window.addEventListener(
       "keyup",
       e => {
         let key = e.keyCode;
-        // Down or Right
         if (key === 40 || key === 39) {
           active === routes.length - 1 ? (active = 0) : active++;
-        }
-        // Up or Left
-        else if (key === 38 || key === 37) {
+        } else if (key === 38 || key === 37) {
           active === 0 ? (active = routes.length - 1) : active--;
-        }
-        // Enter or select
-        else if (key === 13) {
+        } else if (key === 13) {
           animatedNavigate(routes[active].route);
         }
       },
@@ -100,6 +94,7 @@
     position: relative;
     background: #a9e3b0;
     color: #2a333e;
+    cursor: pointer;
   }
 
   .selected::before {

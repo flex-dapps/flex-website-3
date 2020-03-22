@@ -12,8 +12,8 @@ export const data = [
         value: "Legal Alien"
       },
       {
-        key: "Favourite Reviewbrah Video",
-        value: "Popeyes Cheddar Biscuit Butterfly Shrimp"
+        key: "PREDOMINANT DEMEANOUR",
+        value: "SKEPTICAL"
       }
     ],
     description:
