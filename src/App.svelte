@@ -8,6 +8,7 @@
   import { Menu, Apps, Mail, About, Users, Ventures, Player } from "routes";
   import { Music } from "fragments";
   import { mobile, keys } from "stores";
+  import { data } from "./routes/users/data";
 
   let version = "3.0";
 
@@ -16,6 +17,7 @@
   let wantToLoad = true;
 
   const onFinishTyping = () => {
+    console.log({ wantToLoad });
     if (wantToLoad) loaded = true;
   };
 
@@ -24,9 +26,11 @@
     if (route === "/") {
       home = true;
     } else {
-      home = false;
+      loaded = true;
     }
   };
+
+  $: console.log({ wantToLoad });
 
   onMount(() => {
     window.onkeydown = k => {
@@ -36,6 +40,14 @@
     };
     mobile.check();
     window.onresize = mobile.check;
+    if (window.location.pathname !== "/") {
+      wantToLoad = true;
+      loaded = true;
+    }
+    for (let user of data) {
+      const img = new Image();
+      img.src = user.url;
+    }
   });
   setContext("animatedNavigate", animatedNavigate);
 </script>

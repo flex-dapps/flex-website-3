@@ -16,7 +16,6 @@
   });
   let active = 1;
   $: client = clients[active];
-  console.log(clients);
   let navStyles = "pa1 fs3";
 </script>
 
@@ -54,7 +53,11 @@
       <p>OVERVIEW: {client.overview}</p>
       <p>DURATION: {client.duration}</p>
       {#each client.links as linkObj}
-        <p><a href={linkObj.link}>{linkObj.text ? linkObj.text : linkObj.link}</a></p>
+        <p>
+          <a href={linkObj.link}>
+            {linkObj.text ? linkObj.text : linkObj.link}
+          </a>
+        </p>
       {/each}
 
       {#each client.description as desc}
