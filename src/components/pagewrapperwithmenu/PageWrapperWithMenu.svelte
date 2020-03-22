@@ -53,7 +53,7 @@
         on:click={() => (active > 1 ? active-- : (active = routes.length - 1))}>
         {'<'}
       </div>
-      <a href="www.google.com" target="_new">{`${active}.  ${item}`}</a>
+      <div>{`${active}.  ${item}`}</div>
       <div
         class="arrow"
         on:click={() => (active < routes.length - 1 ? active++ : (active = 1))}>

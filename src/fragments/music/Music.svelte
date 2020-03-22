@@ -1,9 +1,15 @@
 <script>
   import { onMount } from "svelte";
 
-  onMount(() => {
+  const draw = () => {
+    let contextFunction =
+      window.AudioContext || // Default
+      window.webkitAudioContext || // Safari and old versions of Chrome
+      false;
+
+    var context = new contextFunction();
+
     var audio = document.getElementById("audio");
-    var context = new AudioContext();
     var src = context.createMediaElementSource(audio);
     var analyser = context.createAnalyser();
     src.connect(analyser);
@@ -19,10 +25,8 @@
     let t = 0;
     let arr = [];
     function renderFrame() {
-      requestAnimationFrame(renderFrame);
       var x = 0;
       analyser.getByteFrequencyData(dataArray);
-      let u = (HEIGHT / dataArray[0]) * 0.66;
       let e = HEIGHT / 10;
       let num = 0;
       for (var i = 0; i < bufferLength; i++) {
@@ -31,13 +35,22 @@
       arr.unshift(num / 16);
       if (t % 2 === 0) {
         ctx.clearRect(0, 0, WIDTH, HEIGHT);
-        for (var i = 0; i < dataArray.length - 5; i++) {
-          let mutator = 0;
-          arr[0] ? (mutator = arr[0]) : (mutator = 0);
-          let barHeight = (dataArray[i] + mutator / 2) * u;
-
-          ctx.fillStyle = "#a9e3b0";
-          ctx.fillRect(x, e, barWidth, barHeight + e);
+        let gap = [];
+        let arrlen = dataArray.length - 6;
+        let midway = arrlen / 2;
+        let mut = 0.6;
+        for (var i = 0; i < arrlen; i++) {
+          let percentLoud = dataArray[i] / 255;
+          let amp = dataArray[i];
+          mut += 0.05;
+          if (i >= 3) mut = 1;
+          ctx.fillStyle = "#2a333e";
+          ctx.fillRect(
+            x,
+            e,
+            barWidth,
+            percentLoud * HEIGHT * (mut <= 0 ? 1 : mut) + 15
+          );
           x += barWidth + barGap;
         }
       }
@@ -46,8 +59,13 @@
       if (arr.length > 15) {
         arr.pop();
       }
+      requestAnimationFrame(renderFrame);
     }
     renderFrame();
+  };
+
+  onMount(() => {
+    draw();
   });
 
   let playing = false;
@@ -57,7 +75,6 @@
   div {
     height: 75%;
     width: 2em;
-    background: url("/img/music-player.svg");
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -66,7 +83,6 @@
     width: 100%;
     height: 100%;
     transform: rotateZ(180deg);
-    border-top: 1rem solid #a9e3b0;
   }
 
   .equalizer {

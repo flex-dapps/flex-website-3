@@ -1,9 +1,8 @@
 <script>
-  import data from "./data";
+  import { onMount } from "svelte";
+  import { data as songs } from "./data";
   import { Back } from "components";
   import { Music } from "fragments";
-  let songs = data;
-  console.log(data);
 
   let active = 0;
   let playing;
@@ -35,35 +34,26 @@
   }
 </style>
 
-<div class="w-100 h-100 flex justify-between items-start">
+<div class="flex justify-between h-100 items-center">
   {#if currentSong}
     <audio id="audio">
       <source src={currentSong.url} id="source" type="audio/mp3" />
       Your browser does not support the audio element.
     </audio>
   {/if}
-  <div class="backContainer">
-    <Back />
-  </div>
 
-  <div class="h-100 w-100 flex flex-column justify-center items-center">
-    <div />
-    <div class="w-75 h-50">
-      <Music />
-    </div>
+  <Music />
 
-    <h1>{currentSong.name}</h1>
-    <div class="controls w-25 flex justify-between">
-      <img
-        on:click={() => skip(false)}
-        src="./img/music-previous.svg"
-        alt="previous" />
-      <img
-        on:click={() => toggle()}
-        src={`./img/music-${playing ? 'pause' : 'play'}.svg`}
-        alt="Toggle Music" />
-      <img on:click={() => skip()} src="./img/music-next.svg" alt="next" />
-    </div>
+  <div>{currentSong.name}</div>
+  <div class="controls w-25 h-50 flex justify-between">
+    <img
+      on:click={() => skip(false)}
+      src="./img/music-previous.svg"
+      alt="previous" />
+    <img
+      on:click={() => toggle()}
+      src={`./img/music-${playing ? 'pause' : 'play'}.svg`}
+      alt="Toggle Music" />
+    <img on:click={() => skip()} src="./img/music-next.svg" alt="next" />
   </div>
-  <div />
 </div>

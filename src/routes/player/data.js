@@ -1,4 +1,4 @@
-const data = [
+export const data = [
   {
     name: "C.R.E.A.M - Wu Tang Clan",
     url: "/audio/cream.mp3"
@@ -24,5 +24,3 @@ const data = [
     url: "/audio/youspinmerightround.mp3"
   }
 ];
-
-export default data;

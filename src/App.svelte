@@ -102,8 +102,11 @@
     class="overflow-hidden"
     in:fade={{ delay: 1000, duration: 0 }}
     out:fade>
-    <div class="topbar flex items-center justify-between pl1">
-      {'flexdapps v' + version}
+    <div class="topbar flex items-center justify-between ph2">
+      <div class="w-40">{'flexdapps v' + version}</div>
+      <div class="w-60 h-75">
+        <Player />
+      </div>
     </div>
     <section class="w-100 h-100">
       <Router>
@@ -124,9 +127,6 @@
         </Route>
         <Route path="/ventures">
           <Ventures />
-        </Route>
-        <Route path="/player">
-          <Player />
         </Route>
       </Router>
     </section>

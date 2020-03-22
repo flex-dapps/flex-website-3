@@ -34,7 +34,7 @@ We're a sharp tech team who consult, build POCs, MVPs, and stand up tech teams f
 
 --
 
-We love ideas but we love the skills to act on those ideas even more. We do what we do because it's fun, and we're really lucky that people want to pay us to do what we enjoy. On this website you'll find the projects we've worked on, our partners and our contact info. If you like our website we probably like you, so don't hesitate to get in touch.
+We love ideas, but we love the skills to act on those ideas even more. We do what we do because it's fun, and we're really lucky that people want to pay us to do what we enjoy. On this website you'll find the projects we've worked on, our partners and our contact info. If you like our website we probably like you, so don't hesitate to get in touch.
 `;
 
 const story = `# This entry is LOCKED`;
