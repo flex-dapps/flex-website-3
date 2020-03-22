@@ -17,7 +17,6 @@
   let enterPressed = false;
 
   const onFinishTyping = () => {
-    console.log({ enterPressed });
     if (enterPressed) typingAnimationFinished = true;
   };
 
@@ -30,8 +29,6 @@
     }
   };
 
-  $: console.log({ enterPressed });
-
   onMount(() => {
     window.onkeydown = k => {
       if (k.keyCode === keys.enter) {
@@ -40,7 +37,6 @@
     };
     mobile.check();
     window.onresize = mobile.check;
-    console.log(window.location.pathname);
     if (window.location.pathname !== "/") {
       enterPressed = true;
       typingAnimationFinished = true;

@@ -13,7 +13,6 @@
   let active = 0;
   export let message;
   $: message = messages[active];
-  $: console.log({ message });
 
   const dispatch = createEventDispatcher();
   const finishTyping = () => dispatch("finishTyping");
