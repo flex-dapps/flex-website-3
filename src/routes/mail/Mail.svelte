@@ -12,16 +12,8 @@
 
   let states = [
     {
-      name: "name",
-      message: "What do we call you?",
-      placeholder: "Nicolas Cage",
-      value: "",
-      validation: name => {
-        return typeof name === "string" || name instanceof String;
-      }
-    },
-    {
       name: "email",
+      key: "_replyto",
       message: "What is your email address?",
       placeholder: "nic.cage@sufferingbees.net",
       value: "",
@@ -35,13 +27,44 @@
       message: "How can we help?",
       placeholder: "I have a problem that involves bees",
       value: "",
+      key: "message",
       validation: () => {
         return true;
       }
+    },
+    {
+      name: "name",
+      message: "What do we call you?",
+      placeholder: "Nicolas Cage",
+      value: "",
+      key: "name",
+      validation: name => {
+        return typeof name === "string" || name instanceof String;
+      }
     }
   ];
+  let state = {};
 
   $: currentState = states[active];
+
+  async function submit() {
+    console.log(state);
+    try {
+      const res = await (await fetch(`https://formspree.io/mkngparz`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "x-www-urlformencoded"
+        },
+        body: JSON.stringify({
+          state
+        })
+      })).JSON();
+      console.log(res);
+      return res;
+    } catch (e) {
+      throw e;
+    }
+  }
 
   const showUserAnError = error => {
     errorMessage = error;
@@ -52,9 +75,11 @@
 
   const next = current => {
     let fieldIsValid = currentState.validation(currentState.value);
+
     if (fieldIsValid) {
+      state[currentState.key] = currentState.value;
       loaded = false;
-      active++;
+      active < states.length - 1 ? active++ : submit();
     } else {
       showUserAnError(("Invalid " + currentState.name).toUpperCase());
     }
@@ -155,5 +180,7 @@
   </div>
 
 </div>
+
+<!-- just create a ready to submit state and prefill the form and submit it  -->
 
 <!-- Invite people to Discord after completing the form -->
