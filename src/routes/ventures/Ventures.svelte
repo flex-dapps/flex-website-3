@@ -24,11 +24,20 @@
 <style>
   .description {
     font-size: 1.1rem;
+    max-height: 80vh;
+  }
+
+  .description::-webkit-scrollbar {
+    display: none;
   }
 
   .logo {
     font-size: 0.34em;
     transition: font-size 0.2s ease-in-out;
+  }
+
+  div::-webkit-scrollbar {
+    display: none;
   }
 
   p {
@@ -42,12 +51,13 @@
 
 <svelte:head>
   <meta name="google" content="notranslate" />
+  <!-- Stops the ascii art from making google chrome turn on translate -->
 </svelte:head>
 
 <PageWrapperWithMenu routes={subroutes} bind:active data>
   {#if active !== null}
-    <div class="description pa3 h-100 overflow-scroll">
-      <div class="logo justify-center tl h-50">
+    <div class="description pa3 overflow-scroll">
+      <div class="logo justify-center tl pr4">
         <Ascii content={venture.logo} />
       </div>
       <h1>{venture.name}</h1>

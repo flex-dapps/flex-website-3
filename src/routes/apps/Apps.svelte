@@ -22,6 +22,7 @@
 <style>
   .description {
     font-size: 1.1rem;
+    max-height: 80vh;
   }
 
   .logo {
@@ -32,6 +33,10 @@
 
   p {
     margin-bottom: 20px;
+  }
+
+  div::-webkit-scrollbar {
+    display: none;
   }
 
   h1 {
@@ -46,7 +51,7 @@
 <PageWrapperWithMenu routes={subroutes} bind:active data>
   {#if active !== null}
     <div class="description pa3 h-100 overflow-scroll">
-      <div class="logo justify-center tl h-50">
+      <div class="logo justify-center tl">
         <Ascii content={client.logo} />
       </div>
       <h1>{client.name}</h1>
