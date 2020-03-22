@@ -40,6 +40,10 @@
 </script>
 
 <style>
+  div::-webkit-scrollbar {
+    display: none;
+  }
+
   #post {
   }
 
@@ -54,6 +58,7 @@
     max-height: 80vh;
     padding-bottom: 3rem;
   }
+
   div {
     margin: 0.5rem 0;
   }

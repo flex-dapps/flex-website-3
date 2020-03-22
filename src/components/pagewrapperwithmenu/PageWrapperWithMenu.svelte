@@ -42,7 +42,7 @@
     <Nav left={true} bind:active routes={$mobile ? back : routes} />
   </div>
   <!-- CONTENT -->
-  <div class={$mobile ? 'w-100' : 'h-100 w-75'}>
+  <div class={($mobile ? 'w-100' : 'h-100 w-75') + ' noscroll'}>
     <slot />
   </div>
   <!-- CONTENT -->
@@ -50,7 +50,7 @@
     <div class="mobile-nav">
       <div
         class="arrow"
-        on:click={() => (active > 0 ? active-- : (active = routes.length - 1))}>
+        on:click={() => (active > 1 ? active-- : (active = routes.length - 1))}>
         {'<'}
       </div>
       <a href="www.google.com" target="_new">{`${active}.  ${item}`}</a>

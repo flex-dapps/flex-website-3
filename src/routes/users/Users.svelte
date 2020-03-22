@@ -5,6 +5,7 @@
   import { getContext } from "svelte";
   import { Router, Route, navigate, Link } from "svelte-routing";
   import { typewriter } from "animations";
+  import { mobile } from "stores";
   import { data } from "./data";
   let humans = [];
   let subroutes = [{ label: "< Go Back", route: "/" }];
@@ -21,13 +22,22 @@
 </script>
 
 <style>
+  .description-mobile {
+    overflow: scroll;
+    max-height: 80vh;
+  }
+
   p {
     /* line-height: 2rem; */
     font-size: 1rem;
   }
 
+  div::-webkit-scrollbar {
+    display: none;
+  }
+
   .sideline {
-    font-size: 0.75rem;
+    /* font-size: 0.75rem; */
     line-height: 2rem;
   }
 </style>
@@ -35,12 +45,12 @@
 <!-- find the url context and do If blocks -->
 <PageWrapperWithMenu routes={subroutes} bind:active data>
   {#if active !== null}
-    <div class="description pr3">
+    <div class={!$mobile ? 'description pr3' : 'description-mobile pa3'}>
       <h1>{human.label}</h1>
-      <div class="flex flex-row">
+      <div class={!$mobile ? 'flex flex-row' : 'flex flex-column'}>
         <img
           alt={'Photo of ' + human.name}
-          class="w-33 mr4 fl h-100"
+          class={!$mobile ? 'w-33 mr4 fl h-100' : 'w-75'}
           src={human.url} />
         <div class="flex flex-column w-100">
           <p class="sideline">KNOWN ALIAS: {human.codeName}</p>
