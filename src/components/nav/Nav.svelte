@@ -46,6 +46,7 @@
         e.target.classList.add("selected");
       });
       navItems[i].addEventListener("mouseleave", e => {
+        if (active === i) return;
         e.target.classList.remove("selected");
       });
     }
