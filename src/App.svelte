@@ -13,12 +13,12 @@
   let version = "3.0";
 
   let home = true;
-  let loaded = true;
-  let wantToLoad = true;
+  let typingAnimationFinished = false;
+  let enterPressed = false;
 
   const onFinishTyping = () => {
-    console.log({ wantToLoad });
-    if (wantToLoad) loaded = true;
+    console.log({ enterPressed });
+    if (enterPressed) typingAnimationFinished = true;
   };
 
   const animatedNavigate = route => {
@@ -26,23 +26,24 @@
     if (route === "/") {
       home = true;
     } else {
-      loaded = true;
+      typingAnimationFinished = true;
     }
   };
 
-  $: console.log({ wantToLoad });
+  $: console.log({ enterPressed });
 
   onMount(() => {
     window.onkeydown = k => {
       if (k.keyCode === keys.enter) {
-        wantToLoad = true;
+        enterPressed = true;
       }
     };
     mobile.check();
     window.onresize = mobile.check;
+    console.log(window.location.pathname);
     if (window.location.pathname !== "/") {
-      wantToLoad = true;
-      loaded = true;
+      enterPressed = true;
+      typingAnimationFinished = true;
     }
     for (let user of data) {
       const img = new Image();
@@ -97,10 +98,14 @@
     rel="stylesheet"
     href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
 </svelte:head>
-{#if !loaded && !wantToLoad}
-  <Loading bind:wantToLoad on:finishTyping={onFinishTyping} />
-{:else if loaded}
-  <div id="app" class="overflow-hidden" out:fade>
+{#if !typingAnimationFinished}
+  <Loading bind:enterPressed on:finishTyping={onFinishTyping} />
+{:else if typingAnimationFinished}
+  <div
+    id="app"
+    class="overflow-hidden"
+    in:fade={{ delay: 1000, duration: 0 }}
+    out:fade>
     <div class="topbar flex items-center justify-between pl1">
       {'flexdapps v' + version}
     </div>

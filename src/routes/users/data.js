@@ -12,8 +12,8 @@ export const data = [
         value: "Legal Alien"
       },
       {
-        key: "PREDOMINANT DEMEANOUR",
-        value: "SKEPTICAL"
+        key: "FAVOURITE STATIONARY",
+        value: "RED STRING"
       }
     ],
     description:
