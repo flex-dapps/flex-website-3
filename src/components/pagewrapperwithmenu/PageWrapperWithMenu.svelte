@@ -50,7 +50,7 @@
     <div class="mobile-nav">
       <div
         class="arrow"
-        on:click={() => (active > 0 ? active-- : (active = routes.length - 1))}>
+        on:click={() => (active > 1 ? active-- : (active = routes.length - 1))}>
         {'<'}
       </div>
       <a href="www.google.com" target="_new">{`${active}.  ${item}`}</a>
