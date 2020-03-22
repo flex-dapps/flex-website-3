@@ -8,6 +8,7 @@
   import { Menu, Apps, Mail, About, Users, Ventures, Player } from "routes";
   import { Music } from "fragments";
   import { mobile, keys } from "stores";
+  import { data } from "./routes/users/data";
 
   let version = "3.0";
 
@@ -42,6 +43,10 @@
     if (window.location.pathname !== "/") {
       wantToLoad = true;
       loaded = true;
+    }
+    for (let user of data) {
+      const img = new Image();
+      img.src = user.url;
     }
   });
   setContext("animatedNavigate", animatedNavigate);

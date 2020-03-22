@@ -39,7 +39,6 @@
       <h1>{human.label}</h1>
       <div class="flex flex-row">
         <img
-          rel="preload"
           alt={'Photo of ' + human.name}
           class="w-33 mr4 fl h-100"
           src={human.url} />
