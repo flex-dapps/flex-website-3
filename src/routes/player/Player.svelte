@@ -4,7 +4,7 @@
   import { Back } from "components";
   import { Music } from "fragments";
 
-  let active = 0;
+  let active = Math.floor(Math.random() * songs.length);
   let playing;
   let currentSong = songs[active];
   let audio;
