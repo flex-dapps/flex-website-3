@@ -47,7 +47,7 @@
   {#if active !== null}
     <div class={!$mobile ? 'description pr3' : 'description-mobile pa3'}>
       <h1>{human.label}</h1>
-      <div class={!$mobile ? 'flex flex-row' : 'flex flex-column'}>
+      <div class={!$mobile ? 'flex flex-row pb3' : 'flex flex-column'}>
         <img
           alt={'Photo of ' + human.name}
           class={!$mobile ? 'w-33 mr4 fl h-100' : 'w-75'}
