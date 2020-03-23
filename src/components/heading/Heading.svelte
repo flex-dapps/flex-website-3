@@ -35,9 +35,9 @@
     position: relative;
     right: 0;
     background: #a9e3b0;
-    min-width: 0.5em;
-    bottom: -0.5em;
-    height: 1.25em;
+    min-width: 10em;
+    bottom: 0.25em;
+    height: 1.5em;
     animation: flash 0.5s infinite linear !important;
   }
 
@@ -59,24 +59,26 @@
 
 <div class="typing-wrapper flex justify-center">
   {#if message}
-    <div
-      class="typing"
-      in:typewriter={{ speed: 75 }}
-      on:introend={() => {
-        window.setTimeout(() => {
-          message = false;
-        }, 3000);
-      }}
-      out:typewriter={{ speed: 35 }}
-      on:outroend={() => {
-        finishTyping();
-        window.setTimeout(() => {
-          active === messages.length - 1 ? (active = 0) : active++;
-          message = true;
-        }, 250);
-      }}>
-      {message}
+    <div>
+      <span
+        class="typing"
+        in:typewriter={{ speed: 75 }}
+        on:introend={() => {
+          window.setTimeout(() => {
+            message = false;
+          }, 3000);
+        }}
+        out:typewriter={{ speed: 35 }}
+        on:outroend={() => {
+          finishTyping();
+          window.setTimeout(() => {
+            active === messages.length - 1 ? (active = 0) : active++;
+            message = true;
+          }, 250);
+        }}>
+        {message}
+      </span>
+      <span class="carat">&nbsp;</span>
     </div>
   {/if}
-  <div class="carat">&nbsp;</div>
 </div>

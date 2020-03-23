@@ -60,7 +60,8 @@
   <div
     in:fade={{ duration: 1000 }}
     class="w-100 h-100 flex items-center justify-center">
-    <div class="w-100 h-25 flex flex-column items-center justify-between f4 tc">
+    <div
+      class="w-100 h-50 pa3 flex flex-column items-center justify-between f4 tc">
       <Heading on:finishTyping message={enterPressed ? false : 0} />
       <button
         class="flashing"
