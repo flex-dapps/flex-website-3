@@ -285,7 +285,7 @@ d++++++- -++++++++/\` /++++++/ \`/++++++++- -++++++d
       }
     ],
     description: [
-      "We worked with the Liven Pay team to assist with the architecture and implementation of their new, token based platform."
+      "We worked with the Liven Pay team to assist with the architecture and implementation of their new token based platform."
     ]
   },
   {
