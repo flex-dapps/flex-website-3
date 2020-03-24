@@ -10,7 +10,7 @@ We are creative and curious. We enjoy nothing more than banding together to clea
 
 ## Scrutiny with Sincerity
 
-Curiosity unchecked becomes absurd, and thus we are rigorous when deriving creative truth. We accept that others will subscribe to different truths and plot different routes on their journey. We respect every path.
+Curiosity unchecked becomes absurd. We respect every path, but our greatest asset is being able to celebrate our strengths and positively critique our weaknesses. We bring ideas to life in ways that are impossible alone.
 
 --
 
