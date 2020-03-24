@@ -10,7 +10,7 @@ We are creative and curious. We enjoy nothing more than banding together to clea
 
 ## Scrutiny with Sincerity
 
-Curiosity unchecked becomes absurd. We respect every path, but our greatest asset is being able to celebrate our strengths and positively critique our weaknesses. We bring ideas to life in ways that are impossible alone.
+Curiosity unchecked becomes absurd. We respect every path, but our greatest asset is being able to celebrate our strengths and positively critique our weaknesses. We bring ideas to life in ways that would be impossible alone.
 
 --
 
