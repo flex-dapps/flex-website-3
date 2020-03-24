@@ -65,7 +65,6 @@
           state
         })
       })).JSON();
-      console.log(res);
       return res;
     } catch (e) {
       throw e;
@@ -95,7 +94,7 @@
   onMount(() => {
     window.onkeydown = k => {
       if (k.keyCode === keys.enter) {
-        next(currentState);
+        return next(currentState);
       }
     };
   });
