@@ -189,7 +189,7 @@ export const data = [
         value: "PAN-ASTRAL FURRYKIN THETA XIN"
       },
       {
-        key: "PREFERRED_LIGHTING",
+        key: "PREFERRED LIGHTING",
         value: "EPILEPSY"
       }
     ],
