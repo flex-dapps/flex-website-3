@@ -7,7 +7,7 @@ export const data = [
         text: "Check out their website"
       }
     ],
-    overview: "SmartBonds for the new world of finance.",
+    overview: "SmartBonds for the new world of finance",
     logo: `
 
 
@@ -83,7 +83,7 @@ export const data = [
         text: "Check out the app"
       }
     ],
-    overview: "The instant crypto payment gateway for digital content.",
+    overview: "The instant crypto payment gateway for digital content",
     logo: `
 
 
@@ -120,7 +120,7 @@ export const data = [
   {
     name: "Tokenbooks",
     links: [],
-    overview: "Crypto-accounting made easy.",
+    overview: "Crypto-accounting made easy",
     logo: ` +osssssssssssssssssssssssssssssssssssssssooooo-+
 /sssssssssssssssssssssssssssssssssssssssooooooooo\\
 sssssssssssssssssssssssssssssssssssooooooooooooooo
