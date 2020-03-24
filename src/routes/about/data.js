@@ -2,27 +2,28 @@ const virtues = `# We hold ourselves accountable to the following virtues:
 
 --
 
-## Curiosity Tempered by Purpose
+## Purposeful Curiosity
 
-We are creative and curious. We enjoy nothing more than banding together to clear the thick weeds of abstract puzzles. We share a single banner, one that shines purpose on all we do. We are loyal to the glory and honour of creation.
+We are creative and curious. We enjoy nothing more than solving abstract puzzles. We are loyal to creative freedom our work is the means by which we express that.
 
 --
 
 ## Scrutiny with Sincerity
 
-Curiosity unchecked becomes absurd. We respect every path, but our greatest asset is being able to celebrate our strengths and positively critique our weaknesses. We bring ideas to life in ways that would be impossible alone.
+Talk is cheap, which is why we are careful to understand and critique ideas before we execute. When we promise, we deliver; just ask CMAC.
 
 --
 
 ## Cultivation and Patience
 
-Mastery is virtuous. It cannot be bought or given, it is cultivated through careful practice. Mastery signals your patience and determination. We strive to be masters of our craft.
+Mastery cannot be bought or given, it is cultivated through careful and direct practice. We see our work as a craft, and strive to be masters.
 
 --
 
 ## Style Points
 
-Remember to collect style points along the way. When you die you'll drop all your gold and items but your style points will be remembered forever. We never forget to season our dishes.`;
+Remember to collect style points along the way. When you die you'll drop all your gold and items but the stories of your adventures will be remembered forever. Make them count.
+`;
 
 const introduction = `# Flex Dapps is the world’s S-Tier dapp studio. We are a tight-knit group of honest and tenacious humans.
 
