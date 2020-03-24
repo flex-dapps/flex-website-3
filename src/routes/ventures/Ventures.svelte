@@ -25,6 +25,7 @@
   .description {
     font-size: 1.1rem;
     max-height: 80vh;
+    padding-bottom: 15vh;
   }
 
   .description::-webkit-scrollbar {

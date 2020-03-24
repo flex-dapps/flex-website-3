@@ -1,11 +1,12 @@
 <script>
   import { fly, fade } from "svelte/transition";
   import { getContext } from "svelte";
-  import { Back } from "components";
+  import { Back, Nav } from "components";
   import { mobile } from "stores";
 
   let loaded = true;
   let finished = false;
+  let back = [{ label: "< Go Back", route: "/" }];
 
   let active = 0;
   let errorMessage;
@@ -125,7 +126,11 @@
 
 <div>
 
-  <Back />
+  {#if $mobile}
+    <Nav left={true} routes={back} mobile={true} active={false} />
+  {:else}
+    <Back />
+  {/if}
   <div class="flex justify-between pa3 w-100">
     {#if !$mobile}
       <div class="w-50">

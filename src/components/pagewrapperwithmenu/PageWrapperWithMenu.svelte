@@ -39,7 +39,11 @@
   class={'flex h-100 ' + ($mobile ? 'flex-column' : 'justify-between items-start')}>
   <div
     class={!$mobile ? 'options flex flex-column justify-center mr4 w-25' : ''}>
-    <Nav left={true} bind:active routes={$mobile ? back : routes} />
+    <Nav
+      left={true}
+      bind:active
+      routes={$mobile ? back : routes}
+      mobile={$mobile} />
   </div>
   <!-- CONTENT -->
   <div class={($mobile ? 'w-100' : 'h-100 w-75') + ' noscroll'}>

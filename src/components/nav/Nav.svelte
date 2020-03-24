@@ -17,6 +17,7 @@
   export let active = start;
   export let customClass;
   export let left;
+  export let mobile;
 
   const addCustomClass = () => {
     if (customClass === undefined) {
@@ -104,6 +105,11 @@
     left: 0.5rem;
     font-size: 1em;
   }
+
+  .mobile {
+    border-bottom: 1px solid #a9e3b0;
+    padding-bottom: 1rem;
+  }
 </style>
 
 <!-- Map items -->
@@ -111,7 +117,8 @@
   <div
     style="text-align:{left ? 'left' : 'center'};"
     on:click={() => clickHandler(route.route, i)}
-    class={i === active ? ' selected item' : ' item'}>
+    class={i === active ? ' selected item' : ' item'}
+    class:mobile>
     {route.label}
   </div>
 {/each}

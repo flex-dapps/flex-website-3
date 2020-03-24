@@ -44,19 +44,13 @@
     display: none;
   }
 
-  #post {
-  }
-
-  h1 {
-    margin: 0.5rem 0rem;
-  }
   #container {
     line-height: 2rem;
     font-size: 1rem;
     margin: 0.5rem;
     overflow: scroll;
     max-height: 80vh;
-    padding-bottom: 3rem;
+    padding-bottom: 15vh;
   }
 
   div {

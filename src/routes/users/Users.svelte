@@ -25,6 +25,7 @@
   .description-mobile {
     overflow: scroll;
     max-height: 80vh;
+    padding-bottom: 15vh;
   }
 
   p {
