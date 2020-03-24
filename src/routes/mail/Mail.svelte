@@ -6,6 +6,7 @@
 
   let loaded = true;
   let finished = false;
+  let thanks = false;
   let back = [{ label: "< Go Back", route: "/" }];
 
   let active = 0;
@@ -55,11 +56,13 @@
 
   async function submit() {
     console.log(state);
+    finished = false;
+    thanks = true;
     try {
       const res = await (await fetch(`https://formspree.io/mkngparz`, {
         method: "POST",
         headers: {
-          "Content-Type": "x-www-urlformencoded"
+          "Content-Type": "application/json "
         },
         body: JSON.stringify({
           state
@@ -84,7 +87,7 @@
     if (fieldIsValid) {
       state[currentState.key] = currentState.value;
       loaded = false;
-      active < states.length - 1 ? active++ : submit();
+      active < states.length - 1 ? active++ : (finished = true);
     } else {
       showUserAnError(("Invalid " + currentState.name).toUpperCase());
     }
@@ -144,7 +147,7 @@
     <Back />
   {/if}
   <div class="flex justify-between pa3 w-100">
-    {#if !$mobile}
+    {#if !$mobile && !thanks}
       <div class="w-50">
         <h1>Want to get in touch?</h1>
         <p>We'll get back to you as soon as we can.</p>
@@ -163,7 +166,7 @@
 
       </div>
     {/if}
-    {#if loaded && !finished}
+    {#if loaded && !finished && !thanks}
       <div
         class={`signup h-100 flex flex-column justify-start pa3 ${$mobile ? 'w-100' : 'w-50'}`}
         in:fade={{ duration: 500 }}
@@ -184,16 +187,38 @@
           </div>
         {/if}
       </div>
-    {:else if finished}
-      <div class="w-100 h-100 flex flex-column justify-start pa3">
+    {/if}
+    {#if loaded && finished}
+      <div
+        in:fade={{ duration: 500 }}
+        class={`h-100 flex flex-column justify-start pa3 ${$mobile ? 'w-100' : 'w-50'}`}>
         <div class="submit">
           {#each states as state}
-            <div class="flex justify-start pa2">
+            <div class="flex flex-column justify-start pa2">
               <p>{state.name.toUpperCase()}: {state.value}</p>
             </div>
           {/each}
         </div>
-        <button>Submit</button>
+        <button on:click={() => submit()}>Submit</button>
+      </div>
+    {/if}
+    {#if loaded && thanks}
+      <div in:fade={{ duration: 500 }}>
+        <h1>Thanks for reaching out!</h1>
+        <p>We'll get back to you as soon as we can.</p>
+        <br />
+        <a target="_blank" href="https://discord.gg/HVS7BVE">
+          <p>
+            If you just can't wait, chat to the Australian web3 community in our
+            Discord server.
+          </p>
+        </a>
+        <br />
+
+        <p>
+          We would be thrilled if you took the time to read everything on this
+          website. It has been carefully written for you.
+        </p>
       </div>
     {/if}
   </div>
