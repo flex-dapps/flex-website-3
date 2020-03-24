@@ -33,6 +33,7 @@
     window.onkeydown = k => {
       if (k.keyCode === keys.enter) {
         enterPressed = true;
+        window.onkeydown = () => {};
       }
     };
     mobile.check();

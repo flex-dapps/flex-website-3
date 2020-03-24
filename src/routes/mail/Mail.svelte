@@ -1,8 +1,8 @@
 <script>
   import { fly, fade } from "svelte/transition";
-  import { getContext } from "svelte";
+  import { getContext, onMount } from "svelte";
   import { Back, Nav } from "components";
-  import { mobile } from "stores";
+  import { mobile, keys } from "stores";
 
   let loaded = true;
   let finished = false;
@@ -10,6 +10,7 @@
 
   let active = 0;
   let errorMessage;
+  let inputEl;
 
   let states = [
     {
@@ -20,7 +21,11 @@
       value: "",
       validation: function validateEmail(email) {
         var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(String(email).toLowerCase());
+        return re.test(
+          String(email)
+            .trim()
+            .toLowerCase()
+        );
       }
     },
     {
@@ -86,6 +91,14 @@
     }
     return;
   };
+
+  onMount(() => {
+    window.onkeydown = k => {
+      if (k.keyCode === keys.enter) {
+        next(currentState);
+      }
+    };
+  });
 </script>
 
 <style>
@@ -153,16 +166,18 @@
     {/if}
     {#if loaded && !finished}
       <div
-        class="signup h-100 flex flex-column justify-start pa3"
+        class="signup h-100 w-50 flex flex-column justify-start pa3"
         in:fade={{ duration: 500 }}
         out:fade={{ duration: 500 }}
+        on:introend={() => inputEl.focus()}
         on:outroend={() => (loaded = true)}>
         <h1>{currentState.message}</h1>
         <input
           placeholder={currentState.placeholder}
           type="text"
           bind:value={currentState.value}
-          name={currentState.name} />
+          name={currentState.name}
+          bind:this={inputEl} />
         <button on:click={() => next(currentState)}>Next</button>
         {#if errorMessage}
           <div class="w-100 flex justify-center pa3">
