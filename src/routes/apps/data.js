@@ -79,7 +79,7 @@ export const data = [
     duration: "Ongoing",
     links: [
       {
-        link: "blocknative.com",
+        link: "https://blocknative.com",
         text: "Check out their website"
       }
     ],
@@ -238,7 +238,8 @@ export const data = [
     duration: "6 weeks",
     links: [
       {
-        link: "learn.rmitonline.edu.au/developing-blockchain-applications",
+        link:
+          "https://learn.rmitonline.edu.au/developing-blockchain-applications",
         text: "Check out the course"
       }
     ],
@@ -280,7 +281,7 @@ d++++++- -++++++++/\` /++++++/ \`/++++++++- -++++++d
     duration: "Ongoing",
     links: [
       {
-        link: "livenpay.io",
+        link: "https://livenpay.io",
         text: "Check out the app"
       }
     ],
@@ -322,7 +323,7 @@ d++++++- -++++++++/\` /++++++/ \`/++++++++- -++++++d
     duration: "7 weeks",
     links: [
       {
-        link: "cansend.io",
+        link: "https://cansend.io",
         text: "Check out the app"
       }
     ],
@@ -365,7 +366,7 @@ d++++++- -++++++++/\` /++++++/ \`/++++++++- -++++++d
     duration: "12 weeks",
     links: [
       {
-        link: "rocketshoes.io",
+        link: "https://rocketshoes.io",
         text: "Check out their website"
       }
     ],
