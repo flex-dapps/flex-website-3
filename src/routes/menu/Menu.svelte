@@ -66,9 +66,11 @@
   {#if $mobile}
     <div class="w-100 h-100 flex flex-column justify-between items-center">
       <div />
-      <div class=" f3 h-100 flex-column justify-center flex" bind:this={logo}>
-        <h1 class="highlighted">FLEX</h1>
-        <h1>DAPPS</h1>
+      <div class=" f3 h-100 flex-column justify-center flex">
+        <div bind:this={logo}>
+          <h1 class="highlighted">FLEX</h1>
+          <h1>DAPPS</h1>
+        </div>
       </div>
       <div class="w-100 f3 ">
         <Nav {routes} />
@@ -76,9 +78,11 @@
     </div>
   {:else if !$mobile}
     <div class="w-100 h-100 flex justify-around items-center pa4">
-      <div class=" f3 h-100 flex-column justify-center flex" bind:this={logo}>
-        <h1 class:highlighted={!logoHighlight}>FLEX</h1>
-        <h1 class:highlighted={logoHighlight}>DAPPS</h1>
+      <div class=" f3 h-100 flex-column justify-center flex">
+        <div bind:this={logo}>
+          <h1 class:highlighted={!logoHighlight}>FLEX</h1>
+          <h1 class:highlighted={logoHighlight}>DAPPS</h1>
+        </div>
       </div>
       <div class="w-33 f3">
         <Nav {routes} />
