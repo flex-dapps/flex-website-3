@@ -166,7 +166,7 @@
     {/if}
     {#if loaded && !finished}
       <div
-        class="signup h-100 w-50 flex flex-column justify-start pa3"
+        class={`signup h-100 flex flex-column justify-start pa3 ${$mobile ? 'w-100' : 'w-50'}`}
         in:fade={{ duration: 500 }}
         out:fade={{ duration: 500 }}
         on:introend={() => inputEl.focus()}
