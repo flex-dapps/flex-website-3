@@ -57,8 +57,8 @@
 
 <PageWrapperWithMenu routes={subroutes} bind:active data>
   {#if active !== null}
-    <div class="description pa3 overflow-scroll">
-      <div class="logo justify-center tl pr4">
+    <div class="description pa3 h-100 overflow-scroll">
+      <div class="logo justify-center tl pr4 h-50">
         <Ascii content={venture.logo} />
       </div>
       <h1>{venture.name}</h1>
