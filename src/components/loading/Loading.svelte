@@ -51,6 +51,10 @@
     font-size: 1.5em;
   }
 
+  .pointer {
+    cursor: pointer;
+  }
+
   .flashing {
     animation: flashing 2s infinite ease-in-out;
   }
@@ -65,6 +69,7 @@
       <Heading on:finishTyping message={enterPressed ? false : 0} />
       <button
         class="flashing"
+        class:pointer={!enterPressed}
         bind:this={btn}
         on:click={() => {
           enterPressed = true;

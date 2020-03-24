@@ -62,6 +62,6 @@
 
 <PageWrapperWithMenu routes={subroutes} bind:active>
   {#if active !== null}
-    <div id="container" />
+    <div id="container" class="h-100" />
   {/if}
 </PageWrapperWithMenu>
