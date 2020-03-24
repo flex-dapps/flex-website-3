@@ -26,6 +26,8 @@ Remember to collect style points along the way. When you die you'll drop all you
 
 const introduction = `# Flex Dapps is the world’s S-Tier dapp studio. We are a tight-knit group of honest and tenacious humans.
 
+--
+
 We love building expressive applications and software that delight our global clients and free us from the desperate boredom of living in Australia.
 
 --
