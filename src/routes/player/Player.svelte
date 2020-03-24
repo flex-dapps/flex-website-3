@@ -40,7 +40,21 @@
   });
 </script>
 
-<div class="flex justify-between h-100 items-center">
+<style>
+  img {
+    padding: 0 0.1rem;
+  }
+
+  .controls {
+    margin: 0 0.3rem;
+  }
+
+  .musicwrap {
+    margin: 0 0.5rem -0.2rem 0.5rem;
+  }
+</style>
+
+<div class="flex justify-end h-100 items-center">
   {#if currentSong}
     <audio id="audio" bind:this={audio}>
       <source src={currentSong.url} id="source" type="audio/mp3" />
@@ -48,10 +62,11 @@
     </audio>
   {/if}
 
-  <Music />
-
   <div>{currentSong.name}</div>
-  <div class="controls w-25 h-50 flex justify-between">
+  <div class="musicwrap">
+    <Music />
+  </div>
+  <div class="controls w-25 justify-between h-50 flex">
     <img
       on:click={() => skip(false)}
       src="./img/music-previous.svg"
