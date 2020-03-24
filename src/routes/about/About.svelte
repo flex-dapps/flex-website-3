@@ -49,8 +49,8 @@
     font-size: 1rem;
     margin: 0.5rem;
     overflow: scroll;
-    max-height: 80vh;
-    padding-bottom: 15vh;
+    max-height: 100vh;
+    padding-bottom: 25vh;
   }
 
   div {

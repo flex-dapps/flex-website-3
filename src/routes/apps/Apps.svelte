@@ -22,8 +22,8 @@
 <style>
   .description {
     font-size: 1.1rem;
-    max-height: 80vh;
-    padding-bottom: 15vh;
+    max-height: 100vh;
+    padding-bottom: 25vh;
   }
 
   .logo {
