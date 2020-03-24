@@ -4,7 +4,7 @@
   import { elasticOut } from "svelte/easing";
   import { fade, fly } from "svelte/transition";
   import { typewriter } from "animations";
-  import { Loading, finishTyping } from "components";
+  import { Loading } from "components";
   import { Menu, Apps, Mail, About, Users, Ventures, Player } from "routes";
   import { Music } from "fragments";
   import { mobile, keys } from "stores";
@@ -97,11 +97,7 @@
 {#if !typingAnimationFinished}
   <Loading bind:enterPressed on:finishTyping={onFinishTyping} />
 {:else if typingAnimationFinished}
-  <div
-    id="app"
-    class="overflow-hidden"
-    in:fade={{ delay: 1000, duration: 0 }}
-    out:fade>
+  <div id="app" class="overflow-hidden" in:fade out:fade>
     <div class="topbar flex items-center justify-between ph2">
       <div class="w-40">{'flexdapps v' + version}</div>
       <div class="w-60 h-75 player-container">
