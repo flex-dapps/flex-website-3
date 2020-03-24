@@ -122,7 +122,7 @@ export const data = [
     links: [],
     description: [
       "In collaboration with the Ethereum foundation and the sponsors of Devcon V we created a treasure hunt for attendees.",
-      "Packaged within a bright and funky application, users could collect stars and play a collaborative game of Pokemon throughout the event. Multiple folks completed constellations and "
+      "Packaged within a bright and funky application, users could collect stars and play a collaborative game of Pokemon throughout the event. Multiple folks completed constellations and won specially made prizes."
     ]
   },
   {
@@ -155,7 +155,7 @@ export const data = [
 
 `,
     name: "Australian Red Cross",
-    overview: "Portable identity solution with configurable trust.",
+    overview: "Portable identity solution with configurable trust",
     duration: "12 weeks",
     links: [
       {
@@ -197,7 +197,7 @@ export const data = [
 
 `,
     name: "Snap Wallet",
-    overview: "Portable identity solution with configurable trust.",
+    overview: "Burner wallet for the Binance Chain",
     duration: "12 weeks",
     links: [],
     description: [
@@ -234,7 +234,7 @@ export const data = [
 
 `,
     name: "RMIT Online",
-    overview: "Developing blockchain applications online course.",
+    overview: "Online dapp developer course",
     duration: "6 weeks",
     links: [
       {
@@ -318,7 +318,7 @@ d++++++- -++++++++/\` /++++++/ \`/++++++++- -++++++d
     Mms+//////////////////////////////////////////+smM
     `,
     name: "CanSend",
-    overview: "Send any ERC20 token to multiple addresses at once.",
+    overview: "Send any ERC20 token to multiple addresses at once",
     duration: "7 weeks",
     links: [
       {
