@@ -35,13 +35,10 @@
       arr.unshift(num / 16);
       if (t % 2 === 0) {
         ctx.clearRect(0, 0, WIDTH, HEIGHT);
-        let gap = [];
         let arrlen = dataArray.length - 6;
-        let midway = arrlen / 2;
         let mut = 0.6;
         for (var i = 0; i < arrlen; i++) {
           let percentLoud = dataArray[i] / 255;
-          let amp = dataArray[i];
           mut += 0.05;
           if (i >= 3) mut = 1;
           ctx.fillStyle = "#2a333e";
