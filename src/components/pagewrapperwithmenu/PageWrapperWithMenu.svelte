@@ -10,6 +10,8 @@
   export let active;
   export let routes;
 
+  let wrappedContent;
+
   $: item = routes[active].label;
 </script>
 
@@ -46,7 +48,9 @@
       mobile={$mobile} />
   </div>
   <!-- CONTENT -->
-  <div class={($mobile ? 'w-100' : 'h-100 w-75') + ' noscroll'}>
+  <div
+    class={($mobile ? 'w-100' : 'h-100 w-75') + ' noscroll'}
+    bind:this={wrappedContent}>
     <slot />
   </div>
   <!-- CONTENT -->
@@ -54,13 +58,27 @@
     <div class="mobile-nav">
       <div
         class="arrow"
-        on:click={() => (active > 1 ? active-- : (active = routes.length - 1))}>
+        on:click={() => {
+          wrappedContent.children[0].scrollTop = 0;
+          if (active > 1) {
+            active--;
+          } else {
+            active = routes.length - 1;
+          }
+        }}>
         {'<'}
       </div>
       <div>{`${active}.  ${item}`}</div>
       <div
         class="arrow"
-        on:click={() => (active < routes.length - 1 ? active++ : (active = 1))}>
+        on:click={() => {
+          wrappedContent.children[0].scrollTop = 0;
+          if (active < routes.length - 1) {
+            active++;
+          } else {
+            active = 1;
+          }
+        }}>
         {'>'}
       </div>
     </div>
