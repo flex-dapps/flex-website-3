@@ -1,5 +1,6 @@
 <script>
   import { fly, fade } from "svelte/transition";
+  import { get } from "svelte/store";
   import { getContext, onMount } from "svelte";
   import { Back, Nav } from "components";
   import { mobile, keys } from "stores";
@@ -8,6 +9,7 @@
   let finished = false;
   let thanks = false;
   let back = [{ label: "< Go Back", route: "/" }];
+  let fixedMobile;
 
   let active = 0;
   let errorMessage;
@@ -55,7 +57,6 @@
   $: currentState = states[active];
 
   async function submit() {
-    console.log(state);
     finished = false;
     thanks = true;
     try {
@@ -100,6 +101,7 @@
         return next(currentState);
       }
     };
+    fixedMobile = get(mobile);
   });
 </script>
 
@@ -132,22 +134,17 @@
     max-width: 600px;
     font-size: 1.5em;
   }
-
-  /* .submit {
-    border: 1px #a9e3b0 solid;
-    margin-bottom: 1rem;
-  } */
 </style>
 
 <div>
 
-  {#if $mobile}
+  {#if fixedMobile}
     <Nav left={true} routes={back} mobile={true} active={false} />
   {:else}
     <Back />
   {/if}
   <div class="flex justify-between pa3 w-100">
-    {#if !$mobile && !thanks}
+    {#if !fixedMobile && !thanks}
       <div class="w-50">
         <h1>Want to get in touch?</h1>
         <p>We'll get back to you as soon as we can.</p>
@@ -168,7 +165,7 @@
     {/if}
     {#if loaded && !finished && !thanks}
       <div
-        class={`signup h-100 flex flex-column justify-start pa3 ${$mobile ? 'w-100' : 'w-50'}`}
+        class={`signup h-100 flex flex-column justify-start pa3 ${fixedMobile ? 'w-100' : 'w-50'}`}
         in:fade={{ duration: 500 }}
         out:fade={{ duration: 500 }}
         on:introend={() => inputEl.focus()}
@@ -191,7 +188,7 @@
     {#if loaded && finished}
       <div
         in:fade={{ duration: 500 }}
-        class={`h-100 flex flex-column justify-start pa3 ${$mobile ? 'w-100' : 'w-50'}`}>
+        class={`h-100 flex flex-column justify-start pa3 ${fixedMobile ? 'w-100' : 'w-50'}`}>
         <div class="submit">
           {#each states as state}
             <div class="flex flex-column justify-start pa2">

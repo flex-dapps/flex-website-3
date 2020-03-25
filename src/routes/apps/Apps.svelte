@@ -23,7 +23,7 @@
   .description {
     font-size: 1.1rem;
     max-height: 100vh;
-    padding-bottom: 25vh;
+    padding-bottom: 30vh;
   }
 
   .logo {

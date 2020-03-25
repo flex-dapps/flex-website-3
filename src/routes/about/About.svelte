@@ -50,7 +50,7 @@
     margin: 0.5rem;
     overflow: scroll;
     max-height: 100vh;
-    padding-bottom: 25vh;
+    padding-bottom: 30vh;
   }
 
   div {
