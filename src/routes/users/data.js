@@ -13,7 +13,7 @@ export const data = [
       },
       {
         key: "FAVOURITE STATIONARY",
-        value: "RED STRING"
+        value: "Red String"
       }
     ],
     description:
