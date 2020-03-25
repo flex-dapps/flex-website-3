@@ -47,14 +47,14 @@
   #container {
     line-height: 2rem;
     font-size: 1rem;
-    margin: 0.5rem;
+    /* margin: 0.5rem; */
     overflow: scroll;
     max-height: 100vh;
     padding-bottom: 30vh;
   }
 
   div {
-    margin: 0.5rem 0;
+    /* margin: 0.5rem 0; */
   }
 </style>
 
