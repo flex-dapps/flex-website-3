@@ -49,7 +49,7 @@ export const data = [
     special: [
       {
         key: "COVID-19 Positive",
-        value: "TRUE"
+        value: "FALSE"
       },
       {
         key: "Screen Size",
