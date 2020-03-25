@@ -16,21 +16,28 @@
   let interval;
   let loaded = false;
   let logoHighlight = false;
-  let logo;
+  let flexHighlight = true;
+  let dappsHighlight = false;
+  let flex;
+  let dapps;
 
   // I have added this subscription to $mobile because something about my mobile store
   // and the component lifecycle my typewriter animation is erroring and this causes other
   // elements on the page to fail
 
   const bindListeners = () => {
-    if (!logo) {
+    if (!flex || !dapps) {
       return setTimeout(bindListeners, 50);
     }
-    logo.addEventListener("mouseenter", () => {
-      logoHighlight = true;
+    flex.addEventListener("mouseenter", () => {
+      console.log("flex");
+      flexHighlight = true;
+      dappsHighlight = false;
     });
-    logo.addEventListener("mouseleave", () => {
-      logoHighlight = false;
+    dapps.addEventListener("mouseenter", () => {
+      console.log("dapps");
+      flexHighlight = false;
+      dappsHighlight = true;
     });
   };
 
@@ -79,9 +86,9 @@
   {:else if !$mobile}
     <div class="w-100 h-100 flex justify-around items-center pa4">
       <div class=" f3 h-100 flex-column justify-center flex">
-        <div bind:this={logo}>
-          <h1 class:highlighted={!logoHighlight}>FLEX</h1>
-          <h1 class:highlighted={logoHighlight}>DAPPS</h1>
+        <div>
+          <h1 bind:this={flex} class:highlighted={flexHighlight}>FLEX</h1>
+          <h1 bind:this={dapps} class:highlighted={dappsHighlight}>DAPPS</h1>
         </div>
       </div>
       <div class="w-33 f3">
