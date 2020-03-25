@@ -4,7 +4,7 @@ const virtues = `# We hold ourselves accountable to the following virtues:
 
 ## Purposeful Curiosity
 
-We are creative and curious. We enjoy nothing more than solving abstract puzzles. We are loyal to creative freedom our work is the means by which we express that.
+We are creative and curious. We enjoy nothing more than solving abstract puzzles. We are loyal to creative freedom and our work is the means by which we express that.
 
 --
 
