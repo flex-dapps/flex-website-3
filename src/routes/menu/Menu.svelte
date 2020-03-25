@@ -67,9 +67,9 @@
     <div class="w-100 h-100 flex flex-column justify-between items-center">
       <div />
       <div class=" f3 h-100 flex-column justify-center flex">
-        <div bind:this={logo}>
-          <h1 class="highlighted">FLEX</h1>
-          <h1>DAPPS</h1>
+        <div on:click={() => (logoHighlight = !logoHighlight)}>
+          <h1 class:highlighted={!logoHighlight}>FLEX</h1>
+          <h1 class:highlighted={logoHighlight}>DAPPS</h1>
         </div>
       </div>
       <div class="w-100 f3 ">
