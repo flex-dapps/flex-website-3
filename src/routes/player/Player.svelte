@@ -66,15 +66,21 @@
   <div class="musicwrap">
     <Music />
   </div>
-  <div class="controls w-25 justify-between h-50 flex">
+  <div class="controls w-10 justify-between h-50 flex">
     <img
       on:click={() => skip(false)}
       src="./img/music-previous.svg"
-      alt="previous" />
+      alt="previous"
+      class="h-100" />
     <img
       on:click={() => toggle()}
       src={`./img/music-${playing ? 'pause' : 'play'}.svg`}
-      alt="Toggle Music" />
-    <img on:click={() => skip()} src="./img/music-next.svg" alt="next" />
+      alt="Toggle Music"
+      class="h-100" />
+    <img
+      on:click={() => skip()}
+      src="./img/music-next.svg"
+      alt="next"
+      class="h-100" />
   </div>
 </div>

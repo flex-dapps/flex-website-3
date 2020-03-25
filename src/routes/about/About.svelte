@@ -47,14 +47,9 @@
   #container {
     line-height: 2rem;
     font-size: 1rem;
-    /* margin: 0.5rem; */
     overflow: scroll;
     max-height: 100vh;
     padding-bottom: 30vh;
-  }
-
-  div {
-    /* margin: 0.5rem 0; */
   }
 </style>
 
@@ -62,6 +57,6 @@
 
 <PageWrapperWithMenu routes={subroutes} bind:active>
   {#if active !== null}
-    <div id="container" class="h-100" />
+    <div id="container" class="h-100 pa3" />
   {/if}
 </PageWrapperWithMenu>
