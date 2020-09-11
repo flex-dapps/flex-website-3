@@ -28,12 +28,12 @@ export const data = [
     skills: "['Javascript', 'Visual Design', 'Business']",
     special: [
       {
-        key: 'Known Locations',
-        value: "['West Melbourne', 'Durotar', 'Dromund Kaas']",
+        key: 'Liability',
+        value: "TRUE",
       },
       {
-        key: 'YEETS PER MINUTE',
-        value: '3.1415926535',
+        key: 'Hours Played',
+        value: "13140",
       },
     ],
     description:
@@ -48,15 +48,35 @@ export const data = [
     skills: `['Due Diligence', 'Motherhood']`,
     special: [
       {
-        key: 'Preferred Governance Model',
-        value: '[REDACTED]',
+        key: 'Languages Spoken',
+        value: "['English', 'Mandarin', 'Yeet Basic']",
       },
       {
-        key: 'Gender Identity',
-        value: 'Golden Retriever',
+        key: 'ROOT ACCESS',
+        value: 'TRUE',
       },
     ],
-    description: `Forcibly ejected and permanently banned from every communist regime under the sun, the Smilin' Dominator has a habit of embroiling herself in underground commercial enterprise. No unmarked building or shadowy stairwell is safe from the Dominator's sense of what's current. She will find you and she will do business with you.`,
+    description: `Forcibly ejected and permanently banned from every communist regime under the sun, the Mighty Ambassador has a habit of embroiling herself in underground commercial enterprise. No unmarked building or shadowy stairwell is safe from the Ambassador's sense of what's current. She will find you and she will do business with you.`,
+  },
+  {
+    label: 'Midnight Swami',
+    url: '/img/team/dan.gif',
+    name: 'Daniel Harrison',
+    codeName: "['Midnight Swami', 'The Wizard']",
+    position: "['Technical Director', 'Floating Mantis']",
+    skills: "['React', 'Redux', 'Canvas', 'Web3']",
+    special: [
+      {
+        key: 'FAVOURITE TOOL',
+        value: 'Dynamite and Bandaids',
+      },
+      {
+        key: 'BLOOD SPILLED',
+        value: 'ERR_UINT_OVERFLOW',
+      },
+    ],
+    description:
+      "Midnight Swami hails from the world's newest nation, the aptly-named New Zealand. His strikingly handsome appearance and charismatic personality gained him a reputation as an extremely nice person. But nice guys get nowhere, so Midnight Swami vowed to live a life committed to writing code behind the veil of multiple 24 inch monitors - flexing his dapps for the world to see.",
   },
   {
     label: 'Phantom Professional',
@@ -79,26 +99,6 @@ export const data = [
       "His demeanour always collected, his eyes often heavy, the Phantom Professional has cemented himself as Flex Dapps' command line interaction officer. The Phantom Professional's everyday tasks are highly classified, sometimes even he must grant himself security clearance. Since nobody understands what he does, Flex have made the wise decision not to terminate his employment any time soon.",
   },
   {
-    label: 'Intellectual Genius',
-    url: '/img/team/aaron.gif',
-    name: '[REDACTED]',
-    codeName: 'Intellectual Genius',
-    position: '[REDACTED]',
-    skills: '[REDACTED]',
-    special: [
-      {
-        key: 'Hair Style',
-        value: '[REDACTED]',
-      },
-      {
-        key: 'Last Successful [REDACTED]',
-        value: '1557294687',
-      },
-    ],
-    description:
-      'One glance at Intellectual Genius will tell you that he means business. That glint in his eye isn\'t saying "namaste," it\'s saying [REDACTED]. Intellectual Genius heads up the [REDACTED] campaign for Flex Dapps and has resolved never to rest until [REDACTED].',
-  },
-  {
     label: 'Tha Prophet',
     url: '/img/team/ryan.gif',
     name: 'Ryan Miller',
@@ -111,8 +111,8 @@ export const data = [
         value: 'Peace and prosperity',
       },
       {
-        key: 'Spirit Pillar',
-        value: `Roll D6 and multiply by your alacrity rating`,
+        key: 'Weakness',
+        value: `ATO`,
       },
     ],
     description:
@@ -157,45 +157,6 @@ export const data = [
     description: `Always a student, now a teacher, the Fearless Mercenary lets nothing stand in his way when put to task. Currying favour from those in any position, the Mercenary draws understanding from every aspect of the Normie-ruled universe and knows exactly what it takes to succeed: fresh kicks and flash bling.`,
   },
   {
-    label: 'Mad Desperado',
-    url: '/img/team/liam.gif',
-    name: '[REDACTED]',
-    codeName: `['Mad Desperado']`,
-    position: '[REDACTED]',
-    skills: '[REDACTED]',
-    special: [
-      {
-        key: '[REDACTED] Count',
-        value: 'Nominal',
-      },
-      {
-        key: 'Preferred Governance Model',
-        value: '[REDACTED]',
-      },
-    ],
-    description: `The journey to [REDACTED] is one way, which is why the Mad Desperado bought fourteen tickets from [REDACTED] in 2011. Winner of the inaugural Holochain Meme Hour in his very first week on the job, the Desperado is firmly positioned to reap the long term health benefits of [REDACTED].`,
-  },
-  {
-    label: 'Midnight Swami',
-    url: '/img/team/dan.gif',
-    name: 'Daniel Harrison',
-    codeName: "['Midnight Swami', 'The Wizard']",
-    position: "['Front-end Developer', 'Floating Mantis']",
-    skills: "['React', 'Redux', 'Canvas', 'Web3']",
-    special: [
-      {
-        key: 'FAVOURITE TOOL',
-        value: 'Dynamite and Bandaids',
-      },
-      {
-        key: 'BLOOD SPILLED',
-        value: 'ERR_UINT_OVERFLOW',
-      },
-    ],
-    description:
-      "Midnight Swami hails from the world's newest nation, the aptly-named New Zealand. His strikingly handsome appearance and charismatic personality gained him a reputation as an extremely nice person. But nice guys get nowhere, so Midnight Swami vowed to live a life committed to writing code behind the veil of multiple 24 inch monitors - flexing his dapps for the world to see.",
-  },
-  {
     label: 'Violent Artist',
     url: '/img/team/denver.gif',
     name: 'Denver Pallis',
@@ -214,6 +175,45 @@ export const data = [
     ],
     description:
       "Most hackers sneak in under the cover of night, but not the Violent Artist. Loud, reckless, and almost certainly a hostile threat, 99% of psychologists agree that his state-issued dictionary didn't contain the word 'caution'. It doesn't matter whether it's bits, shells, or villains; bashing is the name of the game for the Violent Artist.",
+  },
+  {
+    label: '[R] Mad Desperado',
+    url: '/img/team/liam.gif',
+    name: '[REDACTED]',
+    codeName: `['Mad Desperado']`,
+    position: '[REDACTED]',
+    skills: '[REDACTED]',
+    special: [
+      {
+        key: '[REDACTED] Count',
+        value: 'Nominal',
+      },
+      {
+        key: 'Preferred Governance Model',
+        value: '[REDACTED]',
+      },
+    ],
+    description: `The journey to [REDACTED] is one way, which is why the Mad Desperado bought fourteen tickets from [REDACTED] in 2011. Winner of the inaugural Holochain Meme Hour in his very first week on the job, the Desperado is firmly positioned to reap the long term health benefits of [REDACTED].`,
+  },
+  {
+    label: '[R] Intellectual Genius',
+    url: '/img/team/aaron.gif',
+    name: '[REDACTED]',
+    codeName: 'Intellectual Genius',
+    position: '[REDACTED]',
+    skills: '[REDACTED]',
+    special: [
+      {
+        key: 'Hair Style',
+        value: '[REDACTED]',
+      },
+      {
+        key: 'Last Successful [REDACTED]',
+        value: '1557294687',
+      },
+    ],
+    description:
+      'One glance at Intellectual Genius will tell you that he means business. That glint in his eye isn\'t saying "namaste," it\'s saying [REDACTED]. Intellectual Genius heads up the [REDACTED] campaign for Flex Dapps and has resolved never to rest until [REDACTED].',
   },
   {
     label: 'Unknown',
