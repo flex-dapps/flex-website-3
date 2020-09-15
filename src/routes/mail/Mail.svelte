@@ -142,7 +142,7 @@
   {/if}
   <div class="flex justify-between pa3 w-100">
     {#if !fixedMobile && !thanks}
-      <div class="w-50">
+      <div class="w-50 pa3">
         <h1>Want to get in touch?</h1>
         <p>We'll get back to you as soon as we can.</p>
         <a target="_blank" href="https://discord.gg/HVS7BVE">
