@@ -1,108 +1,106 @@
 <script>
-  import { fly, fade } from "svelte/transition";
-  import { get } from "svelte/store";
-  import { getContext, onMount } from "svelte";
-  import { Back, Nav } from "components";
-  import { mobile, keys } from "stores";
+  import { fly, fade } from 'svelte/transition'
+  import { get } from 'svelte/store'
+  import { getContext, onMount } from 'svelte'
+  import { Back, Nav } from 'components'
+  import { mobile, keys } from 'stores'
 
-  let loaded = true;
-  let finished = false;
-  let thanks = false;
-  let back = [{ label: "< Go Back", route: "/" }];
-  let fixedMobile;
+  let loaded = true
+  let finished = false
+  let thanks = false
+  let back = [{ label: '< Go Back', route: '/' }]
+  let fixedMobile
 
-  let active = 0;
-  let errorMessage;
-  let inputEl;
+  let active = 0
+  let errorMessage
+  let inputEl
 
   let states = [
     {
-      name: "email",
-      key: "_replyto",
-      message: "What is your email address?",
-      placeholder: "nic.cage@sufferingbees.net",
-      value: "",
+      name: 'email',
+      key: '_replyto',
+      message: 'What is your email address?',
+      placeholder: 'nic.cage@sufferingbees.net',
+      value: '',
       validation: function validateEmail(email) {
-        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(
-          String(email)
-            .trim()
-            .toLowerCase()
-        );
-      }
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        return re.test(String(email).trim().toLowerCase())
+      },
     },
     {
-      name: "enquiry",
-      message: "How can we help?",
-      placeholder: "I have a problem that involves bees",
-      value: "",
-      key: "message",
+      name: 'enquiry',
+      message: 'How can we help?',
+      placeholder: 'I have a problem that involves bees',
+      value: '',
+      key: 'message',
       validation: () => {
-        return true;
-      }
+        return true
+      },
     },
     {
-      name: "name",
-      message: "What do we call you?",
-      placeholder: "Nicolas Cage",
-      value: "",
-      key: "name",
-      validation: name => {
-        return typeof name === "string" || name instanceof String;
-      }
-    }
-  ];
-  let state = {};
+      name: 'name',
+      message: 'What do we call you?',
+      placeholder: 'Nicolas Cage',
+      value: '',
+      key: 'name',
+      validation: (name) => {
+        return typeof name === 'string' || name instanceof String
+      },
+    },
+  ]
+  let state = {}
 
-  $: currentState = states[active];
+  $: currentState = states[active]
 
   async function submit() {
-    finished = false;
-    thanks = true;
+    finished = false
+    thanks = true
     try {
-      const res = await (await fetch(`https://formspree.io/mkngparz`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json "
-        },
-        body: JSON.stringify({
-          state
+      const res = await (
+        await fetch(`https://formspree.io/mkngparz`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json ',
+          },
+          body: JSON.stringify({
+            state,
+          }),
         })
-      })).JSON();
-      return res;
+      ).JSON()
+      return res
     } catch (e) {
-      throw e;
+      throw e
     }
   }
 
-  const showUserAnError = error => {
-    errorMessage = error;
+  const showUserAnError = (error) => {
+    errorMessage = error
     setTimeout(() => {
-      errorMessage = false;
-    }, 3000);
-  };
+      errorMessage = false
+    }, 3000)
+  }
 
-  const next = current => {
-    let fieldIsValid = currentState.validation(currentState.value);
+  const next = (current) => {
+    let fieldIsValid = currentState.validation(currentState.value)
 
     if (fieldIsValid) {
-      state[currentState.key] = currentState.value;
-      loaded = false;
-      active < states.length - 1 ? active++ : (finished = true);
+      state[currentState.key] = currentState.value
+      loaded = false
+      active < states.length - 1 ? active++ : (finished = true)
     } else {
-      showUserAnError(("Invalid " + currentState.name).toUpperCase());
+      showUserAnError(('Invalid ' + currentState.name).toUpperCase())
     }
-    return;
-  };
+    return
+  }
 
   onMount(() => {
-    window.onkeydown = k => {
+    window.onkeydown = (k) => {
       if (k.keyCode === keys.enter) {
-        return next(currentState);
+        return next(currentState)
       }
-    };
-    fixedMobile = get(mobile);
-  });
+    }
+    fixedMobile = get(mobile)
+  })
 </script>
 
 <style>
@@ -137,7 +135,6 @@
 </style>
 
 <div>
-
   {#if fixedMobile}
     <Nav left={true} routes={back} mobile={true} active={false} />
   {:else}
@@ -158,9 +155,7 @@
         <ul>
           <li>00. Do pro-bono work</li>
           <li>01. Do pro-bono work disguised as tokens</li>
-          <li>02. Sign non-disclosure agreements simply to hear an idea</li>
         </ul>
-
       </div>
     {/if}
     {#if loaded && !finished && !thanks}
@@ -219,7 +214,6 @@
       </div>
     {/if}
   </div>
-
 </div>
 
 <!-- just create a ready to submit state and prefill the form and submit it  -->
