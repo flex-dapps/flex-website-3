@@ -42,6 +42,49 @@ We love ideas, but we love the skills to act on those ideas even more. We do wha
 
 const story = `# This entry is LOCKED`;
 
+const menu = `# The Full Stack 🥞
+We offer our customers an all you can eat platter of permissionless, decentralized bites crafted by Michelin star developers, these include:
+
+--
+
+## Front-End Development
+A smooth, tactile interface rich with flavour and colour. Our team bakes light, responsive front-ends that effortlessly handle on-chain data to provide the delicious user experiences for defi and other decentralized applications.
+
+--
+
+## Smart Contract Development
+Architected and hand crafted meticulously over multiple weeks, our gas(tronomy) efficient smart-contracts power even the most complex financial transactions. Seasoned with truffle oil.
+
+--
+
+## Smart Contract Audits
+Our chefs work carefully and diligently to ensure that every contract is bug free and poses no risk to your health or wallet. 
+
+--
+
+## The Secret Sauce
+Prepared in our secret laboratory with rare and unregulated ingredients sourced locally and from afar.  Our secret sauce gives any dish, project or concept the impossible to replicate zest and lip smacking flavour that keeps our patrons coming back for more.
+
+--
+
+# Specials
+
+--
+
+## Token Flight
+Taste a series of robust and refreshing, regulation friendly token models from around the world. Take an educational journey with experts in taste that will delight your senses and immerse you in a new world of opportunity. If you decide that a token is for you we can support you every step of the way. Starting with design and ideation then development, launch and beyond.
+
+--
+
+## Catering for any group
+Having a lunch and learn? Planning a sprint or to take your client on a long journey? We cater for parties of any shape and size. Just give us your requirements and let the Flex Dapps team design and deliver a 5 course meal for your hungry minds. Our nourishing knowledge meals and easy to digest expert reports will give you all the fuel you need to contend with blockchain technology questions in your field. Recommended for law firms, universities, government agencies & enterprises.
+
+--
+
+## Starting your own kitchen?
+Thinking about cooking up your own schemes? Need to source talented chefs and tastemakers for your own kitchen? We will work closely with your project to source, vet and help you hire the best technologists. 
+`;
+
 const copy = [
   {
     name: "Introduction",
@@ -54,6 +97,10 @@ const copy = [
   {
     name: "What is a dapp?",
     description: story
+  },
+  {
+    name: "Summer Menu",
+    description: menu
   }
   // {
   //   name: "Our Approach",
