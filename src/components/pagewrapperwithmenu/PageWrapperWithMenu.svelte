@@ -1,18 +1,16 @@
 <script>
   // Page Wrapper With Menu is  a super bespoke component for the Flex site which wraps a content
   // with the appropriate submenu
-  import { onMount } from "svelte";
-  import { navigate } from "svelte-routing";
-  import { Back, Nav, Page } from "components";
-  import { mobile } from "stores";
-  let back = [{ label: "< Go Back", route: "/" }];
+  import { Nav } from 'components'
+  import { mobile } from 'stores'
+  let back = [{ label: '< Go Back', route: '/' }]
 
-  export let active;
-  export let routes;
+  export let active
+  export let routes
 
-  let wrappedContent;
+  let wrappedContent
 
-  $: item = routes[active].label;
+  $: item = routes[active].label
 </script>
 
 <style>
@@ -40,7 +38,7 @@
 <div
   class={'flex h-100 ' + ($mobile ? 'flex-column' : 'justify-between items-start')}>
   <div
-    class={!$mobile ? 'options flex flex-column justify-center mr4 w-25' : ''}>
+    class={!$mobile ? 'options flex flex-column justify-center mr4 w-25 h-100 overflow-scroll' : ''}>
     <Nav
       left={true}
       bind:active
@@ -59,11 +57,11 @@
       <div
         class="arrow"
         on:click={() => {
-          wrappedContent.children[0].scrollTop = 0;
+          wrappedContent.children[0].scrollTop = 0
           if (active > 1) {
-            active--;
+            active--
           } else {
-            active = routes.length - 1;
+            active = routes.length - 1
           }
         }}>
         {'<'}
@@ -72,11 +70,11 @@
       <div
         class="arrow"
         on:click={() => {
-          wrappedContent.children[0].scrollTop = 0;
+          wrappedContent.children[0].scrollTop = 0
           if (active < routes.length - 1) {
-            active++;
+            active++
           } else {
-            active = 1;
+            active = 1
           }
         }}>
         {'>'}

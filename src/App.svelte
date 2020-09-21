@@ -1,53 +1,59 @@
 <script>
-  import { setContext, getContext, onMount } from "svelte";
-  import { Router, Route, navigate } from "svelte-routing";
-  import { elasticOut } from "svelte/easing";
-  import { fade, fly } from "svelte/transition";
-  import { typewriter } from "animations";
-  import { Loading } from "components";
-  import { Menu, Apps, Mail, About, Users, Ventures, Player } from "routes";
-  import { Music } from "fragments";
-  import { mobile, keys } from "stores";
-  import { data } from "./routes/users/data";
+  import { setContext, onMount } from 'svelte'
+  import { Router, Route, navigate } from 'svelte-routing'
+  import { fade } from 'svelte/transition'
+  import { Loading } from 'components'
+  import {
+    Menu,
+    Apps,
+    Mail,
+    About,
+    Users,
+    Ventures,
+    Player,
+    Newsletters,
+  } from 'routes'
+  import { mobile, keys } from 'stores'
+  import { data } from './routes/users/data'
 
-  let version = "3.0";
+  let version = '3.0'
 
-  let home = true;
-  let typingAnimationFinished = false;
-  let enterPressed = false;
+  let home = true
+  let typingAnimationFinished = false
+  let enterPressed = false
 
   const onFinishTyping = () => {
-    if (enterPressed) typingAnimationFinished = true;
-  };
+    if (enterPressed) typingAnimationFinished = true
+  }
 
-  const animatedNavigate = route => {
-    navigate(route);
-    if (route === "/") {
-      home = true;
+  const animatedNavigate = (route) => {
+    navigate(route)
+    if (route === '/') {
+      home = true
     } else {
-      typingAnimationFinished = true;
+      typingAnimationFinished = true
     }
-  };
+  }
 
   onMount(() => {
-    window.onkeydown = k => {
+    window.onkeydown = (k) => {
       if (k.keyCode === keys.enter) {
-        enterPressed = true;
-        window.onkeydown = () => {};
+        enterPressed = true
+        window.onkeydown = () => {}
       }
-    };
-    mobile.check();
-    window.onresize = mobile.check;
-    if (window.location.pathname !== "/") {
-      enterPressed = true;
-      typingAnimationFinished = true;
+    }
+    mobile.check()
+    window.onresize = mobile.check
+    if (window.location.pathname !== '/') {
+      enterPressed = true
+      typingAnimationFinished = true
     }
     for (let user of data) {
-      const img = new Image();
-      img.src = user.url;
+      const img = new Image()
+      img.src = user.url
     }
-  });
-  setContext("animatedNavigate", animatedNavigate);
+  })
+  setContext('animatedNavigate', animatedNavigate)
 </script>
 
 <style>
@@ -124,6 +130,9 @@
         </Route>
         <Route path="/ventures">
           <Ventures />
+        </Route>
+        <Route path="/newsletters">
+          <Newsletters />
         </Route>
       </Router>
     </section>

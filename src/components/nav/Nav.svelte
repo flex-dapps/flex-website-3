@@ -5,81 +5,81 @@
   // 2. Make clicking navigate to clicked rather than active
   // 3. If there's a navigate route for an item, give it alittle booping carrot
 
-  import { onMount, getContext } from "svelte";
-  import { navigate } from "svelte-routing";
+  import { onMount, getContext } from 'svelte'
+  import { navigate } from 'svelte-routing'
   export let routes = [
-    { label: "link 1", route: "/yeet" },
-    { label: "link 2", route: "/yoot" }
-  ];
+    { label: 'link 1', route: '/yeet' },
+    { label: 'link 2', route: '/yoot' },
+  ]
 
-  const animatedNavigate = getContext("animatedNavigate");
-  export let start = 0;
-  export let active = start;
-  export let customClass;
-  export let left;
-  export let mobile;
+  const animatedNavigate = getContext('animatedNavigate')
+  export let start = 0
+  export let active = start
+  export let customClass
+  export let left
+  export let mobile
 
   const addCustomClass = () => {
     if (customClass === undefined) {
-      return;
+      return
     }
-    let links = document.getElementsByClassName("item");
+    let links = document.getElementsByClassName('item')
     if (links !== undefined) {
       for (let link of links) {
-        link.className += customClass;
+        link.className += customClass
       }
     }
-    return;
-  };
+    return
+  }
 
   const fitNavItemsToContainer = () => {
-    let navItems = document.getElementsByClassName("item");
+    let navItems = document.getElementsByClassName('item')
     for (let i = 0; i < navItems.length; i++) {
-      let el = navItems[i];
-      el.style.fontSize = parseFloat(el.clientWidth / 8) + "px";
+      let el = navItems[i]
+      el.style.fontSize = parseFloat(el.clientWidth / 8) + 'px'
     }
-  };
+  }
 
   onMount(() => {
-    let navItems = document.getElementsByClassName("item");
+    let navItems = document.getElementsByClassName('item')
     for (let i = 0; i < navItems.length; i++) {
-      navItems[i].addEventListener("mouseenter", e => {
-        e.target.classList.add("selected");
-      });
-      navItems[i].addEventListener("mouseleave", e => {
-        if (active === i) return;
-        e.target.classList.remove("selected");
-      });
+      navItems[i].addEventListener('mouseenter', (e) => {
+        e.target.classList.add('selected')
+      })
+      navItems[i].addEventListener('mouseleave', (e) => {
+        if (active === i) return
+        e.target.classList.remove('selected')
+      })
     }
 
     window.addEventListener(
-      "keyup",
-      e => {
-        let key = e.keyCode;
+      'keyup',
+      (e) => {
+        let key = e.keyCode
         if (key === 40 || key === 39) {
-          active === routes.length - 1 ? (active = 0) : active++;
+          active === routes.length - 1 ? (active = 0) : active++
         } else if (key === 38 || key === 37) {
-          active === 0 ? (active = routes.length - 1) : active--;
+          active === 0 ? (active = routes.length - 1) : active--
         } else if (key === 13) {
-          animatedNavigate(routes[active].route);
+          animatedNavigate(routes[active].route)
         }
       },
       false
-    );
-  });
+    )
+  })
 
   // Refactor this garbage
   const clickHandler = (route, i) => {
-    if (typeof route === "string" || route instanceof String) {
-      animatedNavigate(route);
-      return;
+    if (typeof route === 'string' || route instanceof String) {
+      animatedNavigate(route)
+      return
     }
-    if (typeof route !== "undefined") {
-      animatedNavigate(routes[active].route);
+    if (typeof route !== 'undefined') {
+      animatedNavigate(routes[active].route)
     }
-    addCustomClass();
-    active = i;
-  };
+    addCustomClass()
+    active = i
+  }
 </script>
 
 <style>
@@ -100,7 +100,7 @@
   }
 
   .selected::before {
-    content: "$";
+    content: '$';
     position: absolute;
     left: 0.5rem;
     font-size: 1em;
@@ -117,7 +117,7 @@
   <div
     style="text-align:{left ? 'left' : 'center'};"
     on:click={() => clickHandler(route.route, i)}
-    class={i === active ? ' selected item' : ' item'}
+    class={i === active ? ' selected item' : ' item h4'}
     class:mobile>
     {route.label}
   </div>
