@@ -6,7 +6,7 @@
   import {
     Menu,
     Apps,
-    Mail,
+    Contact,
     About,
     Users,
     Ventures,
@@ -117,8 +117,8 @@
         <Route path="/">
           <Menu />
         </Route>
-        <Route path="/mail">
-          <Mail />
+        <Route path="/contact">
+          <Contact />
         </Route>
         <Route path="/about">
           <About />

@@ -1,2 +1,2 @@
-import Mail from "./Mail.svelte";
-export default Mail;
+import Contact from './Contact.svelte'
+export default Contact

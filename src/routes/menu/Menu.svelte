@@ -9,7 +9,7 @@
     { label: 'apps', route: '/apps' },
     { label: 'ventures', route: '/ventures' },
     { label: 'users', route: '/users' },
-    { label: 'mail', route: '/mail' },
+    { label: 'contact', route: '/contact' },
     { label: 'newslettuce', route: '/newslettuce' },
     // { label: "player", route: "/player" }
   ]
