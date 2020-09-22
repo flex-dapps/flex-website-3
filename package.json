@@ -18,6 +18,7 @@
     "dev": "webpack-dev-server --content-base public --host 0.0.0.0"
   },
   "dependencies": {
+    "moment": "^2.29.0",
     "showdown": "^1.9.1",
     "svelte-routing": "^1.4.0"
   }

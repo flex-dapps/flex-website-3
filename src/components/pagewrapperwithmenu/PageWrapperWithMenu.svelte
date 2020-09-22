@@ -33,21 +33,27 @@
     font-size: 2em;
     margin: 0 0.5em;
   }
+
+  .box {
+    box-sizing: content-box;
+  }
 </style>
 
 <div
   class={'flex h-100 ' + ($mobile ? 'flex-column' : 'justify-between items-start')}>
   <div
-    class={!$mobile ? 'options flex flex-column justify-center mr4 w-25 h-100 overflow-scroll' : ''}>
-    <Nav
-      left={true}
-      bind:active
-      routes={$mobile ? back : routes}
-      mobile={$mobile} />
+    class={!$mobile ? 'options flex flex-column justify-start mr3 w-30 h-100 overflow-hidden' : ''}>
+    <div class="w-100 h-100 overflow-y-scroll pr3 box">
+      <Nav
+        left={true}
+        bind:active
+        routes={$mobile ? back : routes}
+        mobile={$mobile} />
+    </div>
   </div>
   <!-- CONTENT -->
   <div
-    class={($mobile ? 'w-100' : 'h-100 w-75') + ' noscroll'}
+    class={($mobile ? 'w-100 h-100' : 'h-100 w-75') + ' noscroll'}
     bind:this={wrappedContent}>
     <slot />
   </div>

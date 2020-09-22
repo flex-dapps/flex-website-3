@@ -32,14 +32,6 @@
     return
   }
 
-  const fitNavItemsToContainer = () => {
-    let navItems = document.getElementsByClassName('item')
-    for (let i = 0; i < navItems.length; i++) {
-      let el = navItems[i]
-      el.style.fontSize = parseFloat(el.clientWidth / 8) + 'px'
-    }
-  }
-
   onMount(() => {
     let navItems = document.getElementsByClassName('item')
     for (let i = 0; i < navItems.length; i++) {
@@ -84,7 +76,7 @@
 
 <style>
   div {
-    padding: 0.3rem 1.5rem;
+    padding: 0.3rem 0.5rem 0.3rem 1.5rem;
     font-size: 1.5em;
     line-height: 1em;
     width: 100%;
@@ -117,7 +109,7 @@
   <div
     style="text-align:{left ? 'left' : 'center'};"
     on:click={() => clickHandler(route.route, i)}
-    class={i === active ? ' selected item' : ' item h4'}
+    class={i === active ? ' selected item' : ' item'}
     class:mobile>
     {route.label}
   </div>
