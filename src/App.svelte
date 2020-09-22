@@ -44,6 +44,7 @@
     }
     mobile.check()
     window.onresize = mobile.check
+    setTimeout(mobile.check, 100)
     if (window.location.pathname !== '/') {
       enterPressed = true
       typingAnimationFinished = true
@@ -131,7 +132,7 @@
         <Route path="/ventures">
           <Ventures />
         </Route>
-        <Route path="/newsletters">
+        <Route path="/newslettuce">
           <Newsletters />
         </Route>
       </Router>
