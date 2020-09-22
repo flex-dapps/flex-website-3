@@ -6,7 +6,7 @@
   let subroutes = [{ label: '< Go Back', route: '/' }]
   newsletters.map((letter) => {
     let obj = {}
-    obj.label = moment(letter.date).format('MMM DD yyyy')
+    obj.label = letter.title
     subroutes.push(obj)
     newsletters.push(letter)
   })
@@ -18,7 +18,6 @@
 <style>
   .toobig {
     width: 110%;
-    margin-left: -5%;
     border: none;
   }
   h2 {
@@ -28,6 +27,7 @@
 
 <PageWrapperWithMenu routes={subroutes} bind:active data={newsletters}>
   <h2>{newsletter.title}</h2>
+  <subtitle>{moment(newsletter.date).format('MMM DD yyyy')}</subtitle>
   <iframe
     src={`${sendicatePath}/${newsletter.slug}`}
     title="lettuce"
