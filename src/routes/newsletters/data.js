@@ -97,11 +97,6 @@ export const newsletters = [
     slug: `5lstah`,
   },
   {
-    title: `Supplementary Ideas for your Clognoggin`,
-    date: `2019-02-22`,
-    slug: `5lstah`,
-  },
-  {
     title: `Ladders For Sale In Your Area`,
     date: `2019-02-08`,
     slug: `8jf5yj`,

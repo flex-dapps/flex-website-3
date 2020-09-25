@@ -1,7 +1,7 @@
 <script>
-  import { fly, fade } from 'svelte/transition'
+  import { fade } from 'svelte/transition'
   import { get } from 'svelte/store'
-  import { getContext, onMount } from 'svelte'
+  import { onMount } from 'svelte'
   import { Back, Nav } from 'components'
   import { mobile, keys } from 'stores'
 

@@ -6,7 +6,6 @@
   // 3. If there's a navigate route for an item, give it alittle booping carrot
 
   import { onMount, getContext } from 'svelte'
-  import { navigate } from 'svelte-routing'
   export let routes = [
     { label: 'link 1', route: '/yeet' },
     { label: 'link 2', route: '/yoot' },
