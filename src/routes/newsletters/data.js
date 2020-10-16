@@ -2,6 +2,11 @@ export const sendicatePath = `https://www.sendicate.net/m/`
 
 export const newsletters = [
   {
+    title: `Periwinkle`,
+    date: `2020-10-16`,
+    slug: `4uqxsi`,
+  },
+  {
     title: `Cover Me In Leeches and Perform the Blood Ritual`,
     date: `2020-10-02`,
     slug: `4p4l2m`,
