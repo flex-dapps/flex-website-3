@@ -4,7 +4,7 @@ export const newsletters = [
   {
     title: `The Secret Ingredient is Crime`,
     date: `2020-10-30`,
-    slig: `9yraqg`,
+    slug: `9yraqg`,
   },
   {
     title: `Periwinkle`,
