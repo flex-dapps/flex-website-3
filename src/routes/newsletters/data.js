@@ -2,6 +2,11 @@ export const sendicatePath = `https://www.sendicate.net/m/`
 
 export const newsletters = [
   {
+    title: `Jeffrey Toobin Resignation Letter`,
+    date: `2020-11-13`,
+    slug: `ct7pfg`,
+  },
+  {
     title: `The Secret Ingredient is Crime`,
     date: `2020-10-30`,
     slug: `9yraqg`,
