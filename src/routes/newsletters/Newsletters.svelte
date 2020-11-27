@@ -1,18 +1,24 @@
 <script>
+  import { onMount } from 'svelte'
   import moment from 'moment'
   import { PageWrapperWithMenu } from 'components'
   import { sendicatePath, newsletters } from './data'
 
   let subroutes = [{ label: '< Go Back', route: '/' }]
-  newsletters.map((letter) => {
-    let obj = {}
-    obj.label = letter.title
-    subroutes.push(obj)
-    newsletters.push(letter)
+  let items = subroutes
+  let active = 0
+  onMount(() => {
+    items = []
+    newsletters.forEach((letter) => {
+      let obj = {}
+      obj.label = letter.title
+      subroutes.push(obj)
+      items.push(letter)
+    })
+    items.unshift(newsletters[0])
+    active = 1
   })
-  newsletters.unshift(newsletters[0])
-  let active = 1
-  $: newsletter = newsletters[active]
+  $: newsletter = items[active]
 </script>
 
 <style>
@@ -25,7 +31,7 @@
   }
 </style>
 
-<PageWrapperWithMenu routes={subroutes} bind:active data={newsletters}>
+<PageWrapperWithMenu routes={subroutes} bind:active data={items}>
   <h2>{newsletter.title}</h2>
   <subtitle>{moment(newsletter.date).format('MMM DD yyyy')}</subtitle>
   <iframe
