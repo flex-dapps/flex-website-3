@@ -2,6 +2,11 @@ export const sendicatePath = `https://www.sendicate.net/m/`
 
 export const newsletters = [
   {
+    title: `Have you ever seen the Grinch and Putin in the same place?`,
+    date: `2020-11-27`,
+    slug: `53dy8z`
+  },
+  {
     title: `Jeffrey Toobin Resignation Letter`,
     date: `2020-11-13`,
     slug: `ct7pfg`,
