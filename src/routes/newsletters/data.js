@@ -2,6 +2,11 @@ export const sendicatePath = `https://www.sendicate.net/m/`
 
 export const newsletters = [
   {
+    title: `Ergonomics is more valuable to society than Economics`,
+    date: `2020-12-11`,
+    slug: '7waehv',
+  },
+  {
     title: `Have you ever seen the Grinch and Putin in the same place?`,
     date: `2020-11-27`,
     slug: `53dy8z`
