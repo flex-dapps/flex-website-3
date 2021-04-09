@@ -1,6 +1,388 @@
 export const data = [
   {
-    label: "The Web3 Foundation",
+
+    label: "Tracer DAO",
+    logo: `
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+  Ny/                  +MM+                  /ym  
+  hNMMdo-              +MM+              -odMMNy  
+    :smMMNy/           +MM+           /yNMMms:    
+       .+hMMMdo-       +MM+       -odMMNh+.       
+           :smMMNy/    +MM+    /yNMMms:           
+              .+hMMMdo.+MM+-odMMNh+.              
+               -odMMNh+oMMo+hMMMd+.               
+            /yNMMms:   +MM+   :smMMms:            
+        .+dMMMh+.      +MM+      .+dMMMh+.        
+     :smMMms:          +MM+          :ymMMms:     
+  +hMMMh+.             +MM+             -odMMNh+  
+  Mmy/                 +MM+                 /yNM  
+  -                    .//.                    -  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+`,
+  name: "Tracer DAO",
+      overview: "Tracer DAO governance app and keeper bot",
+      duration: "12 weeks",
+      links: [
+        {
+          link: "https://tracer.finance/",
+          text: "Check out their website"
+        }
+      ],
+      description: [
+        "We were grant funded by the TracerDAO to develop to develop two peices of open-source software.",
+"The first was a web application for the Tracer governance protocol that allows for $TCE token holders to easily vote on proposals made to the DAO.",
+"The second was keeper bot that enables operators to liquidate under-collateralised users of the Tracer system."
+      ]
+  },
+  {
+
+    label: "GEX",
+    logo:`
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+     ::::+oooooooo+  ::::+oooooooo+ -::::   .::::   
+    -MMMMMMMMMMMMMh :MMMMMMMMMMMMMd dMMMm   +MMMM/  
+    -MMMMNmmmmmmmmy :MMMMNmmmmmmmmy dMMMm   +MMMM/  
+    -MMMMoNNNNNNNNN-:MMMMNNNNN.         yNNNN-      
+    -MMMMsMMMMMMMMM-:MMMMMMMMM.         yMMMM.      
+    -MMMMyddddMMMMm :MMMMmdddd+///: oyyyd///yyyyy-  
+    -MMMMMMMMMMMMMh :MMMMMMMMMMMMMd dMMMm   +MMMM/  
+    .yyyymNNNNhyyyo -yyyymNNNNNNNNh oyyys   :yyyy-  
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+  `,
+  name: "GEX",
+      overview: "The Game Asset Exchange",
+      duration: "Ongoing",
+      links: [
+        // {
+        //   link: "https://perlinx.finance/",
+        //   text: "Check out their website"
+        // }
+      ],
+      description: [
+        "We worked with the GEX team to design and develop a proof of concept game asset marketplace for the future of game development.",
+        "GEX enables game asset creators to sell their assets as NFTs and receive royalties from titles developed using their intellectual property."
+      ]
+  },
+  {
+
+    label: "PerlinX",
+    logo:` 
+                                                  
+                                                  
+              ./+++++++++++++++:                  
+            .hMMMMMMMMMMMMMMMMMM:                 
+           -mMMMMMMMMMMMMMMMMMMo    +o-           
+          :NMMMMMMMMMMMMMMMMMN/   -mMMM+          
+         +MMMMMMMN+:+mMMMMMMN-   :NMMMMMs         
+        sMMMMMMMMh    hMMMMm.   +MMMMMMMMh        
+       yMMMMMMMMMMy    sMMh    oMMMMMMMMMMd.      
+      dMMMMMMMMMMMMd          yMMMMMMMMMMMMm-     
+    .mMMMMMMMMMMMMMMm.       dMMMMMMMMMMMMMMN:    
+    mMMMMMMMMMMMMMMMMN-    .mMMMMMMMMMMMMMMMMN.   
+    mMMMMMMMMMMMMMMMMN-    .mMMMMMMMMMMMMMMMMN.   
+    .mMMMMMMMMMMMMMMm.       dMMMMMMMMMMMMMMN:    
+      dMMMMMMMMMMMMd          yMMMMMMMMMMMMm-     
+       yMMMMMMMMMMy    sMMh    oMMMMMMMMMMd.      
+        oMMMMMMMMs    hMMMMm.   sMMMMMMMMh        
+         +MMMMMM+   .dMMMMMMN+:+mMMMMMMMs         
+          :NMMN:   -NMMMMMMMMMMMMMMMMMM+          
+           .oo.   /NMMMMMMMMMMMMMMMMMN:           
+                 .MMMMMMMMMMMMMMMMMMd-            
+                  -+++++++++++++++/.              
+                                                  
+                                                  
+`,
+  name: "PerlinX",
+      overview: "Decentralised liquidity pools and synthetic assets",
+      duration: "6 Weeks",
+      links: [
+        {
+          link: "https://perlinx.finance/",
+          text: "Check out their website"
+        }
+      ],
+      description: [
+        "PerlinX is a decentralized finance interface platform, allowing users to trade assets of any kind with each other through incentivized liquidity mining and synthetic asset generation.",
+        "The application utilizes incentivized liquidity provision through the use of liquidity pools powered by the Balancer protocol and the UMA protocol to generate synthetic assets."
+      ]
+  },
+  {
+
+    label: "CollabLand",
+    logo: `
+                                                  
+                                                  
+                                                  
+                         +                        
+                        dM/                       
+                       yMMN:                      
+                      sMMMMN.                     
+                     +MMMMMMm                     
+                    :MMMMMMMMd                    
+                   -NMMMMMMMMMy                   
+                  .mMMMMMMMMMMMo                  
+                  dMMMMMMMMMMMMM+                 
+                 hMMMMMMMMMMMMMMM:                
+                sMMMMMMM+:oMMMMMMN-               
+               +MMMMMMMM+.oMMMMMMMm.              
+              :MMMMMMMMMM+MMMMMMMMMd              
+             -NMMMMMMMNyo-oyNMMMMMMMy             
+            .mMMMMMMN/       +NMMMMMMs            
+            dMMMMMMM/ /h- :h: +MMMMMMM+           
+           hMMMMMMMM-  -   -  :MMMMMMMM/          
+          sMMMMMMMMm.         .mMMMMMMMN-         
+           .......               .......          
+                                                  
+                                                  
+`,
+  name: "CollabLand",
+      overview: "Discover communities and issue your own social token",
+      duration: "Ongoing",
+      links: [
+        {
+          link: "https:/collab.land",
+          text: "Check out their website"
+        }
+      ],
+      description: [
+        "We worked with the Abridged team to develop a proof of concept web application that enables web3 native users to discover new and emerging social token communities, see how their token holdings, understand their community status and even issue their own social token.",  
+        "CollabLand is one of the most exciting new projects in the web3 ecosystem, watch this cyberspace."
+      ]
+  },
+  {
+
+    label: "LinkSwap",
+    logo: `
+                                                  
+                                                  
+                                                  
+                                                  
+                                                 
+                     :sdMNho-   -dNh              
+                 -ohMMMMMMMMMNho-mMM+             
+             .+hNMMMMMNhosdMMMMMMMMMN-            
+             mMMMMMdo:      :ohNMMMMMd            
+             dMMMd          :sdMMMMNdy.           
+             dMMMh          .Nmyo/.               
+             dmho:                                
+                                :+ydh             
+                :+ydm           mMMMd             
+           -shNMMMMmh:          mMMMd             
+            mMMMMMNy+-      -+hNMMMMd             
+            :MMMMMMMMMNho+hNMMMMMMdo-             
+             sMMd/smMMMMMMMMMMms:                 
+              dMm-   /smMMms/                     
+                        .                        
+                                                  
+                                                  
+                                                  
+                                                  
+`,
+  name: "LinkSwap",
+      overview: "Community governed DEX focused on $LINK pairs",
+      duration: "Ongoing",
+      links: [
+        {
+          link: "https://linkswap.app",
+          text: "Check out their website"
+        }
+      ],
+      description: [
+        "Sick and tired of losing their precious $LINK to impermanent loss on Uniswap, an unnamed collective of cyberspace frogs engaged Flex Dapps to write some smart-contracts.",
+        "Linkswap is a decentralised, community owned AMM that minimizes the impermanent loss for $LINK liquidity providers."
+      ]
+  },
+  {
+
+    label: "yAxis",
+    logo: `                                                  
+                                                  
+                                                  
+                                                  
+                                    .-/-          
+          '''''''            '-/oydNMMMm          
+          oMMMMMM+            -odMMMMMMM/         
+           /MMMMMMs             sMMMMMMMm         
+            :NMMMMMh'         'hMMMMMNsdM/        
+             .mMMMMMd.       .dMMMMMm.  ':        
+              'dMMMMMm-     -mMMMMMd'             
+               'yMMMMMN:   :NMMMMMy'              
+                 oMMMMMM+ +MMMMMMo                
+                  :++++++yMMMMMM/                 
+                       'hMMMMMN:                  
+                      .dMMMMMm-                   
+                     -mMMMMMd'                    
+                    :NMMMMMy'                     
+                   +MMMMMMs                       
+                  .osssss/                        
+                                                  
+                                                  
+                                                  
+                                                  
+`,
+  name: "yAxis Metavault",
+      overview: "A community governed yeild farming aggregator",
+      duration: "12 weeks",
+      links: [
+        {
+          link: "https://www.yaxis.io/",
+          text: "Check out their website"
+        }
+      ],
+      description: [
+        "The MetaVault is a community governed, multi-asset yield farming aggregator which automatically redeploys your funds into the best strategy."
+      ]
+  },
+  {
+
+    label: "Jukebox",
+    logo: `
+                                                  
+                     -:/:/+:.                     
+                 .----o+/os/..--.                 
+               -:-:://:+oo:-:::--:-               
+             -:-:///+++:-:/o+/://--/.             
+            -:::+/+o/:----.-:os//+:-/.            
+            /-:+/++. :yNdmNh--:o+/+-:/            
+           --:/+:so+/mmysohmh:/+y///-/.           
+           :+++oosssssssoosssyssso+o/o-           
+           :ooooso+oo++oo++++o++ooooos-           
+           --::+/yo++///////+//ss://.:.           
+           --::+/sy+oos+oo+o++/hh///.:.           
+           --::+/ys/sysdsshsho:yh///.:.           
+           --::+/ys/sysyyyyshs:yy///.:.           
+           --::+/ys/oshsyssho+:yy///.:.           
+           --::++yo+oshsysshso/sy///.:.           
+           --::++ys+yyyhysysho/yy///.:.           
+           --::++hyooysdsyhsy++ss::/.:.           
+           /+//ssyyyooy+ysos+ososo+/+o:           
+           +s/:syyyyyyso+++syssoss+:oy/           
+           +y+/yyyyyhhhhhhhhhyyssyo/sy/           
+           /ssssy++++++++++++++++sssss:           
+           .+++++                o++++.           
+                                                  
+`,
+  name: "Jukebox",
+      overview: "Discover the magic of social tokens",
+      duration: "Ongoing",
+      links: [
+        {
+          link: "https://senaryblockchain.ventures/",
+          text: "Check out their website"
+        }
+      ],
+      description: [
+        "We worked with Senary Blockchain Ventures on a clickable prototype for Jukebox, an application where you can discover social token communities or grow your own"
+      ]
+  },
+  {
+
+    label: "Lighthouse",
+    logo: `                                                  
+                                                  
+                  :+shdmNNNNmdys/-                
+              -smMMMMMMMMMMMMMMMMMNh+.            
+            omMMMMMMMMMMm:+MMMMMMMMMMMh:          
+          oNMMMMMMMMMMMMd .MMMMMMMMMMMMMd-        
+        .dMMMMy/dMMMMMMMd .MMMMMMMNs/mMMMMs       
+       :NMMMMMd: :dMMdy+:  /ohNMNs  oNMMMMMh      
+      .NMMMMMMMMd: -.          -  oNMMMMMMMMy     
+      hMMMMMMMMMMy    +ymmmds-   -mMMMMMMMMMM/    
+     -MMMMMMMMMMh   /NMMMMMMMMh    mMMMMMMMMMd    
+     +MMMMyyyyyy-  .MMMMMMMMMMMy   .----------    
+     +MMMM+/////   -MMMMMMMMMMMh                  
+     :MMMMMMMMMMs   sMMMMMMMMMN-   dNNNNNNNNNd    
+      mMMMMMMMMMM+   :yNMMMMdo    yMMMMMMMMMMo    
+      :MMMMMMMMMNo       .       -hMMMMMMMMMd     
+       +MMMMMMNo  oNms/-   .:+yNd: -hMMMMMMm.     
+        /NMMMM+.oNMMMMMMd .MMMMMMMd:.hMMMMd.      
+         .hMMMMMMMMMMMMMd .MMMMMMMMMMMMMNo        
+           :hMMMMMMMMMMMd -MMMMMMMMMMMNs          
+             .odMMMMMMMMMMMMMMMMMMMNy/            
+                 :ohmNMMMMMMMMNdy+-               
+                       .MNNM.                     
+                                                  
+`,
+  name: "Lighthouse Validator App",
+      overview: "A web application for Ethereum 2.0 validators using Lighthouse",
+      duration: "Ongoing",
+      links: [
+        {
+          link: "https://lighthouse.sigmaprime.io/",
+          text: "Check out their website"
+        }
+      ],
+      description: ["We are actively working with the Sigma Prime team to develop an application that makes it easy for users to operate an Ethereum 2.0 validator and stake their assets."
+      ]
+  },
+//   {
+
+//   label: "Meld Gold",
+//   logo: `
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+//               .------         -----               
+//               -::::::        -::::::              
+//               -::::::        .:::::-              
+//               '.....'         '...'               
+                                                  
+//        '''''''        ''''''          ''''        
+//       '::::::.       '::::::.        -::::-'      
+//       '::::::.       '::::::.       '::::::.      
+//       '::::::.        -::::-'        '-:::.       
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+// `,
+// name: "Meld Gold",
+//     overview: "Digital infrastructure for the gold supply chain",
+//     duration: "Ongoing",
+//     links: [
+//       {
+//         link: "https://meld.gold",
+//         text: "Check out their website"
+//       }
+//     ],
+//     description: [
+// "Meld is overhauling the entire gold supply chain and replacing it with a new, seamless digital infrastructure powered by the Algorand blockchain. We worked with their team to enumerate the scope of the meld gold system, build an initial proof of concept and advise on hiring key personnel."
+//     ]
+// },
+  {
+    label: "Web3 Summit Wallet",
     logo: `
 
 
@@ -76,7 +458,7 @@ export const data = [
 `,
     name: "Blocknative",
     overview: "Decoding the mempool",
-    duration: "Ongoing",
+    duration: "12 months",
     links: [
       {
         link: "https://blocknative.com",
@@ -89,7 +471,7 @@ export const data = [
     ]
   },
   {
-    label: " The Ethereum Foundation",
+    label: "Drop Party",
     logo: `
 
 
@@ -170,7 +552,7 @@ export const data = [
     ]
   },
   {
-    label: "BinanceX",
+    label: "Snap Wallet",
     logo: `
 
                         --

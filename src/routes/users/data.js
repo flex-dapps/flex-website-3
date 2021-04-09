@@ -1,11 +1,11 @@
 export const data = [
   {
     label: 'X-cessive Overlord',
-    url: '/img/team/tom.gif',
+    url: '/img/team/xcessive.png',
     name: 'Tom Nash',
     codeName: "['X-cessive Overlord']",
-    position: "['CTO', 'Co-Founder']",
-    skills: "['Software Architecture', 'Solidity', 'Svelte']",
+    position: "['Boss', 'CTO']",
+    skills: "['Software Architecture', 'Smart-Contract Development', 'Storytelling']",
     special: [
       {
         key: 'Field Status',
@@ -21,11 +21,11 @@ export const data = [
   },
   {
     label: 'Master Assassin',
-    url: '/img/team/alex.gif',
+    url: '/img/team/master.png',
     name: 'Alexander Ramsey',
     codeName: "['Master Assassin', 'Agyle']",
-    position: "['CEO', 'Co-Founder']",
-    skills: "['Javascript', 'Visual Design', 'Business']",
+    position: "['Boss', 'CEO']",
+    skills: "['Memes', 'Visual Design', 'Game Design']",
     special: [
       {
         key: 'Liability',
@@ -41,11 +41,11 @@ export const data = [
   },
   {
     label: `Mighty Ambassador`,
-    url: '/img/team/jeanne.gif',
+    url: '/img/team/mighty.png',
     name: 'Jeanne Bardin',
     codeName: `['Mighty Ambassador']`,
-    position: `['COO', 'Deal Master']`,
-    skills: `['Due Diligence', 'Motherhood']`,
+    position: `['Consigliere', 'Chief Investment Officer']`,
+    skills: "['Due-Dilligence', 'Deal Structuring', 'Perception Checks']",
     special: [
       {
         key: 'Languages Spoken',
@@ -60,11 +60,11 @@ export const data = [
   },
   {
     label: 'Midnight Swami',
-    url: '/img/team/dan.gif',
+    url: '/img/team/midnight.png',
     name: 'Daniel Harrison',
     codeName: "['Midnight Swami', 'The Wizard']",
-    position: "['Technical Director', 'Floating Mantis']",
-    skills: "['React', 'Redux', 'Canvas', 'Web3']",
+    position: "['Underboss', 'Web3 Product Engineer']",
+    skills: "['Front-end Development', 'Product Design', 'Going Windowless']",
     special: [
       {
         key: 'FAVOURITE TOOL',
@@ -79,71 +79,12 @@ export const data = [
       "Midnight Swami hails from the world's newest nation, the aptly-named New Zealand. His strikingly handsome appearance and charismatic personality gained him a reputation as an extremely nice person. But nice guys get nowhere, so Midnight Swami vowed to live a life committed to writing code behind the veil of multiple 24 inch monitors - flexing his dapps for the world to see.",
   },
   {
-    label: 'Phantom Professional',
-    url: '/img/team/seb.gif',
-    name: 'Sebastian Müller',
-    codeName: `['Phantom Professional']`,
-    position: "['Lead Back-end Developer', 'Chief of Linux']",
-    skills: "['Solidity', 'Bash', 'Machine Learning']",
-    special: [
-      {
-        key: 'COVID-19 Positive',
-        value: 'FALSE',
-      },
-      {
-        key: 'Screen Size',
-        value: '2.4"',
-      },
-    ],
-    description:
-      "His demeanour always collected, his eyes often heavy, the Phantom Professional has cemented himself as Flex Dapps' command line interaction officer. The Phantom Professional's everyday tasks are highly classified, sometimes even he must grant himself security clearance. Since nobody understands what he does, Flex have made the wise decision not to terminate his employment any time soon.",
-  },
-  {
-    label: 'Tha Prophet',
-    url: '/img/team/ryan.gif',
-    name: 'Ryan Miller',
-    codeName: `['Tha Prophet']`,
-    position: "['Full-stack Developer', 'Dev-Ops']",
-    skills: "['Object-Oriented', 'Functional', 'Reactive']",
-    special: [
-      {
-        key: 'Favorite night time snack',
-        value: 'Peace and prosperity',
-      },
-      {
-        key: 'Weakness',
-        value: `ATO`,
-      },
-    ],
-    description:
-      'Tha Prophet travels the land spreading the good word of programming, it is supposed that he channels earthly energies through his special shoes to perform "miracles". Although his true origins are unknown, rumour has it that he healed a .NET developer in Lima and recovered bitcoin private keys from a corrupt drive in Montenegro.',
-  },
-  {
-    label: 'X-pert Mastermind',
-    url: '/img/team/maria.gif',
-    name: 'Mariia Tretiakova',
-    codeName: `['X-pert Mastermind']`,
-    position: "['Distributed SysAdmin', 'Operations']",
-    skills: "['Infiltration', 'I.T. Systems']",
-    special: [
-      {
-        key: 'Starting Location',
-        value: 'Kremlin',
-      },
-      {
-        key: 'Win Condition',
-        value: 'Delete 4chan',
-      },
-    ],
-    description: `You don't come to be known as the X-Pert Mastermind by sniffing glue and chasing chickens. While nobody knows the Mastermind's real name (due to it's phonetic complexity), they know her by reputation. She can 3D print foreign passports, turn off websites by frowning at them and blacklist you in over 600 government databases.`,
-  },
-  {
     label: 'Fearless Mercenary',
-    url: '/img/team/jonathan.gif',
+    url: '/img/team/fearless.png',
     name: 'Jonathan Dunne',
-    codeName: "['Fearless Mercenary, 'Tronathan']",
-    position: "['Front-end Developer', '007', 'Delegatee']",
-    skills: "['Svelte', 'Meme Hour', 'Presidential Support']",
+    codeName: "['Fearless Mercenary']",
+    position: "['Caporegime', 'Web3 Product Engineer']",
+    skills: "['Software Architecture', 'Front-end Development', 'Unionisation']",
     special: [
       {
         key: 'Underlying Motives',
@@ -157,12 +98,71 @@ export const data = [
     description: `Always a student, now a teacher, the Fearless Mercenary lets nothing stand in his way when put to task. Currying favour from those in any position, the Mercenary draws understanding from every aspect of the Normie-ruled universe and knows exactly what it takes to succeed: fresh kicks and flash bling.`,
   },
   {
+    label: 'Cerebral Criminal',
+    url: '/img/team/cerebral.png',
+    name: 'Nick Smith',
+    codeName: "['Cerebral Criminal']",
+    position: "['Soldier', 'Web3 Product Designer']",
+    skills: "['Product Design, 'Brand Design', 'ROI']",
+    special: [
+      {
+        key: 'Degen Score',
+        value: 'Grandmaster',
+      },
+      {
+        key: 'Bedtime Snack',
+        value: `Champagne and Oysters`,
+      },
+    ],
+    description: `The Cerebral Criminal rests peacefully in the Flex Dapps Peacelily Water Garden, skimming artisanal design spells across the ponds and through the information tubes. Our man is calm and calculated, and not-yet-known to have committed any crimes, so watch your 6 and track The Criminal's every move - he is certainly tracking yours.`,
+  },
+  {
+    label: 'Quiet Worlock',
+    url: '/img/team/worlock.png',
+    name: 'James Sangalli',
+    codeName: "['Quiet Worlock']",
+    position: "['Soldier', 'Web3 Product Engineer']",
+    skills: "['Smart-contract Development, 'Software Architecture', 'Tackling Seabass']",
+    special: [
+      {
+        key: 'YEETS Compiled',
+        value: '88888888888888888',
+      },
+      {
+        key: 'Credit Rating',
+        value: `Supreme Platinum V`,
+      },
+    ],
+    description: `Always alert and never bested in a back-alley brawl for bitcoin, the Flex soldier known as the Quiet Worlock didn't earn his name for being a shabby occult soothsayer. Those who've seen him in action know he puts the lock in headlock, and the quiet into many a wretched street thug as they're sent to the land of nod. If you roll with the Quiet Worlock outside the dojo you might find yourself rolled up in a carpet and tossed off the harbour bridge.`,
+  },
+
+  {
+    label: 'X-pert Mastermind',
+    url: '/img/team/xpert.png',
+    name: 'Mariia Tretiakova',
+    codeName: `['X-pert Mastermind']`,
+    position: "['Soldier', 'Distributed Operations Officer']",
+    skills: "['Snapping Necks', 'Cashing Cheques', 'Discretion']",
+    special: [
+      {
+        key: 'Starting Location',
+        value: 'Kremlin',
+      },
+      {
+        key: 'Win Condition',
+        value: 'Delete 4chan',
+      },
+    ],
+    description: `You don't come to be known as the X-Pert Mastermind by sniffing glue and chasing chickens. While nobody knows the Mastermind's real name (due to it's phonetic complexity), they know her by reputation. She can 3D print foreign passports, turn off websites by frowning at them and blacklist you in over 600 government databases.`,
+  },
+ 
+  {
     label: 'Violent Artist',
-    url: '/img/team/denver.gif',
+    url: '/img/team/violent.png',
     name: 'Denver Pallis',
     codeName: `['Violent Artist']`,
-    position: "['Junior Developer', 'Zoomer']",
-    skills: "['Python', 'Memes']",
+    position: "['Soldier', 'Web3 Product Engineer']",
+    skills: "['DevOps', 'Software Architecture', 'Hacking']",
     special: [
       {
         key: 'GENDER',
@@ -177,8 +177,27 @@ export const data = [
       "Most hackers sneak in under the cover of night, but not the Violent Artist. Loud, reckless, and almost certainly a hostile threat, 99% of psychologists agree that his state-issued dictionary didn't contain the word 'caution'. It doesn't matter whether it's bits, shells, or villains; bashing is the name of the game for the Violent Artist.",
   },
   {
+    label: 'Dynamic Dominator',
+    url: '/img/team/anonymous.gif',
+    name: 'Dinika Roopani',
+    codeName: `['Dynamic Dominator', 'D.D.']`,
+    position: "['Soldier', 'Compliance & Legal Engineer']",
+    skills: "['Legal', 'Compliance', 'Mission Cleanup']",
+    special: [
+      {
+        key: 'Is legal or tax advice',
+        value: 'FALSE',
+      },
+      {
+        key: 'Open Matters',
+        value: 'ERR_UINT_OVERFLOW',
+      },
+    ],
+    description: `It's ain't tough to grok why civilians might think D.D. stands for due diligence. The Dynamic Dominator leaves no stone unturned no less times than it takes to find the 3rd side of a USB drive. Fighting a war on all fronts and armed with an Aldi bargain bin Swiss army knife, 12,492 notion pages and the keys to the WMDs, D.D. is the anonymous crazy glue that binds the impervious Flex Dapps phalanx.`,
+  },
+  {
     label: '[R] Mad Desperado',
-    url: '/img/team/liam.gif',
+    url: '/img/team/desperado.png',
     name: '[REDACTED]',
     codeName: `['Mad Desperado']`,
     position: '[REDACTED]',
@@ -197,9 +216,9 @@ export const data = [
   },
   {
     label: '[R] Intellectual Genius',
-    url: '/img/team/aaron.gif',
+    url: '/img/team/intellectual.png',
     name: '[REDACTED]',
-    codeName: 'Intellectual Genius',
+    codeName: `['Intellectual Genius']`,
     position: '[REDACTED]',
     skills: '[REDACTED]',
     special: [
@@ -214,6 +233,44 @@ export const data = [
     ],
     description:
       'One glance at Intellectual Genius will tell you that he means business. That glint in his eye isn\'t saying "namaste," it\'s saying [REDACTED]. Intellectual Genius heads up the [REDACTED] campaign for Flex Dapps and has resolved never to rest until [REDACTED].',
+  },
+  {
+    label: '[R] Phantom Professional',
+    url: '/img/team/phantom.png',
+    name: '[REDACTED]',
+    codeName: `['Phantom Professional']`,
+    position: "[REDACTED]",
+    special: [
+      {
+        key: '[REDACTED] Positive',
+        value: 'FALSE',
+      },
+      {
+        key: '[REDACTED] Size',
+        value: '2.4"',
+      },
+    ],
+    description:
+      "His [REDACTED] always collected, his eyes often heavy, the Phantom Professional has [REDACTED] himself as Flex Dapps' [REDACTED] officer. The Phantom Professional's everyday tasks are highly [REDACTED], sometimes even he must grant himself security clearance. Since nobody understands what he does, Flex have made the wise decision not to [REDACTED].",
+  },
+  {
+    label: '[R] Tha Prophet',
+    url: '/img/team/prophet.png',
+    name: '[REDACTED]',
+    codeName: `['Tha Prophet']`,
+    position: "[REDACTED]",
+    special: [
+      {
+        key: 'Favorite night time snack',
+        value: '[REDACTD]',
+      },
+      {
+        key: 'Weakness',
+        value: `[REDACTED]`,
+      },
+    ],
+    description:
+      'Tha Prophet travels the land spreading the good word of programming, it is supposed that he channels earthly energies through his special shoes to [REDACTED]. Although his true origins are [REDACTED], rumour has it that he [REDACTED] a .NET developer in Lima and recovered bitcoin private keys from a [REDACTED] in Montenegro.',
   },
   {
     label: 'Unknown',

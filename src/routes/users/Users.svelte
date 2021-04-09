@@ -1,21 +1,21 @@
 <script>
   // to do:
   //   1. Add real photos
-  import { PageWrapperWithMenu } from 'components'
-  import { mobile } from 'stores'
-  import { data } from './data'
-  let humans = []
-  let subroutes = [{ label: '< Go Back', route: '/' }]
+  import { PageWrapperWithMenu } from "components";
+  import { mobile } from "stores";
+  import { data } from "./data";
+  let humans = [];
+  let subroutes = [{ label: "< Go Back", route: "/" }];
   data.map((person) => {
-    let obj = {}
-    obj.label = person.label
-    subroutes.push(obj)
-    humans.push(person)
-  })
-  humans.unshift(humans[0])
-  let active = 1
-  $: human = humans[active]
-  let navStyles = 'pa1 fs3'
+    let obj = {};
+    obj.label = person.label;
+    subroutes.push(obj);
+    humans.push(person);
+  });
+  humans.unshift(humans[0]);
+  let active = 1;
+  $: human = humans[active];
+  let navStyles = "pa1 fs3";
 </script>
 
 <style>
