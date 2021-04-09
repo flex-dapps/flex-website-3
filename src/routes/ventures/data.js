@@ -45,7 +45,7 @@ export const data = [
         text: "Check out the website"
       }
     ],
-    overview: "Scalable telemetry + monitoring for blockchain nodes",
+    overview: "Scalable telemetry + monitoring for blockchain nodes.",
     logo: `
     ohhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh-
     hMNssssssssssssssssssssssssssssssssssssssssssshMM/
@@ -90,7 +90,7 @@ export const data = [
         text: "Check out their website"
       }
     ],
-    overview: "SmartBonds for the new world of finance",
+    overview: "SmartBonds for the new world of finance.",
     logo: `
 
 
@@ -128,7 +128,7 @@ export const data = [
         text: "Check out their website"
       }
     ],
-    overview: "A decentralised platform for risk minimised stable assets",
+    overview: "A decentralised platform for risk minimised stable assets.",
     logo: `
 
        ////////    /oossso+/         +oossoo/
@@ -166,7 +166,7 @@ export const data = [
         text: "Check out the app"
       }
     ],
-    overview: "The instant crypto payment gateway for digital content",
+    overview: "The instant crypto payment gateway for digital content.",
     logo: `
 
 
