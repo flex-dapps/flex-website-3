@@ -338,10 +338,10 @@ export const data = [
       description: ["We are actively working with the Sigma Prime team to develop an application that makes it easy for users to operate an Ethereum 2.0 validator and stake their assets."
       ]
   },
-//   {
+  {
 
-//   label: "Meld Gold",
-//   logo: `
+  label: "Meld Gold",
+  logo: `
                                                   
                                                   
                                                   
@@ -350,37 +350,37 @@ export const data = [
                                                   
                                                   
                                                   
-//               .------         -----               
-//               -::::::        -::::::              
-//               -::::::        .:::::-              
-//               '.....'         '...'               
+              .------         -----               
+              -::::::        -::::::              
+              -::::::        .:::::-              
+              '.....'         '...'               
                                                   
-//        '''''''        ''''''          ''''        
-//       '::::::.       '::::::.        -::::-'      
-//       '::::::.       '::::::.       '::::::.      
-//       '::::::.        -::::-'        '-:::.       
-                                                  
-                                                  
+       '''''''        ''''''          ''''        
+      '::::::.       '::::::.        -::::-'      
+      '::::::.       '::::::.       '::::::.      
+      '::::::.        -::::-'        '-:::.       
                                                   
                                                   
                                                   
                                                   
                                                   
                                                   
-// `,
-// name: "Meld Gold",
-//     overview: "Digital infrastructure for the gold supply chain",
-//     duration: "Ongoing",
-//     links: [
-//       {
-//         link: "https://meld.gold",
-//         text: "Check out their website"
-//       }
-//     ],
-//     description: [
-// "Meld is overhauling the entire gold supply chain and replacing it with a new, seamless digital infrastructure powered by the Algorand blockchain. We worked with their team to enumerate the scope of the meld gold system, build an initial proof of concept and advise on hiring key personnel."
-//     ]
-// },
+                                                  
+                                                  
+`,
+name: "Meld Gold",
+    overview: "Digital infrastructure for the gold supply chain",
+    duration: "Ongoing",
+    links: [
+      {
+        link: "https://meld.gold",
+        text: "Check out their website"
+      }
+    ],
+    description: [
+"Meld is overhauling the entire gold supply chain and replacing it with a new, seamless digital infrastructure powered by the Algorand blockchain. We worked with their team to enumerate the scope of the meld gold system, build an initial proof of concept and advise on hiring key personnel."
+    ]
+},
   {
     label: "Web3 Summit Wallet",
     logo: `
