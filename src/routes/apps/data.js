@@ -378,7 +378,7 @@ name: "Meld Gold",
       }
     ],
     description: [
-"Meld is overhauling the entire gold supply chain and replacing it with a new, seamless digital infrastructure powered by the Algorand blockchain. We worked with their team to enumerate the scope of the meld gold system, build an initial proof of concept and advise on hiring key personnel."
+      "Meld is overhauling the entire gold supply chain and replacing it with a new, seamless digital infrastructure powered by the Algorand blockchain. We worked with their team to enumerate the scope of the meld gold system, build an initial proof of concept and advise on hiring initial key tech team personnel."
     ]
 },
   {
