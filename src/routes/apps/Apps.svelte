@@ -35,7 +35,7 @@
         <!-- <p>DURATION: {client.duration}</p> -->
         {#each client.links as linkObj}
           <p>
-            <a href={linkObj.link}>
+            <a href={linkObj.link} target="_blank">
               {linkObj.text ? linkObj.text : linkObj.link}
             </a>
           </p>

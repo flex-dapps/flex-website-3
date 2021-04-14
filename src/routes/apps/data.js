@@ -38,10 +38,53 @@ export const data = [
         }
       ],
       description: [
-        "We were grant funded by the TracerDAO to develop to develop two peices of open-source software.",
-"The first was a web application for the Tracer governance protocol that allows for $TCE token holders to easily vote on proposals made to the DAO.",
+        "We were engaged by the TracerDAO to develop two pieces of open-source software for the Tracer Ecosystem.",
+"The first was a web application for the Tracer governance protocol that allows for $TCR token holders to easily vote on proposals made to the DAO.",
 "The second was keeper bot that enables operators to liquidate under-collateralised users of the Tracer system."
       ]
+  },
+  {
+    label: "Blocknative",
+    logo: `
+                      .-//-\`
+                  \`.:////////:.\`
+               \`-///////////////:.
+           \`.:///////////////////-
+        \`-://////////////////////-
+        /////////////////////////-
+        /////////////////////////-
+        ///////////////////////+++-\`
+        ///////////////////+++osssss+:\`
+        /////////////////+oossssssssssso/.
+        -://///////////:--:+ssssssssssssss
+        ----://////:---------:/ossssssssss
+        --------:----------------+ssssssss
+        -------------------------/ssssssss
+        -------------------------/ssssssss
+        s+/----------------------/ssssssso
+        yyyyo/:------------------/sssooooo
+        yyyyyyys+:--------------:+oooooooo
+        yyyyyyyysoo+:--------/+ooooooooooo
+        yyyyyyyysooooo+/::/+oooooooooooooo
+        ./oyyyyysoooooooooooooooooooooo+:.
+           \`:+yysooooooooooooooooooo/-\`
+               -:+oooooooooooooo+:.
+                  \`-/+oooooo+/-\`
+                      .:++:.
+`,
+    name: "Blocknative",
+    overview: "Decoding the mempool",
+    duration: "12 months",
+    links: [
+      {
+        link: "https://blocknative.com",
+        text: "Check out their website"
+      }
+    ],
+    description: [
+      "Blocknative know that the best developer tools come from the best developers. Which is why they asked us to help them humanise the blockchain.",
+      "Our work with Blocknative has spanned more than a year, we have worked with them to develop their Onboard and Notify SDKs, as well as their heavy-lifting mempool monitoring software. Rapidly becoming the most knowledgeable company about Ethereum's real-time data, you should heed their wise words."
+    ]
   },
   {
 
@@ -168,7 +211,7 @@ export const data = [
         }
       ],
       description: [
-        "We worked with the Abridged team to develop a proof of concept web application that enables web3 native users to discover new and emerging social token communities, see how their token holdings, understand their community status and even issue their own social token.",  
+        "We worked with the Abridged team to develop a proof of concept web application that enables web3 native users to discover new and emerging social token communities, view their community status and even issue their own social token.",  
         "CollabLand is one of the most exciting new projects in the web3 ecosystem, watch this cyberspace."
       ]
   },
@@ -425,49 +468,6 @@ name: "Meld Gold",
     description: [
       "We were approached by the Web3 Foundation to help enhance the experience of the 2019 Web3Summit by supercharging it with Cryptocurrency.",
       'We developed arguably one of the best cryptocurrency-powered experiences to-date with the help of some exceptional devtools created by our friends at Abridged. Users could purchase merchandise with cryptocurrency, participate in Plutocrat vs Democrat Chess (democrats won), and customise your "Conference DNA".'
-    ]
-  },
-  {
-    label: "Blocknative",
-    logo: `
-                      .-//-\`
-                  \`.:////////:.\`
-               \`-///////////////:.
-           \`.:///////////////////-
-        \`-://////////////////////-
-        /////////////////////////-
-        /////////////////////////-
-        ///////////////////////+++-\`
-        ///////////////////+++osssss+:\`
-        /////////////////+oossssssssssso/.
-        -://///////////:--:+ssssssssssssss
-        ----://////:---------:/ossssssssss
-        --------:----------------+ssssssss
-        -------------------------/ssssssss
-        -------------------------/ssssssss
-        s+/----------------------/ssssssso
-        yyyyo/:------------------/sssooooo
-        yyyyyyys+:--------------:+oooooooo
-        yyyyyyyysoo+:--------/+ooooooooooo
-        yyyyyyyysooooo+/::/+oooooooooooooo
-        ./oyyyyysoooooooooooooooooooooo+:.
-           \`:+yysooooooooooooooooooo/-\`
-               -:+oooooooooooooo+:.
-                  \`-/+oooooo+/-\`
-                      .:++:.
-`,
-    name: "Blocknative",
-    overview: "Decoding the mempool",
-    duration: "12 months",
-    links: [
-      {
-        link: "https://blocknative.com",
-        text: "Check out their website"
-      }
-    ],
-    description: [
-      "Blocknative know that the best developer tools come from the best developers. Which is why they asked us to help them humanise the blockchain.",
-      "Our work with Blocknative has spanned more than a year, we have worked with them to develop their Onboard and Notify SDKs, as well as their heavy-lifting mempool monitoring software. Rapidly becoming the most knowledgeable company about Ethereum's real-time data, you should heed their wise words."
     ]
   },
   {
