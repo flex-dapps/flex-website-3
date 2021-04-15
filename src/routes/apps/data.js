@@ -28,20 +28,20 @@ export const data = [
                                                   
                                                   
 `,
-  name: "Tracer DAO",
-      overview: "Tracer DAO governance app and keeper bot",
-      duration: "12 weeks",
-      links: [
-        {
-          link: "https://tracer.finance/",
-          text: "Check out their website"
-        }
-      ],
-      description: [
-        "We were engaged by the TracerDAO to develop two pieces of open-source software for the Tracer Ecosystem.",
-"The first was a web application for the Tracer governance protocol that allows for $TCR token holders to easily vote on proposals made to the DAO.",
-"The second was keeper bot that enables operators to liquidate under-collateralised users of the Tracer system."
-      ]
+    name: "Tracer DAO",
+    overview: "Tracer DAO governance app and keeper bot.",
+    duration: "12 weeks",
+    links: [
+      {
+        link: "https://tracer.finance/",
+        text: "Check out their website"
+      }
+    ],
+    description: [
+      "We were engaged by the TracerDAO to develop two pieces of open-source software.",
+      "The first was a web application for the Tracer governance protocol that allows $TCR token holders to view and vote on proposals made to the DAO.",
+      "The second was keeper bot that enables operators to liquidate under-collateralised users of the Tracer system."
+    ]
   },
   {
     label: "Blocknative",
@@ -89,7 +89,7 @@ export const data = [
   {
 
     label: "GEX",
-    logo:`
+    logo: `
                                                   
                                                   
                                                   
@@ -115,24 +115,24 @@ export const data = [
                                                     
                                                     
   `,
-  name: "GEX",
-      overview: "The Game Asset Exchange",
-      duration: "Ongoing",
-      links: [
-        // {
-        //   link: "https://perlinx.finance/",
-        //   text: "Check out their website"
-        // }
-      ],
-      description: [
-        "We worked with the GEX team to design and develop a proof of concept game asset marketplace for the future of game development.",
-        "GEX enables game asset creators to sell their assets as NFTs and receive royalties from titles developed using their intellectual property."
-      ]
+    name: "GEX",
+    overview: "The Game Asset Exchange",
+    duration: "Ongoing",
+    links: [
+      // {
+      //   link: "https://perlinx.finance/",
+      //   text: "Check out their website"
+      // }
+    ],
+    description: [
+      "We worked with the GEX team to design and develop a proof of concept in-game asset marketplace for the future of game development.",
+      "GEX enables game asset creators to sell their assets as NFTs, and receive royalties from titles developed using their intellectual property."
+    ]
   },
   {
 
     label: "PerlinX",
-    logo:` 
+    logo: ` 
                                                   
                                                   
               ./+++++++++++++++:                  
@@ -158,19 +158,19 @@ export const data = [
                                                   
                                                   
 `,
-  name: "PerlinX",
-      overview: "Decentralised liquidity pools and synthetic assets",
-      duration: "6 Weeks",
-      links: [
-        {
-          link: "https://perlinx.finance/",
-          text: "Check out their website"
-        }
-      ],
-      description: [
-        "PerlinX is a decentralized finance interface platform, allowing users to trade assets of any kind with each other through incentivized liquidity mining and synthetic asset generation.",
-        "The application utilizes incentivized liquidity provision through the use of liquidity pools powered by the Balancer protocol and the UMA protocol to generate synthetic assets."
-      ]
+    name: "PerlinX",
+    overview: "Decentralised liquidity pools and synthetic assets.",
+    duration: "6 Weeks",
+    links: [
+      {
+        link: "https://perlinx.finance/",
+        text: "Check out their website"
+      }
+    ],
+    description: [
+      "PerlinX is a decentralized finance interface platform, allowing users to trade assets with each other through incentivized liquidity mining and synthetic asset generation.",
+      "The application utilizes incentivized liquidity provision through the use of liquidity pools powered by the Balancer protocol and the UMA protocol to generate synthetic assets."
+    ]
   },
   {
 
@@ -201,19 +201,19 @@ export const data = [
                                                   
                                                   
 `,
-  name: "CollabLand",
-      overview: "Discover communities and issue your own social token",
-      duration: "Ongoing",
-      links: [
-        {
-          link: "https:/collab.land",
-          text: "Check out their website"
-        }
-      ],
-      description: [
-        "We worked with the Abridged team to develop a proof of concept web application that enables web3 native users to discover new and emerging social token communities, view their community status and even issue their own social token.",  
-        "CollabLand is one of the most exciting new projects in the web3 ecosystem, watch this cyberspace."
-      ]
+    name: "CollabLand",
+    overview: "Discover communities and issue your own social token.",
+    duration: "Ongoing",
+    links: [
+      {
+        link: "https:/collab.land",
+        text: "Check out their website"
+      }
+    ],
+    description: [
+      "We worked with the Abridged team to develop a proof of concept web application that enables web3 native users to discover social token communities, view their token holdings, understand their community status, and even issue their own social token.",
+      "CollabLand is one of the most exciting new projects in the web3 ecosystem, watch this cyberspace."
+    ]
   },
   {
 
@@ -244,19 +244,19 @@ export const data = [
                                                   
                                                   
 `,
-  name: "LinkSwap",
-      overview: "Community governed DEX focused on $LINK pairs",
-      duration: "Ongoing",
-      links: [
-        {
-          link: "https://linkswap.app",
-          text: "Check out their website"
-        }
-      ],
-      description: [
-        "Sick and tired of losing their precious $LINK to impermanent loss on Uniswap, an unnamed collective of cyberspace frogs engaged Flex Dapps to write some smart-contracts.",
-        "Linkswap is a decentralised, community owned AMM that minimizes the impermanent loss for $LINK liquidity providers."
-      ]
+    name: "LinkSwap",
+    overview: "Community governed DEX focused on $LINK pairs.",
+    duration: "Ongoing",
+    links: [
+      {
+        link: "https://linkswap.app",
+        text: "Check out their website"
+      }
+    ],
+    description: [
+      "Sick and tired of losing their precious $LINK to impermanent loss on Uniswap, an unnamed collective of cyberspace frogs engaged Flex Dapps to write some smart-contracts.",
+      "Linkswap is a decentralised, community owned AMM that minimizes impermanent loss for $LINK liquidity providers."
+    ]
   },
   {
 
@@ -286,18 +286,18 @@ export const data = [
                                                   
                                                   
 `,
-  name: "yAxis Metavault",
-      overview: "A community governed yeild farming aggregator",
-      duration: "12 weeks",
-      links: [
-        {
-          link: "https://www.yaxis.io/",
-          text: "Check out their website"
-        }
-      ],
-      description: [
-        "The MetaVault is a community governed, multi-asset yield farming aggregator which automatically redeploys your funds into the best strategy."
-      ]
+    name: "yAxis Metavault",
+    overview: "A community governed yeild farming aggregator.",
+    duration: "12 weeks",
+    links: [
+      {
+        link: "https://www.yaxis.io/",
+        text: "Check out their website"
+      }
+    ],
+    description: [
+      "The MetaVault is a community governed, multi-asset yield farming aggregator which automatically re-deploys your funds into the best strategy."
+    ]
   },
   {
 
@@ -328,18 +328,18 @@ export const data = [
            .+++++                o++++.           
                                                   
 `,
-  name: "Jukebox",
-      overview: "Discover the magic of social tokens",
-      duration: "Ongoing",
-      links: [
-        {
-          link: "https://senaryblockchain.ventures/",
-          text: "Check out their website"
-        }
-      ],
-      description: [
-        "We worked with Senary Blockchain Ventures on a clickable prototype for Jukebox, an application where you can discover social token communities or grow your own"
-      ]
+    name: "Jukebox",
+    overview: "Discover the magic of social tokens.",
+    duration: "Ongoing",
+    links: [
+      {
+        link: "https://senaryblockchain.ventures/",
+        text: "Check out their website"
+      }
+    ],
+    description: [
+      "We worked with Senary Blockchain Ventures on a clickable prototype for Jukebox, an application where you can discover social token communities or grow your own."
+    ]
   },
   {
 
@@ -369,22 +369,22 @@ export const data = [
                        .MNNM.                     
                                                   
 `,
-  name: "Lighthouse Validator App",
-      overview: "A web application for Ethereum 2.0 validators using Lighthouse",
-      duration: "Ongoing",
-      links: [
-        {
-          link: "https://lighthouse.sigmaprime.io/",
-          text: "Check out their website"
-        }
-      ],
-      description: ["We are actively working with the Sigma Prime team to develop an application that makes it easy for users to operate an Ethereum 2.0 validator and stake their assets."
-      ]
+    name: "Lighthouse Validator App",
+    overview: "A web application for Ethereum 2.0 validators using Lighthouse.",
+    duration: "Ongoing",
+    links: [
+      {
+        link: "https://lighthouse.sigmaprime.io/",
+        text: "Check out their website"
+      }
+    ],
+    description: ["We are actively working with the Sigma Prime team to develop an application that makes it easy for users to operate an Ethereum 2.0 validator and stake their assets."
+    ]
   },
   {
 
-  label: "Meld Gold",
-  logo: `
+    label: "Meld Gold",
+    logo: `
                                                   
                                                   
                                                   
@@ -411,8 +411,8 @@ export const data = [
                                                   
                                                   
 `,
-name: "Meld Gold",
-    overview: "Digital infrastructure for the gold supply chain",
+    name: "Meld Gold",
+    overview: "Digital infrastructure for the gold supply chain.",
     duration: "Ongoing",
     links: [
       {
@@ -421,9 +421,9 @@ name: "Meld Gold",
       }
     ],
     description: [
-      "Meld is overhauling the entire gold supply chain and replacing it with a new, seamless digital infrastructure powered by the Algorand blockchain. We worked with their team to enumerate the scope of the meld gold system, build an initial proof of concept and advise on hiring initial key tech team personnel."
+      "Meld (MCAU) is overhauling the entire gold supply chain and replacing it with a new, seamless digital infrastructure powered by the Algorand blockchain. We worked with their team to enumerate the scope of the meld gold system, build an initial proof of concept and advise on hiring initial key tech team personnel."
     ]
-},
+  },
   {
     label: "Web3 Summit Wallet",
     logo: `
@@ -452,7 +452,7 @@ name: "Meld Gold",
 
   `,
     name: "Web3 Summit Wallet",
-    overview: "Crypto wallet to maximise your conference experience",
+    overview: "Crypto wallet to maximise your conference experience.",
     duration: "4 weeks",
     links: [
       {
@@ -499,12 +499,12 @@ name: "Meld Gold",
 
 `,
     name: "Drop Party",
-    overview: "Devcon V treasure hunt",
+    overview: "Devcon V treasure hunt.",
     duration: "4 weeks",
     links: [],
     description: [
       "In collaboration with the Ethereum foundation and the sponsors of Devcon V we created a treasure hunt for attendees.",
-      "Packaged within a bright and funky application, users could collect stars and play a collaborative game of Pokemon throughout the event. Multiple folks completed constellations and won specially made prizes."
+      "Packaged within a bright and funky application, users could collect stars and play a collaborative game of Pokemon throughout the event. Multiple folks completed constellations and won custom prizes."
     ]
   },
   {
@@ -537,7 +537,7 @@ name: "Meld Gold",
 
 `,
     name: "Australian Red Cross",
-    overview: "Portable identity solution with configurable trust",
+    overview: "Portable identity solution with configurable trust.",
     duration: "12 weeks",
     links: [
       {
@@ -548,7 +548,7 @@ name: "Meld Gold",
     ],
     description: [
       "We developed a configurable trust layer on top of uPort's portable attestation model in partnership with the Australian Red Cross and Typehuman.",
-      "This product comes from the Red Cross' goal to make humanitarian work more accessible, but has much further reaching implications for configurable trust between any subset of organisations."
+      "This product comes from the Red Cross' goal to make humanitarian work more accessible, and has much further reaching implications for configurable trust between any subset of organisations."
     ]
   },
   {
@@ -579,11 +579,11 @@ name: "Meld Gold",
 
 `,
     name: "Snap Wallet",
-    overview: "Burner wallet for the Binance Chain",
+    overview: "Burner wallet for the Binance Chain.",
     duration: "12 weeks",
     links: [],
     description: [
-      "Snap is an open source project that brings the straight forwardness and convenience of a burner wallet to Binance Chain, allowing users to transact Binance Coin and other BEP-2 based tokens.",
+      "Snap is an open source project that brings the straight forwardness and convenience of a burner wallet to Binance Chain, allowing users to transact Binance Coin and other BEP-2 tokens.",
       "Snap allows you to deploy a lighting fast burner wallet as a progressive web app on iPhone and Android devices, it is easily extensible so you can build mini apps which utilise BEP-2 and Binance Chain in novel, engaging ways."
     ]
   },
@@ -616,7 +616,7 @@ name: "Meld Gold",
 
 `,
     name: "RMIT Online",
-    overview: "Online dapp developer course",
+    overview: "Online dapp developer course.",
     duration: "6 weeks",
     links: [
       {
@@ -627,7 +627,7 @@ name: "Meld Gold",
     ],
     description: [
       "We worked with RMIT Online to build a course for developers to learn how to build decentralised applications.",
-      "The course encompasses a neat stack of decentralised technologies including Solidity and IPFS, as well as teaching you how to build a web interface to this new world."
+      "The course encompasses a neat stack of decentralised technologies including Solidity and IPFS, as well as teaching you how to build a web interface to the new world of Web3."
     ]
   },
   {
@@ -659,7 +659,7 @@ d++++++- -++++++++/\` /++++++/ \`/++++++++- -++++++d
                 mhysoo++++++oosyhm
 `,
     name: "Liven Pay",
-    overview: "The world's first global food economy",
+    overview: "The world's first global food economy.",
     duration: "Ongoing",
     links: [
       {
@@ -701,7 +701,7 @@ d++++++- -++++++++/\` /++++++/ \`/++++++++- -++++++d
     Mms+//////////////////////////////////////////+smM
     `,
     name: "CanSend",
-    overview: "Send any ERC20 token to multiple addresses at once",
+    overview: "Send any ERC20 token to multiple addresses at once.",
     duration: "7 weeks",
     links: [
       {
@@ -744,7 +744,7 @@ d++++++- -++++++++/\` /++++++/ \`/++++++++- -++++++d
                       \`....\`\`
 `,
     name: "Rocketshoes",
-    overview: "Decentralised learning management system",
+    overview: "Decentralised learning management system.",
     duration: "12 weeks",
     links: [
       {
