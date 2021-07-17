@@ -1,6 +1,6 @@
 export const data = [
   {
-    name: "PrePO",
+    name: "prePO",
     links: [
       {
         link: "https://prepo.io",
