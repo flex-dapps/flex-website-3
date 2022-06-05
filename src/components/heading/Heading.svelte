@@ -1,22 +1,50 @@
 <script>
-  import { createEventDispatcher } from "svelte";
-  import { typewriter } from "animations";
+  import { createEventDispatcher } from 'svelte'
+  import { typewriter } from 'animations'
   const messages = [
-    "WE BUILD PROGRAMMABLE MONEY",
+    'WHAT IS DEAD MAY NEVER DIE',
+    'WE BUILD PROGRAMMABLE MONEY',
     // "WE TRANSFORM PEOPLE INTO BANKS",
     // "WE BUILD CURRENCY POWERED APPLICATIONS",
-    "WE WRITE UNSTOPPABLE CODE",
-    "WE DO NOT NEED PERMISSION"
+    'WE WRITE UNSTOPPABLE CODE',
+    'WE DO NOT NEED PERMISSION',
     // "NEITHER DO YOU"
-  ];
+  ]
 
-  let active = 0;
-  export let message;
-  $: message = messages[active];
+  let active = 0
+  export let message
+  $: message = messages[active]
 
-  const dispatch = createEventDispatcher();
-  const finishTyping = () => dispatch("finishTyping");
+  const dispatch = createEventDispatcher()
+  const finishTyping = () => dispatch('finishTyping')
 </script>
+
+<div class="typing-wrapper flex justify-center">
+  {#if message}
+    <div>
+      <span
+        class="typing"
+        in:typewriter={{ speed: 75 }}
+        on:introend={() => {
+          window.setTimeout(() => {
+            message = false
+          }, 3000)
+        }}
+        out:typewriter={{ speed: 35 }}
+        on:outroend={() => {
+          finishTyping()
+          window.setTimeout(() => {
+            active === messages.length - 1 ? (active = 0) : active++
+            message = true
+          }, 250)
+        }}
+      >
+        {message}
+      </span>
+      <span class="carat">&nbsp;</span>
+    </div>
+  {/if}
+</div>
 
 <style>
   .typing-wrapper {
@@ -56,29 +84,3 @@
     }
   }
 </style>
-
-<div class="typing-wrapper flex justify-center">
-  {#if message}
-    <div>
-      <span
-        class="typing"
-        in:typewriter={{ speed: 75 }}
-        on:introend={() => {
-          window.setTimeout(() => {
-            message = false;
-          }, 3000);
-        }}
-        out:typewriter={{ speed: 35 }}
-        on:outroend={() => {
-          finishTyping();
-          window.setTimeout(() => {
-            active === messages.length - 1 ? (active = 0) : active++;
-            message = true;
-          }, 250);
-        }}>
-        {message}
-      </span>
-      <span class="carat">&nbsp;</span>
-    </div>
-  {/if}
-</div>

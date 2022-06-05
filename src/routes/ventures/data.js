@@ -40,6 +40,47 @@ export const data = [
     ]
   },
   {
+    name: "Talisman",
+    links: [
+      {
+        link: "https://talisman.xyz",
+        text: "Check out the website"
+      }
+    ],
+    overview: "Multi-chain wallet for Polkadot & Kusama (the Paraverse)",
+    logo: `
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                       -++-                       
+                      .NMMN-                      
+                 /hds -MMMM/ odh+                 
+                 MMMM+-MMMM/:MMMM.                
+                 MMMMo-MMMM//MMMM-                
+                 MMMMo-MMMM//MMMM-                
+                 MMMMdhMMMMddMMMM-                
+                 MMMMMMMMMMMMMMMM-                
+           +yy/  MMMMMMMMMMMMMMMM- :yho           
+          :MMMMmmMMMmy//:://smMMMNmMMMM+          
+           +mMMMMMm+o-///+/::o/mMMMMMNo           
+             +mMMMo.o+.+os:-++ oNMMNo.            
+               omMNhs-//++//-syNMNs.              
+                .oNMMmys++oymNMNy.                
+                  .smNMMMMMMMmy-                  
+                     -/osso/-                     
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+`,
+    description: [
+      "Talisman is building a multi-chain browser extension wallet which harnesses the native cross-chain capabilities of Polkadot."
+    ]
+  },
+  {
     name: "Chainflip",
     links: [
       {

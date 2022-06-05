@@ -73,7 +73,30 @@
   }
 </script>
 
+<!-- Map items -->
+{#each routes as route, i}
+  <div
+    style="text-align:{left ? 'left' : 'center'};"
+    on:click={() => clickHandler(route.route, i)}
+    class={i === active ? ' selected item' : ' item'}
+    class:mobile
+  >
+    {route.label}
+  </div>
+{/each}
+
 <style>
+  .selected .micro {
+    color: #2a333e;
+  }
+
+  .micro {
+    height: 100%;
+
+    color: #a9e3b0;
+    font-size: 0.5em;
+  }
+
   div {
     padding: 0.3rem 0.5rem 0.3rem 1.5rem;
     font-size: 1.5em;
@@ -102,14 +125,3 @@
     padding-bottom: 1rem;
   }
 </style>
-
-<!-- Map items -->
-{#each routes as route, i}
-  <div
-    style="text-align:{left ? 'left' : 'center'};"
-    on:click={() => clickHandler(route.route, i)}
-    class={i === active ? ' selected item' : ' item'}
-    class:mobile>
-    {route.label}
-  </div>
-{/each}

@@ -85,7 +85,24 @@ Having a lunch and learn? Planning a sprint or to take your client on a long jou
 Thinking about cooking up your own schemes? Need to source talented chefs and tastemakers for your own kitchen? We will work closely with your project to source, vet and help you hire the best technologists. 
 `;
 
+const dark = `
+# Gone Dark
+On the 8th of January 2021 shortly after the removal of @realDonaldTrump from twitter, the Flex Dapps website was unavailable for exactly 8 minutes 22 seconds. When it reappeared it was hashed and compared to a prior instance by a community forensic unit who found the hashes to match. Thus it was declared that the site and it’s contents hard not been tampered with.
+
+--
+
+However, since this event numerous associates of the community have reported that they remember facts and details about the website and the team to have been different in the years prior. Examples of these include the X-Cessive Overlord having no beard, that the original Flex office had been in a butter factory or that the Violent Artist was actually a woman. The RMIT Blockchain Innovation hub declared in it’s industry analysis that the cause was a crypto-psychological case of the Mandela Effect or [“False Memory”](https://en.wikipedia.org/wiki/False_memory#:~:text=In%202010%2C%20this%20shared%20false,having%20served%20as%20President%20of) likely to occur in DAOs. Wild rumours detailing the gang’s discovery of a multi-verse and subsequent disappearance into other timelines were also been popularised by members of Q-anon and are still discussed on forums like 4chan and the WeWork community message boards.
+
+--
+
+In the years that followed, Blockchain Australia commissioned a working group to explore the matter in hopes of uncovering the whereabouts of the country’s once thriving, underground industry.
+`
+
 const copy = [
+  {
+    name: "Gone Dark",
+    description: dark
+  },
   {
     name: "Introduction",
     description: introduction

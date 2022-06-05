@@ -17,15 +17,15 @@ export const data = [
       },
     ],
     description:
-      'Described by one witness as "possessing arms and dangerous", the Xcessive Overlord knows when to cut and run. Sharing battle stories thinly veiled as fortnightly email marketing drivel, the Overlord has earned a reputation as a reliable delivery driver. Information of his underlying motives is sparse, though some say he receives infrequent instructions via dead drop.',
+      'Described by [REDACTED] as "possessing arms and dangerous", the Xcessive Overlord knows when to cut and run. Sharing [REDACTED] stories thinly veiled as fortnightly email marketing drivel, the Overlord has earned a reputation as a reliable delivery driver. Information of his underlying motives is [REDACTED], though some say he receives infrequent instructions via [REDACTED].',
   },
   {
     label: 'Master Assassin',
     url: '/img/team/master.png',
-    name: 'Alexander Ramsey',
-    codeName: "['Master Assassin', 'Agyle']",
+    name: 'Agyle',
+    codeName: "['Agyle', 'Master Assassin']",
     position: "['Boss', 'CEO']",
-    skills: "['Memes', 'Visual Design', 'Game Design']",
+    skills: "[REDACTED]",
     special: [
       {
         key: 'Liability',
@@ -37,7 +37,7 @@ export const data = [
       },
     ],
     description:
-      "First discovered under a sheet in the back of an '84 Toyota Celica, the Master Assassin is the key that turns all locks. A student of the internet, the Assassin has a view of the world which is both upside and down, as well as back and to the front. You can never be too sure how far away the Master Assassin is from the memetic taps which fill his fuel tanks, but you can be certain that he will find them.",
+      "First [REDACTED] under a sheet in the back of an '84 Toyota Celica, the Master Assassin is the key that turns all locks. A student of the [REDACTED], the Assassin has a view of the world which is both upside and down, as well as back and to the front. You can never be too sure how far away the Master Assassin is from the [REDACTED] which fill his fuel tanks, but you can be certain that he will find them.",
   },
   {
     label: `Mighty Ambassador`,
@@ -49,25 +49,25 @@ export const data = [
     special: [
       {
         key: 'Languages Spoken',
-        value: "['English', 'Mandarin', 'Yeet Basic']",
+        value: "[REDACTED]",
       },
       {
-        key: 'ROOT ACCESS',
+        key: '[REDACTED]',
         value: 'TRUE',
       },
     ],
-    description: `Forcibly ejected and permanently banned from every communist regime under the sun, the Mighty Ambassador has a habit of embroiling herself in underground commercial enterprise. No unmarked building or shadowy stairwell is safe from the Ambassador's sense of what's current. She will find you and she will do business with you.`,
+    description: `Forcibly ejected and permanently banned from every [REDACTED], the Mighty Ambassador has a habit of embroiling herself in underground commercial enterprise. No unmarked building or shadowy stairwell is safe from the Ambassador's sense of what's [REDACTED]. She will find you and she will do business with you.`,
   },
   {
     label: 'Midnight Swami',
     url: '/img/team/midnight.png',
     name: 'Daniel Harrison',
     codeName: "['Midnight Swami', 'The Wizard']",
-    position: "['Underboss', 'Web3 Product Engineer']",
+    position: "[REDACTED]",
     skills: "['Front-end Development', 'Product Design', 'Going Windowless']",
     special: [
       {
-        key: 'FAVOURITE TOOL',
+        key: '[REDACTED]',
         value: 'Dynamite and Bandaids',
       },
       {
@@ -76,7 +76,7 @@ export const data = [
       },
     ],
     description:
-      "Midnight Swami hails from the world's newest nation, the aptly-named New Zealand. His strikingly handsome appearance and charismatic personality gained him a reputation as an extremely nice person. But nice guys get nowhere, so Midnight Swami vowed to live a life committed to writing code behind the veil of multiple 24 inch monitors - flexing his dapps for the world to see.",
+      "Midnight Swami hails from the world's newest nation, the aptly-named [REDACTED]. His strikingly handsome appearance and charismatic personality gained him a reputation as an extremely nice person. But nice guys get nowhere, so Midnight Swami vowed to live a life committed to [REDACTED] behind the veil of multiple 24 inch monitors - flexing his dapps for the world to see.",
   },
   {
     label: 'Fearless Mercenary',
@@ -92,10 +92,10 @@ export const data = [
       },
       {
         key: 'Normie Favour Level',
-        value: `[==========] 20/20`,
+        value: `[REDACTED]`,
       },
     ],
-    description: `Always a student, now a teacher, the Fearless Mercenary lets nothing stand in his way when put to task. Currying favour from those in any position, the Mercenary draws understanding from every aspect of the Normie-ruled universe and knows exactly what it takes to succeed: fresh kicks and flash bling.`,
+    description: `Always a student, now a teacher, the Fearless Mercenary lets nothing stand in his way when put to task. Currying favour from those in any position, the Mercenary draws understanding from every aspect of the [REDACTED] universe and knows exactly what it takes to succeed: [REDACTED].`,
   },
   {
     label: 'Cerebral Criminal',
@@ -107,7 +107,7 @@ export const data = [
     special: [
       {
         key: 'Degen Score',
-        value: 'Grandmaster',
+        value: '[REDACTED]',
       },
       {
         key: 'Bedtime Snack',
@@ -196,7 +196,7 @@ export const data = [
     description: `It's ain't tough to grok why civilians might think D.D. stands for due diligence. The Dynamic Dominator leaves no stone unturned no less times than it takes to find the 3rd side of a USB drive. Fighting a war on all fronts and armed with an Aldi bargain bin Swiss army knife, 12,492 notion pages and the keys to the WMDs, D.D. is the anonymous crazy glue that binds the impervious Flex Dapps phalanx.`,
   },
   {
-    label: '[R] Mad Desperado',
+    label: 'Mad Desperado',
     url: '/img/team/desperado.png',
     name: '[REDACTED]',
     codeName: `['Mad Desperado']`,
@@ -215,7 +215,7 @@ export const data = [
     description: `The journey to [REDACTED] is one way, which is why the Mad Desperado bought fourteen tickets from [REDACTED] in 2011. Winner of the inaugural Holochain Meme Hour in his very first week on the job, the Desperado is firmly positioned to reap the long term health benefits of [REDACTED].`,
   },
   {
-    label: '[R] Intellectual Genius',
+    label: 'Intellectual Genius',
     url: '/img/team/intellectual.png',
     name: '[REDACTED]',
     codeName: `['Intellectual Genius']`,
@@ -235,7 +235,7 @@ export const data = [
       'One glance at Intellectual Genius will tell you that he means business. That glint in his eye isn\'t saying "namaste," it\'s saying [REDACTED]. Intellectual Genius heads up the [REDACTED] campaign for Flex Dapps and has resolved never to rest until [REDACTED].',
   },
   {
-    label: '[R] Phantom Professional',
+    label: 'Phantom Professional',
     url: '/img/team/phantom.png',
     name: '[REDACTED]',
     codeName: `['Phantom Professional']`,
@@ -254,7 +254,7 @@ export const data = [
       "His [REDACTED] always collected, his eyes often heavy, the Phantom Professional has [REDACTED] himself as Flex Dapps' [REDACTED] officer. The Phantom Professional's everyday tasks are highly [REDACTED], sometimes even he must grant himself security clearance. Since nobody understands what he does, Flex have made the wise decision not to [REDACTED].",
   },
   {
-    label: '[R] Tha Prophet',
+    label: 'Tha Prophet',
     url: '/img/team/prophet.png',
     name: '[REDACTED]',
     codeName: `['Tha Prophet']`,
