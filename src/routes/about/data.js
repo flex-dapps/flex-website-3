@@ -87,11 +87,11 @@ Thinking about cooking up your own schemes? Need to source talented chefs and ta
 
 const dark = `
 # Gone Dark
-On the 8th of January 2021 shortly after the removal of @realDonaldTrump from twitter, the Flex Dapps website was unreachable for exactly 8 minutes 22 seconds. When it reappeared it was hashed and compared to a prior instance by a community forensic unit, the hashes were a match. It was officially declared that the site and its contents hard not been tampered with.
+On the 8th of January 2021 shortly after the removal of @realDonaldTrump from twitter, the Flex Dapps website was unreachable for exactly 8 minutes 22 seconds. When it reappeared it was hashed and compared to a prior instance by a community forensic unit, the hashes were a match. It was officially declared that the site and its contents had not been tampered with.
 
 --
 
-Since the site outage numerous associates of the community reported that content on the site did not match what they remembered to be true in the years prior. Examples of these include the X-Cessive Overlord having no beard, that the original Flex office had been in a butter factory or that the Violent Artist was infact the name of a classified operation involving cranes, rather than a person. In an industry analysis performed by the RMIT Blockchain Innovation Hub it was this was named a crypto-psychological case of the Mandela Effect or [“False Memory”](https://en.wikipedia.org/wiki/False_memory#:~:text=In%202010%2C%20this%20shared%20false,having%20served%20as%20President%20of) likely to occur in DAOs. Stories detailing the gang’s discovery of a multi-verse and subsequent disappearance into other timelines were also been popularised by members of Q-anon on forums such as 4chan /biz/ and the WeWork community message boards.
+Since the site outage, numerous associates of the community reported that content on the site did not match what they remembered to be true in the years prior. Examples of these include the X-Cessive Overlord having no beard, that the original Flex office had been in a butter factory or that the Violent Artist was infact the name of a classified operation involving cranes, rather than a person. In an industry analysis performed by the RMIT Blockchain Innovation Hub it was this was named a crypto-psychological case of the Mandela Effect or [“False Memory”](https://en.wikipedia.org/wiki/False_memory#:~:text=In%202010%2C%20this%20shared%20false,having%20served%20as%20President%20of) likely to occur in DAOs. Stories detailing the gang’s discovery of a multiverse and subsequent disappearance into other timelines were also been popularised by members of Q-anon groups on forums such as 4chan /biz/ and the WeWork community message boards.
 
 --
 
