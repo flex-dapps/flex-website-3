@@ -9,7 +9,7 @@
     { label: 'apps', route: '/apps' },
     { label: 'ventures', route: '/ventures' },
     { label: 'users', route: '/users' },
-    { label: 'contact', route: '/contact' },
+    // { label: 'contact', route: '/contact' },
     { label: 'newslettuce', route: '/newslettuce' },
     // { label: "player", route: "/player" }
   ]
@@ -49,27 +49,6 @@
   })
 </script>
 
-<style>
-  .w-33 {
-    width: 33%;
-  }
-
-  .highlighted {
-    background: #a9e3b0;
-    color: #2a333e;
-  }
-
-  h1 {
-    font-weight: lighter;
-    padding: 0 0.4em;
-    font-size: 3.3em;
-    margin: 0;
-    text-align: center;
-    vertical-align: middle;
-    cursor: default;
-  }
-</style>
-
 {#if loaded}
   {#if $mobile}
     <div class="w-100 h-100 flex flex-column justify-between items-center">
@@ -98,3 +77,24 @@
     </div>
   {/if}
 {/if}
+
+<style>
+  .w-33 {
+    width: 33%;
+  }
+
+  .highlighted {
+    background: #a9e3b0;
+    color: #2a333e;
+  }
+
+  h1 {
+    font-weight: lighter;
+    padding: 0 0.4em;
+    font-size: 3.3em;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    cursor: default;
+  }
+</style>
