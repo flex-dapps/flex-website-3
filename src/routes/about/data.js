@@ -95,7 +95,7 @@ Since the site outage numerous associates of the community reported that content
 
 --
 
-In late 2021 Blockchain Australia commissioned a working group to invetigate whereabouts of the Australias infamous team of web3 avengers. In the early weeks of January 2022 when the working group were officially scheduled to report their findings, the CEO of Blockchain Australia resigned. To this day the investigation's findings remain classified.
+In late 2021 Blockchain Australia commissioned a working group to invetigate the whereabouts of Australias infamous team of web3 avengers. In the early weeks of January 2022 when the working group were officially scheduled to report their findings, the CEO of Blockchain Australia resigned. To this day the investigation's findings remain classified.
 `
 
 const copy = [
